@@ -1,5 +1,6 @@
 .buttonsContainer {
   width: 100%;
+  border-radius: 22px;
 }
 
 .buttonsContainer ul {
@@ -12,12 +13,13 @@
 }
 
 .buttonsContainer ul li {
-    font-size: 1.05rem;
+  font-size: 1.05rem;
   padding: 0.25em;
 
   border: 1px solid hsl(0, 0%, 45%, 0.7);
-  text-transform: uppercase;
+
   background: linear-gradient(to right, #000 60%, transparent);
+  letter-spacing: 0.05em;
 
   color: var(--white-secondary);
 

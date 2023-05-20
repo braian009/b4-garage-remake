@@ -34,6 +34,9 @@
 }
 
 .heroText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   max-width: 768px;
   grid-column: span 4;
@@ -43,14 +46,15 @@
 
 .heroText h1 {
   font-size: 3.5rem;
+  letter-spacing: 0.02em;
 }
 
-.heroText h1 span {
-  color: #ff2800;
-}
 
 .heroText p {
+  font-size: 0.85rem;
   margin-top: 1em;
+  max-width: 20em;
+  
 }
 
 .ctaButton {

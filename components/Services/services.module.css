@@ -15,7 +15,7 @@
 }
 
 .serviceCard {
-  padding: 1em 0;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   color: #000;
@@ -31,7 +31,6 @@
 
 .serviceCard p {
   font-size: 0.9rem;
-  letter-spacing: 0.07em;
 }
 
 @media (min-width: 45em) {
@@ -44,3 +43,4 @@
     border-bottom: none;
   }
 }
+
