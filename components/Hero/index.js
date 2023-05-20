@@ -2,6 +2,7 @@ import * as React from "react";
 import styles from "./hero.module.css";
 import Image from "next/image";
 import CtaButtonGroup from "./CtaButtonGroup";
+import Slogan from "./Slogan";
 
 const Hero = () => {
   return (
@@ -23,6 +24,9 @@ const Hero = () => {
         </div>
         <div className={styles.buttons}>
           <CtaButtonGroup />
+        </div>
+        <div className={styles.slogan}>
+          <Slogan />
         </div>
       </div>
     </div>

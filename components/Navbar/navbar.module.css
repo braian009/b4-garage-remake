@@ -5,7 +5,8 @@
   left: 0;
   padding: 0.5em 1em;
   z-index: 100;
-  background-color: hsla(0, 0%, 0%, 0.5);
+  background-color: hsl(0, 0%, 83%, 0.5);
+  color: #000;
 }
 
 .inner {
@@ -19,7 +20,7 @@
 .brandLogo {
   width: 3em;
   height: 3em;
-  border: 1px solid var(--white-primary);
+  border: 1px solid #727272;
   border-radius: 50%;
   display: grid;
   place-items: center;

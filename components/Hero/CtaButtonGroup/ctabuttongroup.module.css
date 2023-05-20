@@ -12,13 +12,14 @@
 }
 
 .buttonsContainer ul li {
+    font-size: 1.05rem;
   padding: 0.25em;
 
-  border: 1px solid #727272;
+  border: 1px solid hsl(0, 0%, 45%, 0.7);
   text-transform: uppercase;
   background: linear-gradient(to right, #000 60%, transparent);
 
-  color: #727272;
+  color: var(--white-secondary);
 
   display: grid;
 }

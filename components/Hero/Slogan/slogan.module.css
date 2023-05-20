@@ -1,0 +1,15 @@
+.sloganContainer {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow-x: visible;
+}
+
+
+.sloganContainer h4 {
+    text-align: center;
+    color: #727272;
+    position: relative;
+
+}
+
