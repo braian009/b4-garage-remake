@@ -6,7 +6,7 @@
   height: 100vh;
 
   border-bottom: 1px solid var(--white-primary);
-  padding: 3em 2em;
+  padding: 6em 0.5em 0;
 }
 
 .inner {
@@ -14,10 +14,12 @@
   width: 100%;
   height: 100%;
   max-width: 1080px;
+  padding-top: 2.5em;
+  padding-bottom: 1.5em;
 
   display: grid;
-  place-content: center;
-  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2fr 1fr 1fr;
 }
 
 .container > img {
@@ -29,16 +31,19 @@
   top: 0;
   bottom: 0;
   width: 100%;
-  background: hsla(0, 0%, 0%, 0.7);
+  background: hsla(0, 0%, 0%, 0.8);
 }
 
 .heroText {
   text-align: center;
   max-width: 768px;
+  grid-column: span 4;
+  justify-self: center;
+  align-self: center;
 }
 
 .heroText h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .heroText h1 span {
@@ -50,10 +55,17 @@
 }
 
 .ctaButton {
-    font-size: 1rem;
+  font-size: 1rem;
   padding: 0.5em 2em;
-  background: coral;
+  background: #000;
   margin-top: 1em;
   border-radius: 5px;
   box-shadow: 3px 3px var(--white-secondary);
+}
+
+.buttons {
+  width: 100%;
+  grid-column: span 4;
+  grid-row: 3 / 4;
+  align-self: end;
 }

@@ -5,7 +5,7 @@
   left: 0;
   padding: 0.5em 1em;
   z-index: 100;
-  background-color: hsla(0, 0%, 0%, 0.8);
+  background-color: hsla(0, 0%, 0%, 0.5);
 }
 
 .inner {

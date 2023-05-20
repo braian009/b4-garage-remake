@@ -1,6 +1,7 @@
 import * as React from "react";
 import styles from "./hero.module.css";
 import Image from "next/image";
+import CtaButtonGroup from "./CtaButtonGroup";
 
 const Hero = () => {
   return (
@@ -16,10 +17,12 @@ const Hero = () => {
 
           <p>
             Culpa sint dolor enim non sit minim veniam.Dolore tempor duis
-            consequat Lorem ex adipisicing est.Exercitation eu ex commodo magna
-            incididunt ad nostrud.
+            consequat Lorem ex adipisicing est.
           </p>
           <button className={styles.ctaButton}>Order Now</button>
+        </div>
+        <div className={styles.buttons}>
+          <CtaButtonGroup />
         </div>
       </div>
     </div>

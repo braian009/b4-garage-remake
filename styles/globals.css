@@ -2,7 +2,7 @@
 
 :root {
   box-sizing: border-box;
-  font-size: calc(0.7em + 1vw);
+  font-size: calc(0.75em + 1vw);
   font-family: "Roboto Condensed", "Helvetica", sans-serif;
 
   --bg-primary: #202020;
