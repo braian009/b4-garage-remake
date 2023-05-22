@@ -28,7 +28,7 @@
 .cardContainer button {
   width: 11em;
   border-radius: 5px;
-  border: 1px solid white;
+  border: 1px solid #d4d4d4;
   padding: 0.5em 2em;
 }
 
