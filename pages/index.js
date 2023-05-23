@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
 import Release from "@/components/Release";
 import Store from "@/components/Store";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Services/>
         <Release/>
         <Store/>
+        <Contact/>
       </main>
     </>
   );
