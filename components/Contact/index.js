@@ -1,5 +1,8 @@
 import * as React from "react";
 import styles from "./contact.module.css";
+import InstagramIcon from "../varied/Icons/InstagramIcon";
+import FacebookIcon from "../varied/Icons/FacebookIcon";
+import TwitterIcon from "../varied/Icons/TwitterIcon";
 
 const Contact = () => {
   return (
@@ -16,9 +19,15 @@ const Contact = () => {
         <div className={styles.socials}>
           <div>Follow B4 on:</div>
           <ul className={styles.socialsList}>
-            <li>H</li>
-            <li>H</li>
-            <li>H</li>
+            <li>
+              <InstagramIcon />
+            </li>
+            <li>
+              <FacebookIcon />
+            </li>
+            <li>
+              <TwitterIcon />
+            </li>
           </ul>
         </div>
       </div>

@@ -29,7 +29,7 @@
   padding: 2em 1em;
   /* border-radius: 5px; */
   max-width: 30em;
-  border: 1px solid rgba(255, 255, 255, 0.4 );
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-left: none;
   border-right: none;
 }
@@ -40,7 +40,6 @@
   text-align: center;
   color: white;
   /* font-weight: bold; */
-
 }
 
 .inner .newsletter form {
@@ -52,22 +51,23 @@
 }
 
 .inner .newsletter form input {
-    width: 100%;
+  width: 100%;
   max-width: 25em;
   background: none;
-  border: 1px solid rgba(255, 255, 255, 0.4 );
+  border: 1px solid rgba(255, 255, 255, 0.4);
   padding: 0.5em 0.5em;
   border-radius: 5px;
-  color: white ;
+  color: white;
   font-size: 0.9rem;
 }
 
 .inner .newsletter form button {
-align-self: stretch;
-  background-color: #ff2800;
+  align-self: stretch;
+  /* background-color: var(--orange-primary); */
   color: white;
   border-radius: 5px;
   padding: 0.5em 1em;
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .inner .socials {
@@ -94,9 +94,16 @@ align-self: stretch;
 .inner .socials .socialsList li {
   width: 3em;
   height: 3em;
-  background-color: #ff2800;
+  /* background-color: var(--orange-primary); */
   border-radius: 50%;
-  border: 1px solid white;
   display: grid;
   place-items: center;
+}
+
+
+.inner .socials .socialsList li svg {
+  width: 3em;
+  height: 3em;
+  fill: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
 }
