@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 9.5em;
+  background-color: #202020;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+
+  display: grid;
+  gap: 1em;
+}
+
+.inner .eventCards {
+  display: grid;
+  gap: 0.5em;
+}
