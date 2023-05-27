@@ -30,12 +30,12 @@
 
   display: grid;
   gap: 1em;
-  padding: 0 1.25em;
+  padding: 0 1em;
 }
 
 .inner .eventCards {
   display: grid;
-  gap: 1em;
+  gap: 0.5em;
 }
 
 
@@ -47,7 +47,7 @@
 @media (min-width: 65em) {
   .eventsForm {
     position: absolute;
-    bottom: 1em;
+    bottom: 0;
     right: 1em;
     margin-top: 0;
   }

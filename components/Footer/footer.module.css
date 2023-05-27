@@ -1,0 +1,28 @@
+.container {
+    height: 4.5em;
+    display: grid;
+    place-items: center;
+    /* position: absolute; */
+    /* bottom: 0; */
+    width: 100%;
+    background-color: #000;
+  }
+  
+  .inner {
+    width: 100%;
+    height: 100%;
+    max-width: 1080px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container .inner div {
+    width: 14em;
+    position: relative;
+    font-size: 0.725rem;
+    text-align: center;
+    color: var(--white-secondary);
+    cursor: default;
+  }
