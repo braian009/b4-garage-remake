@@ -49,6 +49,10 @@
   object-fit: cover;
 }
 
+.inner .releaseInfo h4 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
 @media (min-width: 50em) {
   .inner {
     grid-template-columns: 1fr 1fr;

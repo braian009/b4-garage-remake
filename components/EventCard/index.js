@@ -10,9 +10,7 @@ const EventCard = ({ title, description, date }) => {
       </div>
       <div className={styles.cardInfo}>
         <h4>{title}</h4>
-        <p>
-            {description}
-        </p>
+        <p>{description}</p>
       </div>
     </div>
   );
