@@ -18,12 +18,17 @@ const Hero = () => {
 
           <p>
             Culpa sint dolor enim non sit minim veniam.Dolore tempor duis
-            consequat Lorem ex adipisicing est.
+            consequat.
           </p>
           <button className={styles.ctaButton}>Order Now</button>
         </div>
         <div className={styles.buttons}>
-          <CtaButtonGroup />
+          <ul>
+            <li>check this out</li>
+            <li>check this out</li>
+            <li>socials</li>
+            <li>socials</li>
+          </ul>
         </div>
         <div className={styles.slogan}>
           <Slogan />
