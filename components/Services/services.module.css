@@ -6,13 +6,21 @@
 
   padding: 3.5em 1.5em;
   background-color: #d4d4d4;
-
 }
 
 .inner {
   display: flex;
   flex-direction: column;
+  max-width: 1080px;
   gap: 1.5em;
+}
+
+.servicesCards {
+  width: 100%;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  align-items: center;
 }
 
 .serviceCard {
@@ -22,27 +30,63 @@
   color: #000;
   max-width: 24em;
   text-align: left;
-  border-bottom: 4px solid #000;
+
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
   gap: 0.5em;
+
+  box-shadow: 2px 2px 12px #000;
 
 }
 
 .serviceCard h2 {
-  letter-spacing: 0.07em;
+  letter-spacing: 0.07em;;
 }
 
 .serviceCard p {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+}
+
+.sponsors {
+  padding: 1em;
+  width: 100%;
+  
+  
+
+}
+
+.sponsors p {
+  text-align: center;
+  color: #000;
+  margin-bottom: 0.5em;
+  border-radius: 11px;
+  padding: 0.5em;
+}
+
+.sponsors ul {
+  display: flex;
+  position: relative;
+  gap: 1em;
+  justify-content: center;
+}
+
+
+.sponsors ul li {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  /* background-color: gray; */
+}
+
+.sponsors ul li svg {
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 45em) {
-  .inner {
+
+
+  .servicesCards {
     flex-direction: row;
   }
-
-  .serviceCard {
-    border-left: 4px solid #000;
-    border-bottom: none;
-  }
 }
-
