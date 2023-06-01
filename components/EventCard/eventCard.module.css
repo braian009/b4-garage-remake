@@ -2,60 +2,54 @@
   width: 100%;
   max-width: 25em;
   display: grid;
-  grid-template-columns: 4em 1fr;
-  grid-template-rows: 1fr;
-  padding: 1em;
-  /* background: rgba(0, 0, 0, 0.6); */
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent);
+  position: relative;
   border-radius: 11px;
+  overflow: hidden;
 }
 
-.cardContainer .cardDate {
-  width: 4em;
-  height: 4em;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: black;
+.cardDate {
+  position: absolute;
   display: flex;
   flex-direction: column;
+  top: 0;
+  left: 1em;
+  background-color: coral;
+  z-index: 10;
+  padding: 0.25em 0.5em;
   align-items: center;
-  justify-content: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.cardDate > div:nth-child(1) {
+  font-size: 0.75rem;
+}
+
+.cardDate > div:nth-child(2) {
+  font-size: 1.25rem;
   font-weight: bolder;
 }
 
-.cardContainer .cardDate div:nth-child(1) {
+.cardImage {
+  width: 100%;
+  height: 8.5em;
+  position: relative;
+  background-color: #242424;
+}
+
+.cardImage > img {
+  object-fit: cover;
+  opacity: 0.85;
+}
+
+.cardInfo {
+  background-color: black;
+  width: 100%;
+}
+
+.cardInfo h4 {
   font-size: 0.9rem;
-}
-
-.cardContainer .cardDate div:nth-child(2) {
-  font-size: 2em;
-}
-
-.cardContainer .cardInfo {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  gap: 0.25em;
-  padding-left: 1em;
-}
-
-.cardContainer .cardInfo h4 {
-  font-size: 0.9rem;
-  padding: 0.3em 0.5em;
-  /* border: 1px solid rgba(255, 255, 255, 0.5); */
-  /* background-color: hsla(191, 61%, 13%, 0.5); */
-  /* background-image: linear-gradient(to left, transparent, hsla(191, 61%, 13%, 0.4)); */
-
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  max-width: fit-content;
-
-  border-radius: 5px;
+  text-align: center;
+  padding: 0.5em;
   font-weight: lighter;
-  /* max-width: fit-content; */
-  color: var(--white-primary);
-}
-
-.cardContainer .cardInfo p {
-  font-size: 0.75rem;
-  color: var(--white-secondary);
 }
