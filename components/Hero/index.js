@@ -7,13 +7,13 @@ import Slogan from "./Slogan";
 const Hero = () => {
   return (
     <div className={styles.container}>
-      <Image src={"/herobg.jpg"} fill alt={""}></Image>
+      <Image src={"/herobggg.jpg"} fill alt={""}></Image>
       <div className={styles.heroOverlay}></div>
 
       <div className={styles.inner}>
         <div className={styles.heroText}>
           <h1>
-            <span>Unleash</span> the power
+            <span>Unleash</span> it
           </h1>
 
           <p>

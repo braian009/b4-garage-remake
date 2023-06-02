@@ -5,7 +5,7 @@
   width: 100%;
   height: 100vh;
 
-  padding: 8em 0.5em 0;
+  padding: 7em 1em 0;
 }
 
 .inner {
@@ -14,7 +14,7 @@
   height: 100%;
   max-width: 1080px;
   padding-top: 2.5em;
-  padding-bottom: 1.5em;
+  padding-bottom: 3.5em;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -23,6 +23,7 @@
 
 .container > img {
   object-fit: cover;
+  /* object-position: right; */
 }
 
 .heroOverlay {
@@ -30,7 +31,14 @@
   top: 0;
   bottom: 0;
   width: 100%;
-  background: hsla(0, 0%, 0%, 0.75);
+  background: hsla(0, 0%, 0%, 0.8);
+
+  background-image: linear-gradient(
+    to bottom right,
+    hsla(0, 0%, 0%, 1) 25%,
+    transparent
+  );
+  backdrop-filter: blur(1px) saturate(200%);
 }
 
 .heroText {
@@ -40,57 +48,90 @@
   text-align: center;
   max-width: 768px;
   grid-column: span 4;
-  justify-self: center;
+  /* justify-self: center; */
   align-self: center;
 }
 
 .heroText h1 {
-  font-size: 3.5rem;
-  letter-spacing: 0.02em;
-  font-weight: lighter;
+  line-height: 0.75;
+  font-size: 5.5rem;
+  /* letter-spacing: 0.04em; */
+  /* font-weight: lighter; */
+  color: var(--white-secondary);
 }
-
 
 .heroText p {
   font-size: 0.8rem;
   margin-top: 1em;
-  max-width: 20em;
+  max-width: 22em;
   color: var(--white-secondary);
 }
 
 .ctaButton {
+  /* width: 100%; */
   font-size: 1rem;
   padding: 0.5em 2em;
   background: #000;
+  margin: 0 auto;
   margin-top: 1em;
   border-radius: 5px;
   border: 1px solid #727272;
 }
 
 .buttons {
-  width: 100%;
+  /* width: 100%; */
   grid-column: span 4;
   grid-row: 3 / 4;
   align-self: end;
+
+  padding: 0.5em 0;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
 }
 
 .buttons ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.25em 1em;
+  padding: 0.5em 0;
   border-radius: 5px;
-  backdrop-filter: blur(7px) saturate(200%);
-  background-color: rgba(0, 0, 0, 0.55);
+  /* backdrop-filter: blur(7px) saturate(200%); */
+  /* background-color: rgba(0, 0, 0, 0.55); */
 }
 
 .buttons ul li {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.5);
+  /* color: #202020; */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
 }
 
 .slogan {
   width: 100%;
   grid-column: span 4;
-  padding-top: 2em;
+  align-self: end;
+}
+
+@media (min-width: 35em) {
+  .inner {
+    padding-bottom: 0.5em;
+  }
+
+  .heroText {
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 0.5em;
+  }
+
+  .ctaButton {
+    margin: initial;
+    margin-top: 1em;
+  }
+
+  .slogan > div {
+    place-content: end;
+  }
+
+  .slogan > div > h4 > div:nth-child(2) {
+    display: none;
+  }
 }

@@ -13,9 +13,9 @@ const Slogan = () => {
           right={"105%"}
           translateY={"-50%"}
           backgroundColor={"white"}
-          opacity={'0.2'}
+          opacity={'0.1'}
         />
-        some slogan of some kind
+        architects of speed & style
         <LineDecoration
           width={"100vw"}
           height={'1px'}
@@ -23,7 +23,7 @@ const Slogan = () => {
           left={"105%"}
           translateY={"-50%"}
           backgroundColor={"white"}
-          opacity={'0.2'}
+          opacity={'0.1'}
         />
       </h4>
     </div>
