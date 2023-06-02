@@ -1,0 +1,121 @@
+.container {
+  overflow: auto;
+  padding-top: 8em;
+  padding-bottom: 3em;
+
+  width: 100%;
+  min-height: 100%;
+  background-color: #d4d4d4;
+}
+
+.inner {
+  display: grid;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  gap: 1.5em;
+  padding: 0 1em;
+  place-items: center;
+  position: relative;
+  grid-template-rows: auto auto auto;
+}
+
+.eventText {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 37.5em;
+  color: black;
+}
+
+.eventText h1 {
+  font-size: 3.5rem;
+  line-height: 0.8;
+}
+
+.eventText p {
+  color: #202020;
+}
+
+.eventText > div {
+  align-self: flex-end;
+  padding-right: 2.5em;
+}
+
+.eventImage {
+  position: relative;
+  height: 14em;
+  background-color: coral;
+  width: 100%;
+  border-radius: 11px;
+  overflow: hidden;
+  border: 2px solid coral;
+}
+
+.eventImage img {
+  object-fit: cover;
+}
+
+.eventForm {
+  width: 100%;
+  min-width: 14em;
+  background-color: rgba(32, 32, 32, 0.7);
+  border-radius: 11px;
+}
+
+.eventForm form {
+  width: 100%;
+  padding: 1em;
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: 1fr 1fr;
+}
+
+.eventForm form button {
+    grid-column: span 2;
+    /* border: 1px solid white; */
+    padding: 0.55em;
+    background-color: coral;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+.eventForm form input {
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.5em;
+}
+
+.eventForm form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15em;
+  grid-column: span 2;
+}
+
+@media (min-width: 30em) {
+  .eventForm form > div:nth-child(1) {
+    grid-column: span 2;
+  }
+
+  .eventForm form > div:nth-child(2),
+  .eventForm form > div:nth-child(3) {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 50em) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .eventImage {
+    grid-column: span 1;
+    grid-row: span 2;
+    height: 100%;
+  }
+}
