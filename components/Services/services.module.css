@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
 
-  padding: 3.5em 1.5em;
+  padding: 3.5em 0;
   background-color: #d4d4d4;
 }
 
@@ -24,43 +24,48 @@
 }
 
 .serviceCard {
+  width: 100%;
   padding: 1em;
   display: flex;
   flex-direction: column;
   color: #000;
-  max-width: 24em;
+  max-width: 23em;
   text-align: left;
+  position: relative;
 
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  /* border: 2px solid rgba(0, 0, 0, 0.4); */
   border-radius: 5px;
   gap: 0.5em;
 
-  box-shadow: 2px 2px 12px #000;
-
+  /* box-shadow: 2px 2px 12px #000; */
 }
 
 .serviceCard h2 {
-  letter-spacing: 0.07em;;
+  font-size: 3.5rem;
+  /* letter-spacing: 0.04em; */
 }
 
 .serviceCard p {
-  font-size: 0.85rem;
+  /* max-width: 22em; */
+  font-size: 0.8rem;
 }
 
 .sponsors {
-  padding: 1em;
+  padding: 0.5em;
   width: 100%;
-  
-  
-
+  margin: 0 auto;
+  border-radius: 11px;
+  /* border: 2px solid hsla(0, 0%, 13%, 0.4); */
 }
 
 .sponsors p {
+  background-color: hsla(0, 0%, 13%, 0.8);
+  border-radius: 5px;
+
   text-align: center;
-  color: #000;
+  color: white;
   margin-bottom: 0.5em;
-  border-radius: 11px;
-  padding: 0.5em;
+  padding: 0.25em;
 }
 
 .sponsors ul {
@@ -69,7 +74,6 @@
   gap: 1em;
   justify-content: center;
 }
-
 
 .sponsors ul li {
   width: 3em;
@@ -84,8 +88,6 @@
 }
 
 @media (min-width: 45em) {
-
-
   .servicesCards {
     flex-direction: row;
   }

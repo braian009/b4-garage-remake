@@ -1,5 +1,6 @@
 import * as React from "react";
 import styles from "./services.module.css";
+import Image from "next/image";
 
 const Services = () => {
   return (
@@ -7,7 +8,7 @@ const Services = () => {
       <div className={styles.inner}>
         <div className={styles.servicesCards}>
           <div className={styles.serviceCard}>
-            <h2>some title</h2>
+            <h2>Essentials</h2>
             <p>
               Nostrud ea adipisicing mollit amet consequat quis aute cupidatat
               duis nisi ipsum non. Reprehenderit exercitation est aliquip
@@ -15,7 +16,7 @@ const Services = () => {
             </p>
           </div>
           <div className={styles.serviceCard}>
-            <h2>some title</h2>
+            <h2>Speedscape</h2>
             <p>
               Nostrud ea adipisicing mollit amet consequat quis aute cupidatat
               duis nisi ipsum non. Reprehenderit exercitation est aliquip
@@ -24,7 +25,7 @@ const Services = () => {
           </div>
         </div>
         <div className={styles.sponsors}>
-          <p>powered by</p>
+          <p>powered by:</p>
           <ul>
             <li>
               <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none">
