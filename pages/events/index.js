@@ -2,10 +2,11 @@ import * as React from "react";
 import Image from "next/image";
 import styles from "./events.module.css";
 import { eventList } from "@/data/events";
-import EventCard from "@/components/EventCard";
+
 import GetInfoForm from "@/components/GetInfoForm";
-import EventCardd from "@/components/EventCard";
+import EventCard from "@/components/EventCard";
 import Slogan from "@/components/Hero/Slogan";
+import { getSlugFromString } from "@/utils/slugConverter";
 
 const Events = ({}) => {
   return (
@@ -28,7 +29,7 @@ const Events = ({}) => {
 
           {eventList.map((event) => {
             return (
-              <EventCardd
+              <EventCard
                 key={`event-${event.id}`}
                 title={event.title}
                 description={event.description}

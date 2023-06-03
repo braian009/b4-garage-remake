@@ -24,14 +24,20 @@
   padding: 0.5em;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.5em;
   max-width: 37.5em;
   color: black;
+  justify-self: start;
+  align-self: start;
 }
 
 .eventText h1 {
   font-size: 3.5rem;
   line-height: 0.8;
+}
+
+.eventText h1::first-letter {
+  text-transform: uppercase;
 }
 
 .eventText p {
@@ -60,33 +66,67 @@
 .eventForm {
   width: 100%;
   min-width: 14em;
-  background-color: rgba(32, 32, 32, 0.7);
   border-radius: 11px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5em;
+  /* padding: 1em; */
+  margin-top: 1em;
+  
+}
+
+.eventForm > div {
+    width: 100%;
+    padding-left: 0.5em;
+}
+.eventForm > div h4 {
+    /* font-size: 1.2rem; */
+    /* text-align: center; */
+    color: #202020;
+}
+
+.eventForm p {
+    color: #202020;
+  /* text-align: center; */
+  font-size: 0.8rem;
+  letter-spacing: 0.01em;
+  padding-top: 0.15em;
+
 }
 
 .eventForm form {
-  width: 100%;
+  background-color: hsl(0, 0%, 18%);
   padding: 1em;
+  border-radius: 11px;
+
+  width: 100%;
   display: grid;
   gap: 0.5em;
   grid-template-columns: 1fr 1fr;
 }
 
 .eventForm form button {
-    grid-column: span 2;
-    /* border: 1px solid white; */
-    padding: 0.55em;
-    background-color: coral;
-    border-radius: 5px;
-    margin-top: 0.5em;
+  grid-column: span 2;
+  /* border: 1px solid white; */
+  padding: 0.55em;
+  background-color: coral;
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
+
+.eventForm form label {
+  font-size: 0.8rem;
+  color: var(--white-secondary);
 }
 
 .eventForm form input {
   background: none;
+  color: var(--white-primary);
   border: 1px solid white;
   border-radius: 5px;
   outline: none;
-  padding: 0.5em;
+  padding: 0.4em 0.7em;
 }
 
 .eventForm form > div {
@@ -107,10 +147,15 @@
   }
 }
 
-@media (min-width: 50em) {
+@media (min-width: 57.5em) {
   .inner {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows:  auto auto;
+    gap: .75em;
+  }
+
+  .eventForm {
+    align-self: end;
   }
 
   .eventImage {

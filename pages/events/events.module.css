@@ -16,7 +16,7 @@
   bottom: 0;
   width: 100%;
   background: hsla(0, 0%, 0%, 0.85);
-  backdrop-filter: blur(7px) saturate(150%);
+  backdrop-filter: blur(4px) saturate(100%);
 }
 
 .inner {
@@ -69,7 +69,7 @@
 }
 
 .eventsText h1 {
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
 
 .eventsText p {
