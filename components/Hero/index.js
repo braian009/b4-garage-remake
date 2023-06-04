@@ -2,7 +2,7 @@ import * as React from "react";
 import styles from "./hero.module.css";
 import Image from "next/image";
 import CtaButtonGroup from "./CtaButtonGroup";
-import Slogan from "./Slogan";
+import Slogan from "../varied/LegendText";
 
 const Hero = () => {
   return (
@@ -31,7 +31,7 @@ const Hero = () => {
           </ul>
         </div>
         <div className={styles.slogan}>
-          <Slogan />
+          <Slogan text='architects of style and design'/>
         </div>
       </div>
     </div>

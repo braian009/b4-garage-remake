@@ -1,33 +1,33 @@
 import * as React from "react";
 import LineDecoration from "./LineDecoration";
-import styles from './slogan.module.css'
+import styles from './legendText.module.css'
 
-const Slogan = () => {
+const LegentText = ({text, color}) => {
   return (
-    <div className={styles.sloganContainer}>
-      <h4>
+    <div className={styles.legendContainer}>
+      <h4 style={{color: `${color ? color : '#727272'}`}}>
         <LineDecoration
           width={"100vw"}
           height={'1px'}
           top={"50%"}
           right={"105%"}
           translateY={"-50%"}
-          backgroundColor={"white"}
-          opacity={'0.1'}
+          backgroundColor={`${color ? color : "#727272"}`}
+          opacity={'0.5'}
         />
-        architects of speed & style
+        {text}
         <LineDecoration
           width={"100vw"}
           height={'1px'}
           top={"50%"}
           left={"105%"}
           translateY={"-50%"}
-          backgroundColor={"white"}
-          opacity={'0.1'}
+          backgroundColor={`${color ? color : "#727272"}`}
+          opacity={'0.5'}
         />
       </h4>
     </div>
   );
 };
 
-export default Slogan;
+export default LegentText;

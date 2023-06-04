@@ -81,10 +81,7 @@
   margin-bottom: 0.5em;
 }
 
-.aboutCards > div:nth-child(1) h4 div {
-  background: #7a7a7a !important;
-  opacity: 1 !important;
-}
+
 
 .aboutCard {
   grid-column: span 1;

@@ -5,7 +5,7 @@ import { eventList } from "@/data/events";
 
 import GetInfoForm from "@/components/GetInfoForm";
 import EventCard from "@/components/EventCard";
-import Slogan from "@/components/Hero/Slogan";
+import Slogan from "@/components/varied/LegendText";
 
 const Events = ({}) => {
   return (
@@ -24,7 +24,7 @@ const Events = ({}) => {
           </p>
         </div>
         <div className={styles.eventCards}>
-          <Slogan />
+          <Slogan text='upcoming events'/>
 
           {eventList.map((event) => {
             return (

@@ -1,4 +1,4 @@
-.sloganContainer {
+.legendContainer {
     width: 100%;
     display: grid;
     overflow-x: visible;
@@ -6,12 +6,12 @@
 }
 
 
-.sloganContainer h4 {
+.legendContainer h4 {
     font-size: 0.85rem;
     text-align: center;
-    color: #727272;
     position: relative;
     letter-spacing: 0.1em;
+    font-weight: lighter;
 
 }
 

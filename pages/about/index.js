@@ -1,6 +1,6 @@
 import * as React from "react";
 import Image from "next/image";
-import Slogan from "@/components/Hero/Slogan";
+import Slogan from "@/components/varied/LegendText";
 import styles from "./about.module.css";
 
 const About = () => {
@@ -22,7 +22,7 @@ const About = () => {
           <Image src="/aboutimage.jpg" fill alt={""} />
         </div>
         <div className={styles.aboutCards}>
-          <Slogan />
+          <Slogan text='some insights' />
           <div className={styles.aboutCard}>
             <h4>year founded</h4> <h4>2011</h4>{" "}
           </div>
