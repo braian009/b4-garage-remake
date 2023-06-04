@@ -6,7 +6,6 @@ import { eventList } from "@/data/events";
 import GetInfoForm from "@/components/GetInfoForm";
 import EventCard from "@/components/EventCard";
 import Slogan from "@/components/Hero/Slogan";
-import { getSlugFromString } from "@/utils/slugConverter";
 
 const Events = ({}) => {
   return (

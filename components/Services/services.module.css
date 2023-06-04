@@ -33,11 +33,9 @@
   text-align: left;
   position: relative;
 
-  /* border: 2px solid rgba(0, 0, 0, 0.4); */
   border-radius: 5px;
   gap: 0.5em;
 
-  /* box-shadow: 2px 2px 12px #000; */
 }
 
 .serviceCard h2 {
