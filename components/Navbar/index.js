@@ -9,7 +9,7 @@ const menuListVariants = {
   open: {
     opacity: 1,
     clipPath: "inset(0% 0% 0% 0%)",
-    border: "1px solid coral",
+    border: "1px solid #e84b2c",
   },
   closed: {
     opacity: 1,
@@ -20,10 +20,10 @@ const menuListVariants = {
 
 const buttonVariants = {
   active: {
-    backgroundColor: "coral",
+    backgroundColor: "#e84b2c",
   },
   notActive: {
-    backgroundColor: " #727272",
+    backgroundColor: "#727272",
   },
 };
 

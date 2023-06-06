@@ -2,7 +2,7 @@ import * as React from "react";
 import LineDecoration from "./LineDecoration";
 import styles from './legendText.module.css'
 
-const LegentText = ({text, color}) => {
+const LegendText = ({text, color}) => {
   return (
     <div className={styles.legendContainer}>
       <h4 style={{color: `${color ? color : '#727272'}`}}>
@@ -30,4 +30,4 @@ const LegentText = ({text, color}) => {
   );
 };
 
-export default LegentText;
+export default LegendText;

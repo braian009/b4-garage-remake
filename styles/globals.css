@@ -9,12 +9,13 @@
   --bg-secondary: hsl(219, 30%, 9%);
 
   --blue-primary: #003f5c;
-  --orange-primary: #ee4927;
+  --orange-primary: #e84b2c;
+  /* --orange-primary: hsl(16, 90%, 56%); */
 
   --gray-primary: #303030;
   --gray-secondary: #494949;
 
-  --white-primary: #ffffff;
+  --white-primary: #e4e4e4;
   --white-secondary: #ababab;
 
   overflow-x: hidden;

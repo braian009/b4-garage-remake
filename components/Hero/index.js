@@ -25,7 +25,6 @@ const Hero = () => {
         <div className={styles.buttons}>
           <ul>
             <li>check this out</li>
-            <li>check this out</li>
             <li>socials</li>
             <li>socials</li>
           </ul>

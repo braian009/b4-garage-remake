@@ -1,92 +1,105 @@
 .container {
-  display: grid;
-  place-items: center;
   position: relative;
   width: 100%;
 
-  padding: 3.5em 0;
+  padding: 3em 1em;
   background-color: #d4d4d4;
 }
 
 .inner {
   display: flex;
   flex-direction: column;
+  gap: 1em;
+
   max-width: 1080px;
-  gap: 1.5em;
+  margin: 0 auto;
 }
 
 .servicesCards {
-  width: 100%;
   display: flex;
-  gap: 1em;
   flex-direction: column;
   align-items: center;
-}
-
-.serviceCard {
+  justify-content: center;
+  
   width: 100%;
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  color: #000;
-  max-width: 23em;
-  text-align: left;
-  position: relative;
-
-  border-radius: 5px;
   gap: 0.5em;
 
 }
 
+.serviceCard {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 30em;
+  padding: 1em;
+
+  color: #000;
+  position: relative;
+
+  border-radius: 5px;
+  gap: 0.25em;
+}
+
 .serviceCard h2 {
   font-size: 3.5rem;
-  /* letter-spacing: 0.04em; */
+  line-height: 0.9;
 }
 
 .serviceCard p {
-  /* max-width: 22em; */
-  font-size: 0.8rem;
+  font-size: 0.85rem;
+  line-height: 1.2;
 }
 
 .sponsors {
-  padding: 0.5em;
+  padding: 1em;
   width: 100%;
   margin: 0 auto;
   border-radius: 11px;
-  /* border: 2px solid hsla(0, 0%, 13%, 0.4); */
+  max-width: 30em;
 }
 
 .sponsors p {
-  background-color: hsla(0, 0%, 13%, 0.8);
+  font-size: 0.9rem;
   border-radius: 5px;
+  margin-bottom: 0.75em;
+  padding: 0.25em;
+  
+  color: white;
+  background: var(--orange-primary);
 
   text-align: center;
-  color: white;
-  margin-bottom: 0.5em;
-  padding: 0.25em;
+  box-shadow: 2px 2px 6px #000;
 }
 
 .sponsors ul {
   display: flex;
-  position: relative;
-  gap: 1em;
   justify-content: center;
+  gap: 0.75em;
+
+  position: relative;
 }
 
 .sponsors ul li {
   width: 3em;
   height: 3em;
+
   border-radius: 50%;
-  /* background-color: gray; */
 }
 
 .sponsors ul li svg {
   width: 100%;
   height: 100%;
+  filter: drop-shadow(2px 2px 2px #000);
 }
 
 @media (min-width: 45em) {
   .servicesCards {
     flex-direction: row;
+  }
+
+  .sponsors {
+    max-width: initial;
   }
 }
