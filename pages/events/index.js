@@ -10,9 +10,6 @@ import Slogan from "@/components/varied/LegendText";
 const Events = ({}) => {
   return (
     <div className={styles.container}>
-      <Image src={"/eventsbgg.jpg"} alt={""} fill />
-      <div className={styles.eventsOverlay}></div>
-
       <div className={styles.inner}>
         <div className={styles.eventsText}>
           <h1>Events</h1>
@@ -23,8 +20,8 @@ const Events = ({}) => {
             tempor in.
           </p>
         </div>
-        <div className={styles.eventCards}>
-          <Slogan text='upcoming events'/>
+        <div className={styles.eventsCards}>
+          <Slogan text="upcoming events" />
 
           {eventList.map((event) => {
             return (
@@ -38,9 +35,9 @@ const Events = ({}) => {
             );
           })}
         </div>
-      </div>
-      <div className={styles.eventsForm}>
-        <GetInfoForm />
+        <div className={styles.eventsForm}>
+          <GetInfoForm />
+        </div>
       </div>
     </div>
   );

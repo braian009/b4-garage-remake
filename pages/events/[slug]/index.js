@@ -48,8 +48,7 @@ const Event = ({ event }) => {
         </div>
         <div className={styles.eventForm}>
           <div>
-            <h4>Do you wanna be part of this or any of our events?</h4>
-            <p>fill the form below for full details:</p>
+            <p>Get info on how to be part of B4&apos;s events!</p>
           </div>
           <form>
             <div>

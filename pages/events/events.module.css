@@ -1,65 +1,53 @@
 .container {
+  position: relative;
+
   width: 100%;
   min-height: 100%;
-  padding-top: 8em;
+  padding-top: 6.5em;
+
   background-color: #d4d4d4;
-  position: relative;
 }
 
 .container > img {
   object-fit: cover;
 }
 
-.eventsOverlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  background: hsla(0, 0%, 0%, 0.85);
-  backdrop-filter: blur(4px) saturate(100%);
-}
-
 .inner {
   position: relative;
+  display: grid;
+  gap: 3em;
+
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
 
-  display: grid;
-  gap: 3em;
-  padding: 0 1.5em;
+  padding: 3em 1em;
 }
 
-.inner .eventCards {
+.inner .eventsCards {
   width: 100%;
   display: grid;
+  justify-items: center;
+
   gap: 1em;
   border-radius: 11px;
-  justify-items: center;
 }
 
-.eventCards > div:nth-child(1) {
+.eventsCards > div:nth-child(1) {
   margin-bottom: 0.75em;
 }
 
 .eventsForm {
   position: relative;
+
   width: 100%;
-  background-image: linear-gradient(to bottom, transparent, black);
-  margin-top: 1.25em;
-  padding: 2em 0;
-  z-index: 50;
+  margin-top: 0.5em;
 }
 
 .eventsForm > div {
   margin: 0 auto;
-  background: transparent;
 }
 
-.inner .eventsText {
-  display: grid;
-  width: 100%;
-}
 
 .eventsText {
   display: flex;
@@ -70,20 +58,21 @@
 
 .eventsText h1 {
   font-size: 4.5rem;
+  color: #202020;
 }
 
 .eventsText p {
-  color: var(--white-secondary);
   max-width: 35em;
+  color: #242424;
 }
 
 @media (min-width: 50em) {
-  .eventCards {
+  .eventsCards {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
   }
 
-  .eventCards > div:nth-child(1) {
+  .eventsCards > div:nth-child(1) {
     grid-column: span 2;
   }
 }

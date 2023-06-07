@@ -11,7 +11,7 @@
   object-fit: cover;
 }
 
-.eventsOverlay {
+.aboutOverlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -45,7 +45,6 @@
 }
 
 .aboutText p {
-  color: var(--white-secondary);
   max-width: 35em;
   color: #242424;
 }

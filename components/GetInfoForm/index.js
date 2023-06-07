@@ -5,8 +5,7 @@ const GetInfoForm = () => {
   return (
     <div className={styles.formContainer}>
       <p>
-        wanna participate in some of these events? we&apos;ll email you the
-        details!
+        Get notified about new upcoming events!
       </p>
       <form>
         <input type="text" placeholder="your email"></input>

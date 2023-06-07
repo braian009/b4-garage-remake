@@ -6,7 +6,7 @@
   left: 0;
 
   height: 6.5em;
-  padding: 0.65em 1em;
+  padding: 0.65em 0em;
 
   z-index: 100;
   color: var(--white-secondary);
@@ -85,7 +85,8 @@
   padding: 1.5em;
   border-radius: 11px;
 
-  transform: translateY(2em) !important;
+  transform: translateY(1.9em) !important;
+
   background-color: #0c0c0c;
   z-index: 100;
 }

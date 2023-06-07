@@ -6,6 +6,9 @@ import styles from "./about.module.css";
 const About = () => {
   return (
     <div className={styles.container}>
+      {/* <Image src={"/aboutbg.jpg"} alt={""} fill /> */}
+      {/* <div className={styles.aboutOverlay}></div> */}
+
       <div className={styles.inner}>
         <div className={styles.aboutText}>
           <h1>About us</h1>
@@ -22,7 +25,7 @@ const About = () => {
           <Image src="/aboutimage.jpg" fill alt={""} />
         </div>
         <div className={styles.aboutCards}>
-          <Slogan text='some insights' />
+          <Slogan text="some insights" />
           <div className={styles.aboutCard}>
             <h4>year founded</h4> <h4>2011</h4>{" "}
           </div>
