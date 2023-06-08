@@ -8,10 +8,6 @@
   background-color: #d4d4d4;
 }
 
-.container > img {
-  object-fit: cover;
-}
-
 .inner {
   position: relative;
   display: grid;
