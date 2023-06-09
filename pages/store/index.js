@@ -1,6 +1,7 @@
 import * as React from "react";
 import styles from "./store.module.css";
 import { productsList } from "@/data/store";
+import LineDecoration from "@/components/varied/LegendText/LineDecoration";
 import Image from "next/image";
 
 const Store = () => {
@@ -17,6 +18,24 @@ const Store = () => {
             <li>Wheels</li>
             <li>Accesories</li>
           </ul>
+          <LineDecoration
+            top={"0"}
+            left={"0"}
+            width={"150vw"}
+            translateX={"-25%"}
+            backgroundColor={"#727272"}
+            height={"1px"}
+            opacity={"0.4"}
+          />
+          <LineDecoration
+            bottom={"0"}
+            left={"0"}
+            width={"150vw"}
+            translateX={"-25%"}
+            backgroundColor={"#727272"}
+            height={"1px"}
+            opacity={"0.4"}
+          />
         </div>
         <div className={styles.storeCards}>
           {productsList.wheels.map((product) => {
@@ -27,6 +46,8 @@ const Store = () => {
                 </div>
                 <div className={styles.cardText}>
                   <h4>{product.name}</h4>
+                  <p>${product.price}</p>
+                  <button>Details</button>
                 </div>
               </div>
             );

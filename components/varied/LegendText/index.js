@@ -10,7 +10,7 @@ const LegendText = ({text, color}) => {
           width={"100vw"}
           height={'1px'}
           top={"50%"}
-          right={"105%"}
+          right={"110%"}
           translateY={"-50%"}
           backgroundColor={`${color ? color : "#727272"}`}
           opacity={'0.5'}
