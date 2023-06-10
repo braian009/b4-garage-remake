@@ -3,8 +3,11 @@ import styles from "./store.module.css";
 import { productsList } from "@/data/store";
 import LineDecoration from "@/components/varied/LegendText/LineDecoration";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import { getSlugFromString } from "@/utils/slugConverter";
 
 const Store = () => {
+  const router = useRouter();
   return (
     <div className={styles.container}>
       <div className={styles.inner}>
@@ -40,14 +43,26 @@ const Store = () => {
         <div className={styles.storeCards}>
           {productsList.wheels.map((product) => {
             return (
-              <div key={`product-${product.id}`} className={styles.storeCard}>
+              <div
+                key={`product-${product.id}`}
+                className={styles.storeCard}
+                onClick={() =>
+                  router.push(`store/wheels/${getSlugFromString(product.name)}`)
+                }
+              >
                 <div className={styles.cardImage}>
                   <Image src={product.image} fill alt={""} />
                 </div>
                 <div className={styles.cardText}>
                   <h4>{product.name}</h4>
                   <p>${product.price}</p>
-                  <button>Details</button>
+                  <button
+                    onClick={() =>
+                      router.push(`/${getSlugFromString(product.name)}`)
+                    }
+                  >
+                    Details
+                  </button>
                 </div>
               </div>
             );
