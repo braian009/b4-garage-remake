@@ -19,8 +19,6 @@ const getStaticPaths = () => {
     });
   });
 
-  console.log(paths);
-
   return {
     paths,
     fallback: false,
@@ -29,7 +27,6 @@ const getStaticPaths = () => {
 
 const getStaticProps = ({ params }) => {
   const { type, item } = params;
-  console.log(type, item);
 
   return {
     props: {
@@ -41,15 +38,12 @@ const getStaticProps = ({ params }) => {
 };
 
 const Product = ({ item }) => {
-  React.useEffect(() => {
-    console.log("jjee");
-  }, []);
   return (
     <div className={styles.container}>
       <div className={styles.inner}>
         <div className={styles.storeText}>
           <h1>B4&apos;s Store</h1>
-          <LegendText text="Wheels" />
+          <LegendText text={item.type} />
         </div>
         <div className={styles.itemDetailsCard}>
           <div className={styles.productImage}>
@@ -59,9 +53,7 @@ const Product = ({ item }) => {
             <div className={styles.infoHeader}>
               <h4>{item.name}</h4>
             </div>
-            <p>
-              {item.details}
-            </p>
+            <p>{item.details}</p>
             <div className={styles.infoFooter}>
               <p>$44.44</p>
               <div className={styles.cartButton}>Add to cart</div>

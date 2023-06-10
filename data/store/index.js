@@ -147,4 +147,78 @@ export const productsList = {
       price: "44.44",
     },
   ],
+  accesories: [
+    {
+      id: 16,
+      type: 'accesories',
+      name: "product 16",
+      image: "/speedometer.png",
+      details:
+        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+      price: "44.44",
+    },
+    {
+      id: 17,
+      type: 'accesories',
+      name: "product 17",
+      image: "/speedometer.png",
+      details:
+        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+      price: "44.44",
+    },
+    {
+      id: 18,
+      type: 'accesories',
+      name: "product 18",
+      image: "/speedometer.png",
+      details:
+        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+      price: "44.44",
+    },
+    {
+      id: 19,
+      type: 'accesories',
+      name: "product 19",
+      image: "/speedometer.png",
+      details:
+        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+      price: "44.44",
+    },
+    {
+      id: 20,
+      type: 'accesories',
+      name: "product 20",
+      image: "/speedometer.png",
+      details:
+        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+      price: "44.44",
+    },
+    {
+      id: 21,
+      type: 'accesories',
+      name: "product 21",
+      image: "/speedometer.png",
+      details:
+        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+      price: "44.44",
+    },
+    {
+      id: 22,
+      type: 'accesories',
+      name: "product 22",
+      image: "/speedometer.png",
+      details:
+        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+      price: "44.44",
+    },
+    {
+      id: 23,
+      type: 'accesories',
+      name: "product 23",
+      image: "/speedometer.png",
+      details:
+        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+      price: "44.44",
+    },
+  ],
 };
