@@ -15,7 +15,7 @@ const getStaticPaths = () => {
     },
     {
       params: {
-        type: "engineoil",
+        type: "engine-oil",
       },
     },
     {
@@ -36,11 +36,13 @@ const getStaticProps = ({ params }) => {
 
   return {
     props: {
-      itemType: type,
-      itemList: productsList[type],
+      itemType: getStringFromSlug(type),
+      itemList: productsList[getStringFromSlug(type)],
     },
   };
 };
+
+const productTypes = ["Wheels", "Engine Oil", "Accesories"];
 
 const Store = ({ itemType, itemList }) => {
   const router = useRouter();
@@ -53,10 +55,23 @@ const Store = ({ itemType, itemList }) => {
         </div>
         <div className={styles.storeNav}>
           <ul>
-            <li>Fluids</li>
-            <li>Spoilers</li>
-            <li>Wheels</li>
-            <li>Accesories</li>
+            {productTypes.map((type) => {
+              return (
+                <li
+                  key={`productType-${type}`}
+                  onClick={() => {
+                    router.push({
+                      pathname: "/store/[type]",
+                      query: {
+                        type: getSlugFromString(type),
+                      },
+                    });
+                  }}
+                >
+                  {type}
+                </li>
+              );
+            })}
           </ul>
           <LineDecoration
             top={"0"}
@@ -92,7 +107,7 @@ const Store = ({ itemType, itemList }) => {
                       router.push({
                         pathname: "/store/[type]/[item]",
                         query: {
-                          type: itemType,
+                          type: getSlugFromString(itemType),
                           item: getSlugFromString(product.name),
                         },
                       });

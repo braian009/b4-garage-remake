@@ -73,10 +73,10 @@ export const productsList = {
       price: "44.44",
     },
   ],
-  engineoil: [
+  "engine oil": [
     {
       id: 8,
-      type: 'engineoil',
+      type: 'engine oil',
       name: "product 8",
       image: "/bottle.png",
       details:
@@ -85,7 +85,7 @@ export const productsList = {
     },
     {
       id: 9,
-      type: 'engineoil',
+      type: 'engine oil',
       name: "product 9",
       image: "/bottle.png",
       details:
@@ -94,7 +94,7 @@ export const productsList = {
     },
     {
       id: 10,
-      type: 'engineoil',
+      type: 'engine oil',
       name: "product 10",
       image: "/bottle.png",
       details:
@@ -103,7 +103,7 @@ export const productsList = {
     },
     {
       id: 11,
-      type: 'engineoil',
+      type: 'engine oil',
       name: "product 11",
       image: "/bottle.png",
       details:
@@ -112,7 +112,7 @@ export const productsList = {
     },
     {
       id: 12,
-      type: 'engineoil',
+      type: 'engine oil',
       name: "product 12",
       image: "/bottle.png",
       details:
@@ -121,7 +121,7 @@ export const productsList = {
     },
     {
       id: 13,
-      type: 'engineoil',
+      type: 'engine oil',
       name: "product 13",
       image: "/bottle.png",
       details:
@@ -130,7 +130,7 @@ export const productsList = {
     },
     {
       id: 14,
-      type: 'engineoil',
+      type: 'engine oil',
       name: "product 14",
       image: "/bottle.png",
       details:
@@ -139,7 +139,7 @@ export const productsList = {
     },
     {
       id: 15,
-      type: 'engineoil',
+      type: 'engine oil',
       name: "product 15",
       image: "/bottle.png",
       details:

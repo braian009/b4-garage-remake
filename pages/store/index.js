@@ -31,7 +31,7 @@ const Store = () => {
               </div>
             </div>
           </div>
-          <div className={styles.storeCard} onClick={() => router.push('/store/engineoil')}>
+          <div className={styles.storeCard} onClick={() => router.push('/store/engine-oil')}>
             <div className={styles.storeCardImage}>
               <Image src={"/oil.jpg"} fill alt={""} />
             </div>
