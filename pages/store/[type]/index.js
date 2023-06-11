@@ -1,29 +1,25 @@
 import * as React from "react";
 import styles from "./store.module.css";
-import { productsList } from "@/data/store";
+
 import LineDecoration from "@/components/varied/LegendText/LineDecoration";
-import Image from "next/image";
-import { useRouter } from "next/router";
+import ProductCard from "@/components/ProductCard";
+
+import { productTypes } from "@/data/store";
+import { productsList } from "@/data/store";
+
 import { getSlugFromString, getStringFromSlug } from "@/utils/slugConverter";
+import { useRouter } from "next/router";
 
 const getStaticPaths = () => {
-  const paths = [
-    {
+  let paths = [];
+
+  productTypes.forEach((type) => {
+    paths.push({
       params: {
-        type: "wheels",
+        type: getSlugFromString(type),
       },
-    },
-    {
-      params: {
-        type: "engine-oil",
-      },
-    },
-    {
-      params: {
-        type: "accesories",
-      },
-    },
-  ];
+    });
+  });
 
   return {
     paths,
@@ -41,8 +37,6 @@ const getStaticProps = ({ params }) => {
     },
   };
 };
-
-const productTypes = ["Wheels", "Engine Oil", "Accesories"];
 
 const Store = ({ itemType, itemList }) => {
   const router = useRouter();
@@ -93,30 +87,9 @@ const Store = ({ itemType, itemList }) => {
           />
         </div>
         <div className={styles.storeCards}>
-          {itemList.map((product) => {
+          {itemList.map((item) => {
             return (
-              <div key={`product-${product.id}`} className={styles.storeCard}>
-                <div className={styles.cardImage}>
-                  <Image src={product.image} fill alt={""} />
-                </div>
-                <div className={styles.cardText}>
-                  <h4>{product.name}</h4>
-                  <p>${product.price}</p>
-                  <button
-                    onClick={() => {
-                      router.push({
-                        pathname: "/store/[type]/[item]",
-                        query: {
-                          type: getSlugFromString(itemType),
-                          item: getSlugFromString(product.name),
-                        },
-                      });
-                    }}
-                  >
-                    Details
-                  </button>
-                </div>
-              </div>
+              <ProductCard key={`productCard-${item.id}`} item={item} />
             );
           })}
         </div>

@@ -1,3 +1,6 @@
+export const productTypes = ["Wheels", "Engine Oil", "Accesories"];
+
+
 export const productsList = {
   wheels: [
     {

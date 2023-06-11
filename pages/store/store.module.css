@@ -10,9 +10,6 @@
 
 .inner {
   position: relative;
-  display: grid;
-  gap: 3em;
-
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
@@ -24,6 +21,7 @@
   font-size: 4.5rem;
   text-align: center;
   color: #202020;
+  margin-bottom: 3rem;
 }
 
 
@@ -35,60 +33,8 @@
     justify-content: center;
 }
 
-.storeCard {
-    display: flex;
-    flex-direction: column;
-  
-    width: 100%;
-    max-width: 24em;
-  
-    color: var(--white-secondary);
-    
-    border-radius: 5px;
-    overflow: hidden;
-  
-    box-shadow: 2px 2px 12px #000;
-    cursor: pointer;
-  }
-  
-  .storeCardImage {
-    position: relative;
-    width: 100%;
-    height: 10em;
-    overflow: hidden;
-  }
-  
-  .storeCardImage img {
-    object-fit: cover;
-  }
-  
-  .storeCardFooter {
-    display: flex;
-    justify-content: center;
-    gap: 0.5em;
-  
-    width: 100%;
-    padding: 0.75em 1em;
-    background-color: #0c0c0c;
-    position: relative;
-  }
-  
-  .storeCardFooter > h4 {
-    line-height: 0.7;
-  }
-  
-  .storeCardFooter > div > svg {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  
-    width: 0.75em;
-    height: 0.75em;
-    fill: var(--orange-primary);
-    stroke: var(--orange-primary);
-  }
-  
-  @media (min-width: 50em) {
+
+  @media (min-width: 55em) {
     .storeCards {
         flex-direction: row;
     }

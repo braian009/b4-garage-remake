@@ -11,7 +11,7 @@
 .inner {
   position: relative;
   display: grid;
-  gap: 3em;
+  gap: 2.5em;
 
   width: 100%;
   max-width: 1180px;
@@ -27,9 +27,9 @@
 }
 
 .storeNav {
-  width: 100%;
   position: relative;
-  padding: 1em 2.5em !important;
+  width: 100%;
+  padding: 0.5em 2em !important;
 }
 
 .storeNav ul {
@@ -43,97 +43,30 @@
   color: #242424;
 }
 
-.storeNav ul li:nth-child(1) {
-  color: var(--orange-primary);
+.storeNav ul li {
+  font-size: 0.95rem;
+  padding: 0.5rem;
+
+  cursor: pointer;
 }
 
 .storeCards {
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
-  gap: 1.5em;
+  gap: 1.25em;
 
   width: 100%;
   margin: 0 auto;
   padding: 0 1em;
 }
 
-.storeCard {
-  display: grid;
-  grid-template-columns: 11em 1fr;
-  place-items: center;
 
-  width: 100%;
-  max-width: 21em;
-
-  border-radius: 11px;
-  box-shadow: 2px 2px 6px #000;
-  overflow: hidden;
-  border-bottom: none;
-}
-
-.storeCard .cardImage {
-  position: relative;
-
-  width: 100%;
-  height: 10em;
-  background-color: #a29d9a;
-}
-
-.storeCard .cardImage img {
-  object-fit: contain;
-  padding: 1em !important;
-
-  width: 100%;
-  height: 100%;
-
-  filter: drop-shadow(2px 2px 1px #000);
-}
-
-.storeCard .cardText {
-  display: grid;
-  place-content: center;
-  gap: 0.25em;
-
-  text-align: center;
-  height: 100%;
-  width: 100%;
-
-  color: var(--white-secondary);
-  background-color: #242424;
-
-  padding: 0.55em;
-}
-
-.cardText h4 {
-  font-size: 0.9rem;
-}
-
-.cardText p {
-  font-size: 0.85rem;
-}
-
-.cardText button {
-  font-size: 0.85rem;
-
-  padding: 0.3em 1.5em;
-  background-color: var(--orange-primary);
-  border-radius: 5px;
-}
 
 @media (min-width: 490px) {
   .storeCards {
     grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
     padding: 0 1.5em;
   }
-  .storeCard {
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-    max-width: 14em;
-  }
 
-  .cardText {
-    background-color: #242424 !important;
-    color: var(--white-secondary) !important;
-  }
 }
