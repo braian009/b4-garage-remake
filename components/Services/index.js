@@ -1,6 +1,6 @@
 import * as React from "react";
 import styles from "./services.module.css";
-import Image from "next/image";
+import LegendText from "../varied/LegendText";
 
 const Services = () => {
   return (
@@ -25,7 +25,7 @@ const Services = () => {
           </div>
         </div>
         <div className={styles.sponsors}>
-          <p>powered by:</p>
+          <LegendText text='powered by:'/>
           <ul>
             <li>
               <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none">
