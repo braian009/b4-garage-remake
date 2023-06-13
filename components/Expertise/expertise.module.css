@@ -57,21 +57,19 @@
 }
 
 .cardText {
-  padding: 1em;
+  padding: 0.5em;
   z-index: 20;
 }
 
 .cardText h4 {
   font-size: 1.25rem;
-  margin: 0 auto;
   max-width: 25em;
-  text-align: center;
   margin-bottom: 0.25em;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   font-style: italic;
 
-  color: var(--orange-primary);
+  color: var(--white-secondary);
   width: fit-content;
   border-radius: 5px;
 }
@@ -80,7 +78,6 @@
   font-size: 0.85rem;
   margin: 0 auto;
   max-width: 25em;
-  text-align: center;
 
   color: var(--white-secondary);
 }

@@ -18,7 +18,6 @@ const Expertise = () => {
                 Cupidatat ex proident mollit cillum duis aliquip sit minim
                 consequat id sint.
               </p>
-              <button></button>
             </div>
           </div>
           <div className={styles.expertiseCard}>

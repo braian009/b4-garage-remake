@@ -9,13 +9,13 @@ const ProExhaustLogo = () => {
         alignItems: "center",
         width: "175px",
         height: "60px",
-        cursor: 'default',
+        cursor: "default",
       }}
     >
       <div style={{ flex: "50%", height: "100%" }}>
         <svg fill="#e84b2c" height="100%" width="100%" viewBox="0 0 512 512">
           <g strokeWidth="0"></g>
-          <g stroke-Linecap="round" stroke-Linejoin="round"></g>
+          <g strokeLinecap="round" strokeLinejoin="round"></g>
           <g>
             <g>
               <g>
