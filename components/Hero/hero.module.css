@@ -40,7 +40,7 @@
     to bottom right,
     rgba(12, 12, 12, 0.7) 45%,
     transparent
-  ); 
+  );
   backdrop-filter: blur(1px) saturate(150%);
 }
 
@@ -59,7 +59,7 @@
 
 .heroText h1 {
   line-height: 0.75;
-  font-size: 5.5rem;
+  font-size: 5rem;
 }
 
 .heroText p {
@@ -70,7 +70,6 @@
 }
 
 .ctaButton {
-  width: 11em;
   font-size: 1rem;
   padding: 0.5em 2em;
 
@@ -82,12 +81,10 @@
 }
 
 .buttons {
-  width: 100%;
-  max-width: 25em;
   justify-self: center;
   align-self: end;
 
-  padding-bottom: 2em;
+  padding-bottom: 3.5em;
 
   grid-column: span 4;
   grid-row: 3 / 4;
@@ -96,23 +93,28 @@
 .buttons ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 1em;
 
   padding: 0.5em;
   margin: 0 auto;
 
-  background-color: rgba(12, 12, 12, 0.4);
-  backdrop-filter: blur(44px) saturate(100%);
-  
-  border: 2px solid rgba(232, 75, 44, 0.5);
+  /* background-color: rgba(12, 12, 12, 0.4);
+  backdrop-filter: blur(44px) saturate(100%); */
+
   border-radius: 11px;
-  box-shadow: 2px 2px 6px #000;
+  /* box-shadow: 2px 2px 6px #000; */
 }
 
 .buttons ul li {
+  width: 3em;
+  height: 3em;
   font-size: 0.9rem;
-  color: var(--white-secondary);
-  padding: 0.3em 0.8em;
+}
+
+.buttons ul li svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--white-secondary);
 }
 
 .slogan {

@@ -25,7 +25,7 @@ const Services = () => {
           </div>
         </div>
         <div className={styles.sponsors}>
-          <LegendText text='powered by:'/>
+          <LegendText text='Powered by:'/>
           <ul>
             <li>
               <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none">

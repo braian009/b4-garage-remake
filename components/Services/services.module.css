@@ -20,10 +20,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
   width: 100%;
   gap: 0.5em;
-
 }
 
 .serviceCard {
@@ -63,8 +62,12 @@
   margin-bottom: 0.5em;
 }
 
+.sponsors > div h4 {
+  color: #242424 !important;
+}
+
 .sponsors > div h4 div {
-background-color: var(--orange-primary) !important;
+  background-color: var(--orange-primary) !important;
 }
 
 .sponsors ul {
@@ -80,6 +83,9 @@ background-color: var(--orange-primary) !important;
   height: 3em;
 
   border-radius: 50%;
+  background-color: #242424;
+  border: 1px solid var(--orange-borders);
+  padding: 0.5em;
 }
 
 .sponsors ul li svg {

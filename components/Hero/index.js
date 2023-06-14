@@ -1,7 +1,8 @@
 import * as React from "react";
 import styles from "./hero.module.css";
 import Image from "next/image";
-import CtaButtonGroup from "./CtaButtonGroup";
+import TwitterIcon from "../varied/Icons/TwitterIcon";
+import InstagramIcon from "../varied/Icons/InstagramIcon";
 import Slogan from "../varied/LegendText";
 
 const Hero = () => {
@@ -24,13 +25,16 @@ const Hero = () => {
         </div>
         <div className={styles.buttons}>
           <ul>
-            <li>check this out</li>
-            <li>socials</li>
-            <li>socials</li>
+            <li>
+              <InstagramIcon />
+            </li>
+            <li>
+              <TwitterIcon />
+            </li>
           </ul>
         </div>
         <div className={styles.slogan}>
-          <Slogan text='architects of style and design'/>
+          <Slogan text="architects of style and design" />
         </div>
       </div>
     </div>
