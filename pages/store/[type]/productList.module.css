@@ -2,7 +2,6 @@
   position: relative;
 
   width: 100%;
-  min-height: 100%;
   padding-top: 6.5em;
 
   background-color: #d4d4d4;
@@ -13,22 +12,20 @@
   display: grid;
   gap: 2.5em;
 
-  width: 100%;
   max-width: 1180px;
   margin: 0 auto;
 
-  padding: 3em 1em;
+  padding: 3em 1.25em;
 }
 
 .storeText h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   text-align: center;
   color: #202020;
 }
 
 .storeNav {
   position: relative;
-  width: 100%;
   padding: 0.5em 2em !important;
 }
 
@@ -44,7 +41,7 @@
 }
 
 .storeNav ul li {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   padding: 0.5rem;
 
   cursor: pointer;

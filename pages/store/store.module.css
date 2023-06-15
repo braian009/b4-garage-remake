@@ -2,7 +2,6 @@
   position: relative;
 
   width: 100%;
-  min-height: 100%;
   padding-top: 6.5em;
 
   background-color: #d4d4d4;
@@ -14,29 +13,26 @@
   max-width: 1180px;
   margin: 0 auto;
 
-  padding: 3em 1em;
+  padding: 3em 1.25em;
 }
 
 .inner h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   text-align: center;
   color: #202020;
   margin-bottom: 3rem;
 }
 
-
 .storeCards {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
 }
 
-
-  @media (min-width: 55em) {
-    .storeCards {
-        flex-direction: row;
-    }
+@media (min-width: 55em) {
+  .storeCards {
+    flex-direction: row;
   }
-  
+}

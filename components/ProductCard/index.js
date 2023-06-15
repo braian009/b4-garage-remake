@@ -1,5 +1,6 @@
 import * as React from "react";
 import styles from "./productCard.module.css";
+
 import Image from "next/image";
 
 import { useRouter } from "next/router";

@@ -1,14 +1,15 @@
 import * as React from "react";
-import styles from "./store.module.css";
+import styles from "./productList.module.css";
 
 import LineDecoration from "@/components/varied/LegendText/LineDecoration";
 import ProductCard from "@/components/ProductCard";
 
+import { useRouter } from "next/router";
+import { getSlugFromString, getStringFromSlug } from "@/utils/slugConverter";
+
 import { productTypes } from "@/data/store";
 import { productsList } from "@/data/store";
 
-import { getSlugFromString, getStringFromSlug } from "@/utils/slugConverter";
-import { useRouter } from "next/router";
 
 const getStaticPaths = () => {
   let paths = [];

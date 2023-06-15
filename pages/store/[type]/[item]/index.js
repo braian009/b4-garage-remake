@@ -1,9 +1,11 @@
 import * as React from "react";
 import styles from "./product.module.css";
+
 import Image from "next/image";
 import LegendText from "@/components/varied/LegendText";
-import { productsList } from "@/data/store";
+
 import { getSlugFromString, getStringFromSlug } from "@/utils/slugConverter";
+import { productsList } from "@/data/store";
 
 const getStaticPaths = () => {
   let paths = [];
