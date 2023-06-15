@@ -46,7 +46,7 @@
   grid-column: span 2;
 }
 
-.cartBody ul li {
+.cartHeader ul li {
   font-size: 0.9rem;
 }
 
@@ -67,7 +67,6 @@
 }
 
 .cartItem {
-  min-height: 9em;
   display: grid;
   justify-content: center;
   grid-template-columns: 10em auto;
@@ -79,6 +78,7 @@
 
 .cartItem > .itemImage {
   position: relative;
+  height: 9em;
 }
 
 .itemImage > img {
@@ -94,7 +94,7 @@
   justify-items: start;
   align-content: center;
   gap: 0.25em;
-  padding-left: 1.5em;
+  /* padding-left: 0.5em; */
 }
 
 .itemInfo {
@@ -110,14 +110,23 @@
 }
 
 .itemInfo p {
+  padding-top: 0.15em;
   font-size: 0.8rem;
 }
 
 .itemQuantity {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  gap: 5.5rem;
+}
+
+.itemQuantity > div {
   font-size: 0.85rem;
+}
+
+.itemQuantity > button {
+  color: var(--orange-primary);
+  text-decoration: underline;
+  padding: 0;
 }
 
 .itemPrice {
@@ -134,7 +143,50 @@
   font-size: 0.85rem;
 }
 
-@media (min-width: 35em) {
+.cartFooter {
+  display: flex;
+  text-align: center;
+
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.checkout {
+  padding: 1em;
+  background-color: #1f1f1f;
+  border-radius: 11px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 980px;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.checkout h4 {
+  font-size: 1.25rem;
+  color: var(--white-primary);
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  line-height: 0.8;
+}
+
+.checkout p {
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+
+  color: var(--white-secondary);
+}
+
+.checkout button {
+  margin-top: 0.25rem;
+  padding: 0.5em 1em;
+  background-color: var(--orange-primary);
+  border-radius: 5px;
+}
+
+@media (min-width: 37.5em) {
   .cartHeader {
     border-bottom: 1px solid hsla(0, 0%, 45%, 0.5);
   }
@@ -173,6 +225,10 @@
 
   .itemQuantity {
     grid-column: 2 / 3;
+    flex-direction: column;
+    align-items: center !important;
+
+    gap: 0em;
   }
 
   .itemPrice {
@@ -181,5 +237,14 @@
 
   .itemTotal {
     grid-column: 4 / 5;
+  }
+
+  .cartFooter {
+    justify-content: flex-end !important;
+    gap: 1.5em;
+  }
+
+  .cartFooter > div:nth-child(2) {
+    width: 5.25rem;
   }
 }

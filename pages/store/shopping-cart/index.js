@@ -16,7 +16,7 @@ const ShoppingCart = () => {
               <li>Price</li>
               <li>Item total</li>
             </ul>
-            <LegendText text='Order summary'/>
+            <LegendText text="Order summary" />
           </div>
           <div className={styles.cartBody}>
             <ul className={styles.cartItems}>
@@ -29,7 +29,11 @@ const ShoppingCart = () => {
                     <h4>Tire number 444</h4>
                     <p>with some especial details</p>
                   </div>
-                  <div className={styles.itemQuantity}>4</div>
+                  <div className={styles.itemQuantity}>
+                    <div>4</div>
+                    <button>Remove</button>
+                  </div>
+
                   <div className={styles.itemPrice}>$44.00</div>
                   <div className={styles.itemTotal}>$176.00</div>
                 </div>
@@ -43,7 +47,10 @@ const ShoppingCart = () => {
                     <h4>Tire number 444</h4>
                     <p>with some especial details</p>
                   </div>
-                  <div className={styles.itemQuantity}>4</div>
+                  <div className={styles.itemQuantity}>
+                    <div>4</div>
+                    <button>Remove</button>
+                  </div>
                   <div className={styles.itemPrice}>$44.00</div>
                   <div className={styles.itemTotal}>$176.00</div>
                 </div>
@@ -57,7 +64,10 @@ const ShoppingCart = () => {
                     <h4>Tire number 444</h4>
                     <p>with some especial details</p>
                   </div>
-                  <div className={styles.itemQuantity}>4</div>
+                  <div className={styles.itemQuantity}>
+                    <div>4</div>
+                    <button>Remove</button>
+                  </div>
                   <div className={styles.itemPrice}>$44.00</div>
                   <div className={styles.itemTotal}>$176.00</div>
                 </div>
@@ -71,13 +81,26 @@ const ShoppingCart = () => {
                     <h4>Tire number 444</h4>
                     <p>with some especial details</p>
                   </div>
-                  <div className={styles.itemQuantity}>4</div>
+                  <div className={styles.itemQuantity}>
+                    <div>4</div>
+                    <button>Remove</button>
+                  </div>
+
                   <div className={styles.itemPrice}>$44.00</div>
                   <div className={styles.itemTotal}>$176.00</div>
                 </div>
               </li>
             </ul>
           </div>
+          <div className={styles.cartFooter}>
+            <div>Subtotal:</div>
+            <div>$444.00</div>
+          </div>
+        </div>
+        <div className={styles.checkout}>
+          <h4>Guest Checkout</h4>
+          <p>Checkout without registering</p>
+          <button>Proceed to checkout</button>
         </div>
       </div>
     </div>
