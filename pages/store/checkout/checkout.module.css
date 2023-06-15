@@ -1,0 +1,50 @@
+.container {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 6.5em;
+
+  background-color: #d4d4d4;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  color: #242424;
+
+  padding: 3em 1em;
+}
+
+.inner h1 {
+  color: #202020;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.inner .checkoutCard {
+  margin: 0 auto;
+  margin-top: 2em;
+  width: 100%;
+  max-width: 25em;
+}
+
+.checkoutCard h4 {
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: lighter;
+}
+
+.checkoutCard div {
+  font-size: 0.95rem;
+  padding: 0.3em 1em;
+  text-align: center;
+  color: var(--white-primary);
+  background-color: var(--orange-primary);
+  border-radius: 5px;
+  max-width: 14em;
+  margin: 0 auto;
+  margin-top: 0.5em;
+}
