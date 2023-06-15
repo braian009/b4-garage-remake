@@ -2,7 +2,6 @@
   position: relative;
 
   width: 100%;
-  min-height: 100%;
   padding-top: 6.5em;
 
   background-color: #d4d4d4;
@@ -13,11 +12,10 @@
   display: grid;
   gap: 3em;
 
-  width: 100%;
   max-width: 1180px;
   margin: 0 auto;
 
-  padding: 3em 1em;
+  padding: 3em 1.25em;
 }
 
 .inner .eventsCards {
@@ -26,18 +24,17 @@
   justify-items: center;
 
   gap: 1em;
-  border-radius: 11px;
 }
 
 .eventsCards > div:nth-child(1) {
-  margin-bottom: 0.75em;
+  margin-bottom: 1em;
 }
+
 
 .eventsForm {
   position: relative;
 
   width: 100%;
-  margin-top: 0.5em;
 }
 
 .eventsForm > div {
@@ -45,15 +42,11 @@
 }
 
 
-.eventsText {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-  width: 100%;
-}
-
 .eventsText h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
+  font-style: italic;
+
+  margin-bottom: .5rem;
   color: #202020;
 }
 

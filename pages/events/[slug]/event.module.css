@@ -1,39 +1,40 @@
 .container {
-  overflow: auto;
-  padding-top: 6.5em;
-  /* padding-bottom: 3em; */
-
   width: 100%;
-  min-height: 100%;
+  padding-top: 6.5em;
+
   background-color: #d4d4d4;
 }
 
 .inner {
   display: grid;
-  width: 100%;
-  max-width: 1180px;
-  margin: 0 auto;
   gap: 1.5em;
-  padding: 3em 1em;
   place-items: center;
+  grid-auto-rows: auto;
   position: relative;
-  grid-template-rows: auto auto auto;
+
+  max-width: 1180px;
+
+  padding: 3em 1.25em;
+  margin: 0 auto;
 }
 
 .eventText {
-  padding: 0.5em;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+
   max-width: 37.5em;
-  color: black;
+  padding: 0.25em;
+
   justify-self: start;
   align-self: start;
+  overflow: hidden;
 }
 
 .eventText h1 {
   font-size: 3.5rem;
-  line-height: 0.8;
+  font-style: italic;
+  color: #202020;
 }
 
 .eventText h1::first-letter {
@@ -41,25 +42,39 @@
 }
 
 .eventText p {
-  color: #202020;
+  color: #242424;
 }
 
-.eventText > div {
+.eventText > .date {
   align-self: flex-end;
-  padding-right: 2.5em;
+  padding-right: 0.5em;
+  margin-top: 0.25em;
+}
+
+.eventText > .date > div > h4 {
+  color: #242424 !important;
+}
+
+.eventText > .date > div > h4 > div:nth-child(2) {
+  display: none !important;
+}
+
+.eventText > .date > div > h4 > div:nth-child(1) {
+  background-color: var(--orange-borders) !important;
 }
 
 .eventImage {
   position: relative;
+
   height: 14em;
-  background-color: coral;
   width: 100%;
-  border-radius: 11px;
-  overflow: hidden;
+  border-radius: 10px;
+  background-color: var(--orange-primary);
   border: 2px solid var(--orange-borders);
 
   box-shadow: 2px 2px 8px #000;
 
+  overflow: hidden;
 }
 
 .eventImage img {
@@ -69,47 +84,41 @@
 .eventForm {
   width: 100%;
   min-width: 14em;
-  border-radius: 11px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 0.5em;
   margin-top: 1em;
 }
 
-.eventForm > div {
-  width: 100%;
-  padding-left: 0.5em;
-}
+.eventForm > p {
+  font-size: 0.95rem;
 
-.eventForm p {
-  color: #202020;
+  padding-left: 0.5em;
+  margin-bottom: 0.5rem;
+
+  color: #242424;
   text-align: center;
-  font-size: 1.25rem;
-  letter-spacing: 0.015em;
-  padding-top: 0.15em;
-  /* letter-spacing: 0.025em; */
 }
 
 .eventForm form {
-  background-color: hsl(0, 0%, 18%);
-  padding: 1em;
-  border-radius: 11px;
-
-  width: 100%;
   display: grid;
-  gap: 0.5em;
   grid-template-columns: 1fr 1fr;
+  gap: 0.25em;
+  
+  padding: 1em;
+  width: 100%;
+  
+  background-color: #1f1f1f;
+  border-radius: 10px;
   box-shadow: 2px 2px 8px #000;
 }
 
 .eventForm form button {
-  grid-column: span 2;
-  /* border: 1px solid white; */
-  padding: 0.55em;
+  font-size: 0.85rem;
+
+  padding: 0.5em;
+  margin-top: 0.5em;
+
   background-color: var(--orange-primary);
   border-radius: 5px;
-  margin-top: 0.5em;
+  grid-column: span 2;
 }
 
 .eventForm form label {
@@ -118,19 +127,22 @@
 }
 
 .eventForm form input {
+  font-size: 0.8rem;
+
+  padding: 0.5em;
   background: none;
   color: var(--white-primary);
+
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 5px;
   outline: none;
 
-  padding: 0.4em 0.7em;
 }
 
 .eventForm form > div {
   display: flex;
   flex-direction: column;
-  gap: 0.15em;
+  gap: 0.25em;
   grid-column: span 2;
 }
 

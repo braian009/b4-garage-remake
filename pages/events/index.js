@@ -1,11 +1,11 @@
 import * as React from "react";
-import Image from "next/image";
 import styles from "./events.module.css";
-import { eventList } from "@/data/events";
 
 import GetInfoForm from "@/components/GetInfoForm";
 import EventCard from "@/components/EventCard";
 import Slogan from "@/components/varied/LegendText";
+
+import { eventList } from "@/data/events";
 
 const Events = ({}) => {
   return (

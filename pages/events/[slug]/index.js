@@ -1,13 +1,11 @@
 import * as React from "react";
 import styles from "./event.module.css";
+
 import Image from "next/image";
-import { eventList } from "@/data/events";
+import LegendText from "@/components/varied/LegendText";
 
 import { getStringFromSlug, getSlugFromString } from "@/utils/slugConverter";
-
-
-
-
+import { eventList } from "@/data/events";
 
 const getStaticPaths = () => {
   const paths = eventList.map((event) => ({
@@ -38,18 +36,18 @@ const Event = ({ event }) => {
       <div className={styles.inner}>
         <div className={styles.eventText}>
           <h1>{event.title}</h1>
-          <p>{event.description}
-          </p>
-          <div>{event.date.month} {event.date.day}</div>
+          <p>{event.description}</p>
+          <div className={styles.date}>
+            <LegendText text={`${event.date.month} ${event.date.day}`} />
+          </div>
         </div>
 
         <div className={styles.eventImage}>
           <Image src={event.image} fill alt={""} />
         </div>
         <div className={styles.eventForm}>
-          <div>
-            <p>Get info on how to be part of B4&apos;s events!</p>
-          </div>
+          <p>Get info on how to be part of B4&apos;s events!</p>
+
           <form>
             <div>
               <label htmlFor="fullname">Full Name:</label>
@@ -57,7 +55,6 @@ const Event = ({ event }) => {
             </div>
             <div>
               <label htmlFor="email">Email:</label>
-
               <input id="email" type="text"></input>
             </div>
             <div>

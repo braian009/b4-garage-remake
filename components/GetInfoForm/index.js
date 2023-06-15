@@ -4,12 +4,10 @@ import styles from "./getInfoForm.module.css";
 const GetInfoForm = () => {
   return (
     <div className={styles.formContainer}>
-      <p>
-        Get notified about new upcoming events!
-      </p>
+      <p>Get notified about new upcoming events!</p>
       <form>
         <input type="text" placeholder="your email"></input>
-        <button type="submit">submit</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
