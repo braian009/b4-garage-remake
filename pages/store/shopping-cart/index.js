@@ -2,6 +2,8 @@ import * as React from "react";
 import styles from "./shoppingCart.module.css";
 import Image from "next/image";
 import LegendText from "@/components/varied/LegendText";
+import ItemCartRow from "@/components/ItemCartRow";
+import { productsList } from "@/data/store";
 
 const ShoppingCart = () => {
   return (
@@ -20,76 +22,7 @@ const ShoppingCart = () => {
           </div>
           <div className={styles.cartBody}>
             <ul className={styles.cartItems}>
-              <li className={styles.cartItem}>
-                <div className={styles.itemImage}>
-                  <Image src="/bottle.png" alt="" fill />
-                </div>
-                <div className={styles.itemDetails}>
-                  <div className={styles.itemInfo}>
-                    <h4>Tire number 444</h4>
-                    <p>with some especial details</p>
-                  </div>
-                  <div className={styles.itemQuantity}>
-                    <div>4</div>
-                    <button>Remove</button>
-                  </div>
-
-                  <div className={styles.itemPrice}>$44.00</div>
-                  <div className={styles.itemTotal}>$176.00</div>
-                </div>
-              </li>
-              <li className={styles.cartItem}>
-                <div className={styles.itemImage}>
-                  <Image src="/wheels.png" alt="" fill />
-                </div>
-                <div className={styles.itemDetails}>
-                  <div className={styles.itemInfo}>
-                    <h4>Tire number 444</h4>
-                    <p>with some especial details</p>
-                  </div>
-                  <div className={styles.itemQuantity}>
-                    <div>4</div>
-                    <button>Remove</button>
-                  </div>
-                  <div className={styles.itemPrice}>$44.00</div>
-                  <div className={styles.itemTotal}>$176.00</div>
-                </div>
-              </li>
-              <li className={styles.cartItem}>
-                <div className={styles.itemImage}>
-                  <Image src="/wheels.png" alt="" fill />
-                </div>
-                <div className={styles.itemDetails}>
-                  <div className={styles.itemInfo}>
-                    <h4>Tire number 444</h4>
-                    <p>with some especial details</p>
-                  </div>
-                  <div className={styles.itemQuantity}>
-                    <div>4</div>
-                    <button>Remove</button>
-                  </div>
-                  <div className={styles.itemPrice}>$44.00</div>
-                  <div className={styles.itemTotal}>$176.00</div>
-                </div>
-              </li>
-              <li className={styles.cartItem}>
-                <div className={styles.itemImage}>
-                  <Image src="/wheels.png" alt="" fill />
-                </div>
-                <div className={styles.itemDetails}>
-                  <div className={styles.itemInfo}>
-                    <h4>Tire number 444</h4>
-                    <p>with some especial details</p>
-                  </div>
-                  <div className={styles.itemQuantity}>
-                    <div>4</div>
-                    <button>Remove</button>
-                  </div>
-
-                  <div className={styles.itemPrice}>$44.00</div>
-                  <div className={styles.itemTotal}>$176.00</div>
-                </div>
-              </li>
+              <ItemCartRow item={productsList["wheels"][0]} />
             </ul>
           </div>
           <div className={styles.cartFooter}>
