@@ -16,6 +16,7 @@ const ProductCard = ({ item }) => {
       </div>
       <div className={styles.cardText}>
         <h4>{item.name}</h4>
+        <div>{item.features}</div>
         <p>${item.price}</p>
         <button
           onClick={() => {

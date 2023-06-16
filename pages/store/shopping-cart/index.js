@@ -40,7 +40,7 @@ const ShoppingCart = () => {
               </li>
               <li className={styles.cartItem}>
                 <div className={styles.itemImage}>
-                  <Image src="/tirewheelll.png" alt="" fill />
+                  <Image src="/wheels.png" alt="" fill />
                 </div>
                 <div className={styles.itemDetails}>
                   <div className={styles.itemInfo}>
@@ -57,7 +57,7 @@ const ShoppingCart = () => {
               </li>
               <li className={styles.cartItem}>
                 <div className={styles.itemImage}>
-                  <Image src="/tirewheelll.png" alt="" fill />
+                  <Image src="/wheels.png" alt="" fill />
                 </div>
                 <div className={styles.itemDetails}>
                   <div className={styles.itemInfo}>
@@ -74,7 +74,7 @@ const ShoppingCart = () => {
               </li>
               <li className={styles.cartItem}>
                 <div className={styles.itemImage}>
-                  <Image src="/tirewheelll.png" alt="" fill />
+                  <Image src="/wheels.png" alt="" fill />
                 </div>
                 <div className={styles.itemDetails}>
                   <div className={styles.itemInfo}>

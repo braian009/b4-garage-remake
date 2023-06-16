@@ -13,7 +13,7 @@ const Release = () => {
           <CardWithCTA />
         </div>
         <div className={styles.releaseImage}>
-          <Image src="/exhaust.jpg" fill alt={""} />
+          <Image src="/proexhaust.jpg" fill alt={""} />
         </div>
       </div>
     </div>

@@ -26,7 +26,7 @@
 
 .storeNav {
   position: relative;
-  padding: 0.5em 2em !important;
+  padding: 0.5em 1em !important;
 }
 
 .storeNav ul {
@@ -34,7 +34,7 @@
   justify-content: space-between;
 
   width: 100%;
-  max-width: 25em;
+  max-width: 27.5em;
   margin: 0 auto;
 
   color: #242424;
@@ -55,12 +55,12 @@
 
   width: 100%;
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 0.5em;
 }
 
 
 
-@media (min-width: 490px) {
+@media (min-width: 510px) {
   .storeCards {
     grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
     padding: 0 1.5em;

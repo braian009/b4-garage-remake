@@ -2,7 +2,6 @@
   position: relative;
 
   width: 100%;
-  min-height: 100%;
   padding-top: 6.5em;
 
   background-color: #d4d4d4;
@@ -10,7 +9,6 @@
 
 .inner {
   position: relative;
-  width: 100%;
   max-width: 1180px;
   margin: 0 auto;
   color: #242424;
@@ -28,11 +26,7 @@
   width: 100%;
   max-width: 980px;
   margin: 0 auto;
-  margin-top: 2em;
-}
-
-.inner .cartHeader {
-  width: 100%;
+  margin-top: 2.5em;
 }
 
 .cartHeader ul {
@@ -51,14 +45,17 @@
 }
 
 .cartHeader > div {
-  font-size: 0.9rem;
-
-  text-align: center;
   padding: 0.5rem 0rem;
+  text-transform: uppercase;
 }
+
+.cartHeader > div > h4 {
+  font-size: 1rem !important;
+}
+
 .cartBody {
   width: 100%;
-  padding: 1.5em 0;
+  padding: 1em 0;
 }
 
 .cartItems {
@@ -94,24 +91,17 @@
   justify-items: start;
   align-content: center;
   gap: 0.25em;
-  /* padding-left: 0.5em; */
-}
-
-.itemInfo {
-  display: flex;
-
-  flex-direction: column;
-  justify-content: center;
 }
 
 .itemInfo h4 {
   font-size: 0.95rem;
   text-transform: uppercase;
+  font-style: italic;
 }
 
 .itemInfo p {
-  padding-top: 0.15em;
   font-size: 0.8rem;
+  padding-top: 0.15em;
 }
 
 .itemQuantity {
@@ -130,16 +120,10 @@
 }
 
 .itemPrice {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   font-size: 0.85rem;
 }
 
 .itemTotal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   font-size: 0.85rem;
 }
 
@@ -153,14 +137,16 @@
 }
 
 .checkout {
+  text-align: center;
   padding: 1em;
+
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 2em;
   background-color: #1f1f1f;
   border-radius: 11px;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 980px;
-  margin-top: 2em;
-  text-align: center;
+  box-shadow: 2px 2px 8px #000;
 }
 
 .checkout h4 {

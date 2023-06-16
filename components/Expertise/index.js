@@ -23,7 +23,7 @@ const Expertise = () => {
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                    ></path>{" "}
+                    ></path>
                   </g>
                 </svg>
                 some title of some kind
@@ -45,14 +45,14 @@ const Expertise = () => {
                 <svg viewBox="0 0 24 24" fill="none">
                   <g strokeWidth="0"></g>
                   <g strokeLinecap="round" strokeLinejoin="round"></g>
-                  <g i>
+                  <g>
                     <path
                       d="M12 3C12 7.97056 16.0294 12 21 12C16.0294 12 12 16.0294 12 21C12 16.0294 7.97056 12 3 12C7.97056 12 12 7.97056 12 3Z"
                       stroke="#e84f30"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                    ></path>{" "}
+                    ></path>
                   </g>
                 </svg>
                 some title of some kind
