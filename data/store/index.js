@@ -8,7 +8,7 @@ export const productsList = {
       name: "wheel 0",
       image: "/wheels.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Timeless and dependable, these wheels feature a classic design suitable for everyday driving, offering a perfect blend of style and functionality.",
       features: "conventional",
       price: "870.00",
     },
@@ -18,7 +18,7 @@ export const productsList = {
       name: "wheel 1",
       image: "/wheels.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Timeless and dependable, these wheels feature a classic design suitable for everyday driving, offering a perfect blend of style and functionality.",
       features: "conventional",
       price: "870.00",
     },
@@ -28,7 +28,7 @@ export const productsList = {
       name: "wheel 2",
       image: "/wheels.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Timeless and dependable, these wheels feature a classic design suitable for everyday driving, offering a perfect blend of style and functionality.",
       features: "conventional",
       price: "870.00",
     },
@@ -38,7 +38,7 @@ export const productsList = {
       name: "wheel 3",
       image: "/wheels.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Timeless and dependable, these wheels feature a classic design suitable for everyday driving, offering a perfect blend of style and functionality.",
       features: "conventional",
       price: "870.00",
     },
@@ -48,9 +48,9 @@ export const productsList = {
       name: "wheel 4",
       image: "/wheels.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Engineered for superior performance, these wheels combine eye-catching aesthetics with lightweight construction, delivering enhanced handling and a sporty look.",
       features: "performance line",
-      price: "870.00",
+      price: "950.00",
     },
     {
       id: 5,
@@ -58,9 +58,9 @@ export const productsList = {
       name: "wheel 5",
       image: "/wheels.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Engineered for superior performance, these wheels combine eye-catching aesthetics with lightweight construction, delivering enhanced handling and a sporty look.",
       features: "performance line",
-      price: "870.00",
+      price: "950.00",
     },
     {
       id: 6,
@@ -68,9 +68,9 @@ export const productsList = {
       name: "wheel 6",
       image: "/wheels.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Engineered for superior performance, these wheels combine eye-catching aesthetics with lightweight construction, delivering enhanced handling and a sporty look.",
       features: "performance line",
-      price: "870.00",
+      price: "950.00",
     },
     {
       id: 7,
@@ -78,9 +78,9 @@ export const productsList = {
       name: "wheel 7",
       image: "/wheels.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Engineered for superior performance, these wheels combine eye-catching aesthetics with lightweight construction, delivering enhanced handling and a sporty look.",
       features: "performance line",
-      price: "870.00",
+      price: "950.00",
     },
   ],
   "engine oil": [
@@ -90,7 +90,7 @@ export const productsList = {
       name: "oil 0",
       image: "/bottle.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Trusted and cost-effective, this conventional oil provides reliable lubrication and engine protection for everyday driving, maintaining optimal performance and durability.",
       features: "conventional",
       price: "35.00",
     },
@@ -100,7 +100,7 @@ export const productsList = {
       name: "oil 1",
       image: "/bottle.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Trusted and cost-effective, this conventional oil provides reliable lubrication and engine protection for everyday driving, maintaining optimal performance and durability.",
       features: "conventional",
       price: "35.00",
     },
@@ -110,7 +110,7 @@ export const productsList = {
       name: "oil 2",
       image: "/bottle.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Trusted and cost-effective, this conventional oil provides reliable lubrication and engine protection for everyday driving, maintaining optimal performance and durability.",
       features: "conventional",
       price: "35.00",
     },
@@ -120,7 +120,7 @@ export const productsList = {
       name: "oil 3",
       image: "/bottle.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Trusted and cost-effective, this conventional oil provides reliable lubrication and engine protection for everyday driving, maintaining optimal performance and durability.",
       features: "conventional",
       price: "35.00",
     },
@@ -130,9 +130,9 @@ export const productsList = {
       name: "oil 4",
       image: "/bottle.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Engineered for high-performance engines, this advanced oil formulation offers exceptional protection and enhanced performance, ensuring optimal power delivery and reliability under demanding conditions.",
       features: "performance line",
-      price: "35.00",
+      price: "45.00",
     },
     {
       id: 13,
@@ -140,9 +140,9 @@ export const productsList = {
       name: "oil 5",
       image: "/bottle.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Engineered for high-performance engines, this advanced oil formulation offers exceptional protection and enhanced performance, ensuring optimal power delivery and reliability under demanding conditions.",
       features: "performance line",
-      price: "35.00",
+      price: "45.00",
     },
     {
       id: 14,
@@ -150,9 +150,9 @@ export const productsList = {
       name: "oil 6",
       image: "/bottle.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Engineered for high-performance engines, this advanced oil formulation offers exceptional protection and enhanced performance, ensuring optimal power delivery and reliability under demanding conditions.",
       features: "performance line",
-      price: "35.00",
+      price: "45.00",
     },
     {
       id: 15,
@@ -160,9 +160,9 @@ export const productsList = {
       name: "oil 7",
       image: "/bottle.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Engineered for high-performance engines, this advanced oil formulation offers exceptional protection and enhanced performance, ensuring optimal power delivery and reliability under demanding conditions.",
       features: "performance line",
-      price: "35.00",
+      price: "45.00",
     },
   ],
   accesories: [
@@ -172,7 +172,7 @@ export const productsList = {
       name: "accesory 0",
       image: "/speedometer.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Enhance your vehicle with this premium accessory, meticulously crafted to seamlessly integrate into your car's design, providing both style and functionality for an elevated driving experience.",
       features: "with unique features",
       price: "120.00",
     },
@@ -182,7 +182,7 @@ export const productsList = {
       name: "accesory 1",
       image: "/speedometer.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Enhance your vehicle with this premium accessory, meticulously crafted to seamlessly integrate into your car's design, providing both style and functionality for an elevated driving experience.",
       features: "with unique features",
       price: "120.00",
     },
@@ -192,7 +192,7 @@ export const productsList = {
       name: "accesory 2",
       image: "/speedometer.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Enhance your vehicle with this premium accessory, meticulously crafted to seamlessly integrate into your car's design, providing both style and functionality for an elevated driving experience.",
       features: "with unique features",
       price: "120.00",
     },
@@ -202,7 +202,7 @@ export const productsList = {
       name: "accesory 3",
       image: "/speedometer.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Enhance your vehicle with this premium accessory, meticulously crafted to seamlessly integrate into your car's design, providing both style and functionality for an elevated driving experience.",
       features: "with unique features",
       price: "120.00",
     },
@@ -212,7 +212,7 @@ export const productsList = {
       name: "accesory 4",
       image: "/speedometer.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Enhance your vehicle with this premium accessory, meticulously crafted to seamlessly integrate into your car's design, providing both style and functionality for an elevated driving experience.",
       features: "with unique features",
       price: "120.00",
     },
@@ -222,7 +222,7 @@ export const productsList = {
       name: "accesory 5",
       image: "/speedometer.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Enhance your vehicle with this premium accessory, meticulously crafted to seamlessly integrate into your car's design, providing both style and functionality for an elevated driving experience.",
       features: "with unique features",
       price: "120.00",
     },
@@ -232,7 +232,7 @@ export const productsList = {
       name: "accesory 6",
       image: "/speedometer.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Enhance your vehicle with this premium accessory, meticulously crafted to seamlessly integrate into your car's design, providing both style and functionality for an elevated driving experience.",
       features: "with unique features",
       price: "120.00",
     },
@@ -242,7 +242,7 @@ export const productsList = {
       name: "accesory 7",
       image: "/speedometer.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Enhance your vehicle with this premium accessory, meticulously crafted to seamlessly integrate into your car's design, providing both style and functionality for an elevated driving experience.",
       features: "with unique features",
       price: "120.00",
     },
@@ -254,7 +254,7 @@ export const productsList = {
       name: "exhaust 0",
       image: "/exhaust.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "This exhaust system offers a classic design and reliable performance, providing a balanced combination of sound enhancement and improved exhaust flow for a satisfying driving experience.",
       features: "conventional",
       price: "710.00",
     },
@@ -264,7 +264,7 @@ export const productsList = {
       name: "exhaust 1",
       image: "/exhaust.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "This exhaust system offers a classic design and reliable performance, providing a balanced combination of sound enhancement and improved exhaust flow for a satisfying driving experience.",
       features: "conventional",
       price: "710.00",
     },
@@ -274,7 +274,7 @@ export const productsList = {
       name: "exhaust 2",
       image: "/exhaust.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "This exhaust system offers a classic design and reliable performance, providing a balanced combination of sound enhancement and improved exhaust flow for a satisfying driving experience.",
       features: "conventional",
       price: "710.00",
     },
@@ -284,7 +284,7 @@ export const productsList = {
       name: "exhaust 3",
       image: "/exhaust.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "This exhaust system offers a classic design and reliable performance, providing a balanced combination of sound enhancement and improved exhaust flow for a satisfying driving experience.",
       features: "conventional",
       price: "710.00",
     },
@@ -294,9 +294,9 @@ export const productsList = {
       name: "exhaust 4",
       image: "/exhaust.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Engineered for exhilarating performance, this high-performance exhaust system delivers enhanced power, aggressive sound, and optimized exhaust flow, unleashing the full potential of your vehicle's engine.",
       features: "performance line",
-      price: "710.00",
+      price: "840.00",
     },
     {
       id: 29,
@@ -304,9 +304,9 @@ export const productsList = {
       name: "exhaust 5",
       image: "/exhaust.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Engineered for exhilarating performance, this high-performance exhaust system delivers enhanced power, aggressive sound, and optimized exhaust flow, unleashing the full potential of your vehicle's engine.",
       features: "performance line",
-      price: "710.00",
+      price: "840.00",
     },
     {
       id: 30,
@@ -314,9 +314,9 @@ export const productsList = {
       name: "exhaust 6",
       image: "/exhaust.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Engineered for exhilarating performance, this high-performance exhaust system delivers enhanced power, aggressive sound, and optimized exhaust flow, unleashing the full potential of your vehicle's engine.",
       features: "performance line",
-      price: "710.00",
+      price: "840.00",
     },
     {
       id: 31,
@@ -324,9 +324,9 @@ export const productsList = {
       name: "exhaust 7",
       image: "/exhaust.png",
       description:
-        "Cillum officia minim sunt incididunt excepteur sit reprehenderit nulla culpa in laborum aliqua.",
+        "Engineered for exhilarating performance, this high-performance exhaust system delivers enhanced power, aggressive sound, and optimized exhaust flow, unleashing the full potential of your vehicle's engine.",
       features: "performance line",
-      price: "710.00",
+      price: "840.00",
     },
   ],
 };

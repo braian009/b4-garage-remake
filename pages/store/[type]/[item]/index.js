@@ -54,10 +54,11 @@ const Product = ({ item }) => {
           <div className={styles.productInfo}>
             <div className={styles.infoHeader}>
               <h4>{item.name}</h4>
+              <p>{item.features}</p>
             </div>
-            <p>{item.details}</p>
+            <p>{item.description}</p>
             <div className={styles.infoFooter}>
-              <p>$44.44</p>
+              <p>${item.price}</p>
               <div className={styles.cartButton}>Add to cart</div>
             </div>
           </div>
