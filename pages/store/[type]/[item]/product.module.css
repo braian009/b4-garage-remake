@@ -106,11 +106,13 @@
   padding: 0.5em 1em;
 }
 
-.productInfo .infoFooter > div {
+.productInfo .infoFooter > button {
+  font-size: 0.95rem;
   align-self: stretch;
   background-color: var(--orange-primary);
   border-radius: 5px;
   color: var(--white-primary);
+  cursor: pointer;
 }
 
 @media (min-width: 45em) {

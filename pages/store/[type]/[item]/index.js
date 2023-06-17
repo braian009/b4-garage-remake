@@ -44,8 +44,6 @@ import { productsList } from "@/data/store";
 const getServerSideProps = ({ params }) => {
   const { type, item } = params;
 
-
-
   return {
     props: {
       item: productsList[getStringFromSlug(type)].find((productItem) => {
@@ -56,12 +54,11 @@ const getServerSideProps = ({ params }) => {
 };
 
 const Product = ({ item }) => {
-
   const dispatch = useDispatch();
 
   const isAlreadyinCart = useSelector((state) => {
-    return state.cart.items.find((i) => i.id === item.id );
-  })
+    return state.cart.items.find((i) => i.id === item.id);
+  });
 
   return (
     <div className={styles.container}>
@@ -82,7 +79,12 @@ const Product = ({ item }) => {
             <p>{item.description}</p>
             <div className={styles.infoFooter}>
               <p>${item.price}</p>
-              <div className={styles.cartButton} onClick={() => dispatch(addToCart({ item: item }))}>Add to cart</div>
+              <button
+                className={styles.cartButton}
+                onClick={() => dispatch(addToCart({ item: item }))}
+              >
+                Add to cart
+              </button>
             </div>
           </div>
         </div>
