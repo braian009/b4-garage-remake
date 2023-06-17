@@ -7,27 +7,39 @@ import LegendText from "@/components/varied/LegendText";
 import { getSlugFromString, getStringFromSlug } from "@/utils/slugConverter";
 import { productsList } from "@/data/store";
 
-const getStaticPaths = () => {
-  let paths = [];
+// const getStaticPaths = () => {
+//   let paths = [];
 
-  Object.keys(productsList).forEach((product) => {
-    productsList[product].forEach((productItem) => {
-      paths.push({
-        params: {
-          type: getSlugFromString(productItem.type),
-          item: getSlugFromString(productItem.name),
-        },
-      });
-    });
-  });
+//   Object.keys(productsList).forEach((product) => {
+//     productsList[product].forEach((productItem) => {
+//       paths.push({
+//         params: {
+//           type: getSlugFromString(productItem.type),
+//           item: getSlugFromString(productItem.name),
+//         },
+//       });
+//     });
+//   });
 
-  return {
-    paths,
-    fallback: false,
-  };
-};
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// };
 
-const getStaticProps = ({ params }) => {
+// const getStaticProps = ({ params }) => {
+//   const { type, item } = params;
+
+//   return {
+//     props: {
+//       item: productsList[getStringFromSlug(type)].find((productItem) => {
+//         return productItem.name === getStringFromSlug(item);
+//       }),
+//     },
+//   };
+// };
+
+const getServerSideProps = ({ params }) => {
   const { type, item } = params;
 
   return {
@@ -68,5 +80,6 @@ const Product = ({ item }) => {
   );
 };
 
-export { getStaticPaths, getStaticProps };
+// export { getStaticPaths, getStaticProps };
+export { getServerSideProps };
 export default Product;

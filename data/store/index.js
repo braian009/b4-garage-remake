@@ -11,6 +11,7 @@ export const productsList = {
         "Timeless and dependable, these wheels feature a classic design suitable for everyday driving, offering a perfect blend of style and functionality.",
       features: "conventional",
       price: "870.00",
+      inventory: 6,
     },
     {
       id: 1,
@@ -21,6 +22,7 @@ export const productsList = {
         "Timeless and dependable, these wheels feature a classic design suitable for everyday driving, offering a perfect blend of style and functionality.",
       features: "conventional",
       price: "870.00",
+      inventory: 4,
     },
     {
       id: 2,
@@ -31,6 +33,7 @@ export const productsList = {
         "Timeless and dependable, these wheels feature a classic design suitable for everyday driving, offering a perfect blend of style and functionality.",
       features: "conventional",
       price: "870.00",
+      inventory: 6,
     },
     {
       id: 3,
@@ -41,6 +44,7 @@ export const productsList = {
         "Timeless and dependable, these wheels feature a classic design suitable for everyday driving, offering a perfect blend of style and functionality.",
       features: "conventional",
       price: "870.00",
+      inventory: 8,
     },
     {
       id: 4,
@@ -51,6 +55,7 @@ export const productsList = {
         "Engineered for superior performance, these wheels combine eye-catching aesthetics with lightweight construction, delivering enhanced handling and a sporty look.",
       features: "performance line",
       price: "950.00",
+      inventory: 2,
     },
     {
       id: 5,
@@ -61,6 +66,7 @@ export const productsList = {
         "Engineered for superior performance, these wheels combine eye-catching aesthetics with lightweight construction, delivering enhanced handling and a sporty look.",
       features: "performance line",
       price: "950.00",
+      inventory: 8,
     },
     {
       id: 6,
@@ -71,6 +77,7 @@ export const productsList = {
         "Engineered for superior performance, these wheels combine eye-catching aesthetics with lightweight construction, delivering enhanced handling and a sporty look.",
       features: "performance line",
       price: "950.00",
+      inventory: 10,
     },
     {
       id: 7,
@@ -81,6 +88,7 @@ export const productsList = {
         "Engineered for superior performance, these wheels combine eye-catching aesthetics with lightweight construction, delivering enhanced handling and a sporty look.",
       features: "performance line",
       price: "950.00",
+      inventory: 4,
     },
   ],
   "engine oil": [
@@ -93,6 +101,7 @@ export const productsList = {
         "Trusted and cost-effective, this conventional oil provides reliable lubrication and engine protection for everyday driving, maintaining optimal performance and durability.",
       features: "conventional",
       price: "35.00",
+      inventory: 9,
     },
     {
       id: 9,
@@ -103,6 +112,7 @@ export const productsList = {
         "Trusted and cost-effective, this conventional oil provides reliable lubrication and engine protection for everyday driving, maintaining optimal performance and durability.",
       features: "conventional",
       price: "35.00",
+      inventory: 7,
     },
     {
       id: 10,
@@ -113,6 +123,7 @@ export const productsList = {
         "Trusted and cost-effective, this conventional oil provides reliable lubrication and engine protection for everyday driving, maintaining optimal performance and durability.",
       features: "conventional",
       price: "35.00",
+      inventory: 11,
     },
     {
       id: 11,
@@ -123,6 +134,7 @@ export const productsList = {
         "Trusted and cost-effective, this conventional oil provides reliable lubrication and engine protection for everyday driving, maintaining optimal performance and durability.",
       features: "conventional",
       price: "35.00",
+      inventory: 15,
     },
     {
       id: 12,
@@ -133,6 +145,7 @@ export const productsList = {
         "Engineered for high-performance engines, this advanced oil formulation offers exceptional protection and enhanced performance, ensuring optimal power delivery and reliability under demanding conditions.",
       features: "performance line",
       price: "45.00",
+      inventory: 4,
     },
     {
       id: 13,
@@ -143,6 +156,7 @@ export const productsList = {
         "Engineered for high-performance engines, this advanced oil formulation offers exceptional protection and enhanced performance, ensuring optimal power delivery and reliability under demanding conditions.",
       features: "performance line",
       price: "45.00",
+      inventory: 9,
     },
     {
       id: 14,
@@ -153,6 +167,7 @@ export const productsList = {
         "Engineered for high-performance engines, this advanced oil formulation offers exceptional protection and enhanced performance, ensuring optimal power delivery and reliability under demanding conditions.",
       features: "performance line",
       price: "45.00",
+      inventory: 3,
     },
     {
       id: 15,
@@ -163,6 +178,7 @@ export const productsList = {
         "Engineered for high-performance engines, this advanced oil formulation offers exceptional protection and enhanced performance, ensuring optimal power delivery and reliability under demanding conditions.",
       features: "performance line",
       price: "45.00",
+      inventory: 4,
     },
   ],
   accesories: [
@@ -175,6 +191,7 @@ export const productsList = {
         "Enhance your vehicle with this premium accessory, meticulously crafted to seamlessly integrate into your car's design, providing both style and functionality for an elevated driving experience.",
       features: "with unique features",
       price: "120.00",
+      inventory: 15,
     },
     {
       id: 17,
@@ -185,6 +202,7 @@ export const productsList = {
         "Enhance your vehicle with this premium accessory, meticulously crafted to seamlessly integrate into your car's design, providing both style and functionality for an elevated driving experience.",
       features: "with unique features",
       price: "120.00",
+      inventory: 10,
     },
     {
       id: 18,
@@ -195,6 +213,7 @@ export const productsList = {
         "Enhance your vehicle with this premium accessory, meticulously crafted to seamlessly integrate into your car's design, providing both style and functionality for an elevated driving experience.",
       features: "with unique features",
       price: "120.00",
+      inventory: 11,
     },
     {
       id: 19,
@@ -205,6 +224,7 @@ export const productsList = {
         "Enhance your vehicle with this premium accessory, meticulously crafted to seamlessly integrate into your car's design, providing both style and functionality for an elevated driving experience.",
       features: "with unique features",
       price: "120.00",
+      inventory: 5,
     },
     {
       id: 20,
@@ -215,6 +235,7 @@ export const productsList = {
         "Enhance your vehicle with this premium accessory, meticulously crafted to seamlessly integrate into your car's design, providing both style and functionality for an elevated driving experience.",
       features: "with unique features",
       price: "120.00",
+      inventory: 4,
     },
     {
       id: 21,
@@ -225,6 +246,7 @@ export const productsList = {
         "Enhance your vehicle with this premium accessory, meticulously crafted to seamlessly integrate into your car's design, providing both style and functionality for an elevated driving experience.",
       features: "with unique features",
       price: "120.00",
+      inventory: 12,
     },
     {
       id: 22,
@@ -235,6 +257,7 @@ export const productsList = {
         "Enhance your vehicle with this premium accessory, meticulously crafted to seamlessly integrate into your car's design, providing both style and functionality for an elevated driving experience.",
       features: "with unique features",
       price: "120.00",
+      inventory: 7,
     },
     {
       id: 23,
@@ -245,6 +268,7 @@ export const productsList = {
         "Enhance your vehicle with this premium accessory, meticulously crafted to seamlessly integrate into your car's design, providing both style and functionality for an elevated driving experience.",
       features: "with unique features",
       price: "120.00",
+      inventory: 5,
     },
   ],
   exhausts: [
@@ -257,6 +281,7 @@ export const productsList = {
         "This exhaust system offers a classic design and reliable performance, providing a balanced combination of sound enhancement and improved exhaust flow for a satisfying driving experience.",
       features: "conventional",
       price: "710.00",
+      inventory: 2,
     },
     {
       id: 25,
@@ -267,6 +292,7 @@ export const productsList = {
         "This exhaust system offers a classic design and reliable performance, providing a balanced combination of sound enhancement and improved exhaust flow for a satisfying driving experience.",
       features: "conventional",
       price: "710.00",
+      inventory: 4,
     },
     {
       id: 26,
@@ -277,6 +303,7 @@ export const productsList = {
         "This exhaust system offers a classic design and reliable performance, providing a balanced combination of sound enhancement and improved exhaust flow for a satisfying driving experience.",
       features: "conventional",
       price: "710.00",
+      inventory: 3,
     },
     {
       id: 27,
@@ -287,6 +314,7 @@ export const productsList = {
         "This exhaust system offers a classic design and reliable performance, providing a balanced combination of sound enhancement and improved exhaust flow for a satisfying driving experience.",
       features: "conventional",
       price: "710.00",
+      inventory: 2,
     },
     {
       id: 28,
@@ -297,6 +325,7 @@ export const productsList = {
         "Engineered for exhilarating performance, this high-performance exhaust system delivers enhanced power, aggressive sound, and optimized exhaust flow, unleashing the full potential of your vehicle's engine.",
       features: "performance line",
       price: "840.00",
+      inventory: 7,
     },
     {
       id: 29,
@@ -307,6 +336,7 @@ export const productsList = {
         "Engineered for exhilarating performance, this high-performance exhaust system delivers enhanced power, aggressive sound, and optimized exhaust flow, unleashing the full potential of your vehicle's engine.",
       features: "performance line",
       price: "840.00",
+      inventory: 4,
     },
     {
       id: 30,
@@ -317,6 +347,7 @@ export const productsList = {
         "Engineered for exhilarating performance, this high-performance exhaust system delivers enhanced power, aggressive sound, and optimized exhaust flow, unleashing the full potential of your vehicle's engine.",
       features: "performance line",
       price: "840.00",
+      inventory: 4,
     },
     {
       id: 31,
@@ -327,6 +358,7 @@ export const productsList = {
         "Engineered for exhilarating performance, this high-performance exhaust system delivers enhanced power, aggressive sound, and optimized exhaust flow, unleashing the full potential of your vehicle's engine.",
       features: "performance line",
       price: "840.00",
+      inventory: 4,
     },
   ],
 };
