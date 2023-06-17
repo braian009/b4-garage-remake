@@ -5,6 +5,8 @@ import Image from "next/image";
 import LegendText from "@/components/varied/LegendText";
 
 import { getSlugFromString, getStringFromSlug } from "@/utils/slugConverter";
+import { useSelector, useDispatch } from "react-redux";
+import { addToCart } from "@/redux/cartSlice";
 import { productsList } from "@/data/store";
 
 // const getStaticPaths = () => {
@@ -42,6 +44,8 @@ import { productsList } from "@/data/store";
 const getServerSideProps = ({ params }) => {
   const { type, item } = params;
 
+
+
   return {
     props: {
       item: productsList[getStringFromSlug(type)].find((productItem) => {
@@ -52,6 +56,13 @@ const getServerSideProps = ({ params }) => {
 };
 
 const Product = ({ item }) => {
+
+  const dispatch = useDispatch();
+
+  const isAlreadyinCart = useSelector((state) => {
+    return state.cart.items.find((i) => i.id === item.id );
+  })
+
   return (
     <div className={styles.container}>
       <div className={styles.inner}>
@@ -71,7 +82,7 @@ const Product = ({ item }) => {
             <p>{item.description}</p>
             <div className={styles.infoFooter}>
               <p>${item.price}</p>
-              <div className={styles.cartButton}>Add to cart</div>
+              <div className={styles.cartButton} onClick={() => dispatch(addToCart({ item: item }))}>Add to cart</div>
             </div>
           </div>
         </div>
