@@ -92,27 +92,39 @@
   gap: 0.5em;
 }
 
-.infoFooter > p {
+.infoFooter > * {
+  font-size: 0.95rem !important;
+  box-shadow: 2px 2px 4px #000;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  cursor: default;
+
+}
+
+.infoFooter > .price {
+  font-size: 0.95rem;
+  flex: 50%;
   background-color: #a29d9a;
   color: #242424;
   line-height: 1.125;
-  border-radius: 5px;
 }
 
-.productInfo .infoFooter > * {
-  align-items: center;
-  flex: 50%;
-  box-shadow: 2px 2px 4px #000;
-  padding: 0.5em 1em;
-}
-
-.productInfo .infoFooter > button {
-  font-size: 0.95rem;
+.infoFooter > .addButton,
+.infoFooter > .added {
   align-self: stretch;
-  background-color: var(--orange-primary);
-  border-radius: 5px;
-  color: var(--white-primary);
+  background-color: var(--orange-primary) !important;
+  flex: 50%;
+}
+
+.infoFooter > .addButton {
   cursor: pointer;
+}
+
+.infoFooter > .outOfStock {
+  background-color: #a29d9a;
+  color: #242424;
+  line-height: 1.125;
+  flex: 100%;
 }
 
 @media (min-width: 45em) {

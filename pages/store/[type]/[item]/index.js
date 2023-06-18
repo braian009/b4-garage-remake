@@ -60,6 +60,10 @@ const Product = ({ item }) => {
     return state.cart.items.find((i) => i.id === item.id);
   });
 
+  const isOutOfStock = useSelector((state) => {
+    return state.products.items.find((i) => i.id === item.id).inventory === 0;
+  });
+
   return (
     <div className={styles.container}>
       <div className={styles.inner}>
@@ -78,13 +82,24 @@ const Product = ({ item }) => {
             </div>
             <p>{item.description}</p>
             <div className={styles.infoFooter}>
-              <p>${item.price}</p>
-              <button
-                className={styles.cartButton}
-                onClick={() => dispatch(addToCart({ item: item }))}
-              >
-                Add to cart
-              </button>
+              {isOutOfStock ? (
+                <div className={styles.outOfStock}>item out of stock</div>
+              ) : (
+                <>
+                  <p className={styles.price}>${item.price}</p>
+
+                  {isAlreadyinCart ? (
+                    <div className={styles.added}>Added to cart!</div>
+                  ) : (
+                    <button
+                      className={styles.addButton}
+                      onClick={() => dispatch(addToCart({ item: item }))}
+                    >
+                      Add to cart
+                    </button>
+                  )}
+                </>
+              )}
             </div>
           </div>
         </div>
