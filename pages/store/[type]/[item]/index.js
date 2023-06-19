@@ -86,7 +86,7 @@ const Product = ({ item }) => {
                 <div className={styles.outOfStock}>item out of stock</div>
               ) : (
                 <>
-                  <p className={styles.price}>${item.price}</p>
+                  <p className={styles.price}>${Number(item.price).toFixed(2)}</p>
 
                   {isAlreadyinCart ? (
                     <div className={styles.added}>Added to cart!</div>

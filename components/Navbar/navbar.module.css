@@ -11,12 +11,10 @@
   z-index: 100;
   color: var(--white-secondary);
 
-  background-color: rgba(12, 12, 12, 0.9);
+  background-color: var(--bg-black);
 
   border-bottom: 2px solid rgba(255, 255, 255, 0.125);
-  /* backdrop-filter: blur(7px) saturate(200%); */
 }
-
 
 .inner {
   display: flex;
@@ -26,7 +24,6 @@
   width: 100%;
   height: 100%;
   justify-content: space-between;
- 
 }
 
 .brandLogo {
@@ -45,7 +42,7 @@
 }
 
 .brandLogo svg g {
-  fill: #727272;
+  fill: var(--gray-primary);
 }
 
 .navMenu {
@@ -63,9 +60,9 @@
 
   height: 1.5em;
 
-  background-color: #727272;
+  background-color: var(--gray-primary);
   border-radius: 5px;
-  
+
   cursor: pointer;
   z-index: 150;
 }
@@ -87,14 +84,15 @@
 
   transform: translateY(1.9em) !important;
 
-  background-color: #0c0c0c;
+  background-color: var(--bg-black);
   z-index: 100;
 }
 
 .navList li {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-align: center;
   padding: 1em 2em;
+  cursor: pointer;
 }
 
 @media (min-width: 40em) {

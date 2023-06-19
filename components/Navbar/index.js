@@ -4,6 +4,7 @@ import styles from "./navbar.module.css";
 
 import BrandIcon from "../varied/Icons/BrandIcon";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 const menuListVariants = {
   open: {
@@ -29,6 +30,8 @@ const buttonVariants = {
 
 const Navbar = () => {
   const [isActive, setIsActive] = React.useState(false);
+
+  const router = useRouter();
 
   return (
     <nav className={styles.container}>
@@ -59,11 +62,9 @@ const Navbar = () => {
             }}
             className={styles.navList}
           >
-            <li>About</li>
-            <li>Gallery</li>
-            <li>Store</li>
-            <li>Events</li>
-            <li>Contact</li>
+            <li onClick={() => router.push('/about')}>About</li>
+            <li onClick={() => router.push('/store')}>Store</li>
+            <li onClick={() => router.push('/events')}>Events</li>
           </motion.ul>
         </div>
       </div>

@@ -3,8 +3,6 @@
 
   width: 100%;
   padding-top: 6.5em;
-
-  background-color: #d4d4d4;
 }
 
 .inner {
@@ -21,7 +19,6 @@
 .storeText h1 {
   font-size: 4rem;
   text-align: center;
-  color: #202020;
 }
 
 .storeText h4 {
@@ -66,7 +63,6 @@
 }
 
 .itemDetailsCard .infoHeader h4 {
-  color: #202020;
   font-size: 1.8rem;
   text-transform: uppercase;
   font-style: italic;
@@ -74,16 +70,14 @@
 }
 
 .infoHeader > p {
-  font-size: 0.85rem;
-  color: hsl(0, 0%, 23%);
+  font-size: 0.75rem;
+  color: var(--gray-primary);
   margin-top: 0.15rem;
   font-style: italic;
 }
 
 .productInfo > p {
-  font-size: 0.9em;
-  color: #242424;
-  line-height: 0.95;
+  color: var(--black-secondary);
 }
 
 .productInfo .infoFooter {
@@ -93,7 +87,7 @@
 }
 
 .infoFooter > * {
-  font-size: 0.95rem !important;
+  font-size: 0.9rem !important;
   box-shadow: 2px 2px 4px #000;
   border-radius: 5px;
   padding: 0.5em 1em;
@@ -105,7 +99,7 @@
   font-size: 0.95rem;
   flex: 50%;
   background-color: #a29d9a;
-  color: #242424;
+  color: var(--black-secondary);
   line-height: 1.125;
 }
 
@@ -122,7 +116,7 @@
 
 .infoFooter > .outOfStock {
   background-color: #a29d9a;
-  color: #242424;
+  color: #414141;
   line-height: 1.125;
   flex: 100%;
 }

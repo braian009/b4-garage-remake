@@ -5,6 +5,7 @@ import LegendText from "@/components/varied/LegendText";
 import ItemCartRow from "@/components/ItemCartRow";
 import { useSelector, useDispatch } from "react-redux";
 import { purchaseItems } from "@/redux/purchaseAction";
+import { useRouter } from "next/router";
 
 const ShoppingCart = () => {
   const dispatch = useDispatch();
@@ -14,6 +15,8 @@ const ShoppingCart = () => {
       return priceSum + item.price * item.quantity;
     }, 0);
   });
+
+  const router = useRouter();
 
   return (
     <div className={styles.container}>
@@ -57,7 +60,10 @@ const ShoppingCart = () => {
             </div>
           </>
         ) : (
-          <div>There is nothing here yet</div>
+          <div className={styles.emptyCart}>
+            <LegendText text="There's no items in your cart yet"/>
+            <div onClick={() => router.back()}>Continue</div>
+          </div>
         )}
       </div>
     </div>

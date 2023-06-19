@@ -29,29 +29,29 @@
 }
 
 .itemInfo h4 {
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   text-transform: uppercase;
   font-style: italic;
 }
 
 .itemInfo p {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   padding-top: 0.15em;
-  color: hsl(0, 0%, 24%);
+  color: var(--gray-primary);
 }
 
 .itemQuantity {
   display: flex;
-  gap: 5.5rem;
+  gap: 3rem;
 }
 
 .itemQuantity > select {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   padding: 0.05em 0.3em;
   color: #242424;
   background-color: #d4d4d4;
   border-radius: 5px;
-  border: 1px solid #727272;
+  border: 1px solid var(--gray-primary);
   outline: none;
   cursor: pointer;
 }
@@ -61,6 +61,7 @@
 }
 
 .itemQuantity > button {
+  font-size: 0.75rem;
   color: var(--orange-primary);
   text-decoration: underline;
   padding: 0;
@@ -68,11 +69,11 @@
 }
 
 .itemPrice {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 .itemTotal {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 @media (min-width: 37.5em) {

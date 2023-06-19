@@ -16,10 +16,12 @@
     position: relative;
     height: 9em;
     overflow: hidden;
+    background-color: var(--bg-black);
   }
   
   .storeCardImage img {
     object-fit: cover;
+    opacity: 0.9;
   }
   
   .storeCardFooter {
@@ -29,7 +31,7 @@
   
     width: 100%;
     padding: 0.75em 1em;
-    background-color: #0c0c0c;
+    background-color: var(--bg-black);
     position: relative;
   }
   

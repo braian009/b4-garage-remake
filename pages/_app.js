@@ -8,17 +8,16 @@ import { Provider } from "react-redux";
 import { persistStore } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
 
-
 let persistor = persistStore(store);
 
 export default function App({ Component, pageProps }) {
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-        <div style={{ minHeight: "100vh", width: "100%" }}>
+        <div style={{ minHeight: "100vh", width: "100%", position: 'relative', paddingBottom: "5em", backgroundColor: "#d4d4d4" }}>
           <>
             <Navbar />
-            <main>
+            <main style={{ minHeight: "100%" }}>
               <Component {...pageProps} />
             </main>
             <Footer />

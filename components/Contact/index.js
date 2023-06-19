@@ -10,7 +10,7 @@ const Contact = () => {
       <div className={styles.inner}>
         <h1>Contact</h1>
         <div className={styles.newsletter}>
-          <div>suscribe to our newsletter:</div>
+          <div>Suscribe to our newsletter:</div>
           <form>
             <input id="email" type="text"></input>
             <button type="submit">Suscribe</button>

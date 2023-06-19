@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   padding: 3em 1em;
-  background-color: #0c0c0c;
+  background-color: var(--bg-black);
 }
 
 .inner {
@@ -16,7 +16,8 @@
 }
 
 .inner h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  color: var(--white-primary);
 }
 
 .inner .newsletter {
@@ -29,7 +30,7 @@
 }
 
 .inner .newsletter > div {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   letter-spacing: 0.01em;
   text-align: center;
   color: var(--white-secondary);
@@ -44,13 +45,13 @@
 }
 
 .inner .newsletter form input {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   width: 100%;
   padding: 0.5em;
 
-  color: white;
+  color: var(--white-primary);
   background: none;
-  border: 1px solid hsla(0, 0%, 25%, 0.7);
+  border: 1px solid var(--gray-input-borders);
   border-radius: 5px;
 
   outline: none;
@@ -60,7 +61,6 @@
   align-self: stretch;
 
   padding: 0.5em 1.25em;
-  color: var(--white-primary);
   background-color: var(--orange-primary);
   border-radius: 5px;
 }
@@ -75,7 +75,7 @@
 
 .inner .socials > div {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--white-secondary);
 }
 

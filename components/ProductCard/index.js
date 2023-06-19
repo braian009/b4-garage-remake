@@ -17,7 +17,7 @@ const ProductCard = ({ item }) => {
       <div className={styles.cardText}>
         <h4>{item.name}</h4>
         <div>{item.features}</div>
-        <p>${item.price}</p>
+        <p>${Number(item.price).toFixed(2)}</p>
         <button
           onClick={() => {
             router.push({

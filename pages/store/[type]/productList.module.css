@@ -4,7 +4,6 @@
   width: 100%;
   padding-top: 6.5em;
 
-  background-color: #d4d4d4;
 }
 
 .inner {
@@ -21,7 +20,6 @@
 .storeText h1 {
   font-size: 4rem;
   text-align: center;
-  color: #202020;
 }
 
 .storeNav {
@@ -37,7 +35,7 @@
   max-width: 27.5em;
   margin: 0 auto;
 
-  color: #242424;
+  color: var(--black-secondary);
 }
 
 .storeNav ul li {

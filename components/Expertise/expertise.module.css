@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  background-color: #0c0c0c;
+  background-color: var(--bg-black);
 }
 
 .inner {
@@ -16,7 +16,7 @@
   grid-template-rows: 25em 25em;
 
   background-color: var(--orange-primary);
-  background-color: #d4d4d4;
+  background-color: var(--gray-primary);
   padding: 2px 0;
   gap: 2px;
 }
@@ -67,8 +67,9 @@
   font-size: 1.15rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  font-weight: lighter;
   font-style: italic;
-  color: var(--white-secondary);
+  color: var(--white-primary);
 
   border-radius: 4px;
   
@@ -81,8 +82,7 @@
 }
 
 .cardText p {
-    line-height: 1.05;
-  font-size: 0.85rem;
+    line-height: 1.2;
   margin: 0 auto;
 
   color: var(--white-secondary);
@@ -91,7 +91,7 @@
 
 .cardText button {
   background-color: var(--orange-primary);
-  padding: 0.3em 2em;
+  padding: 0.5em 2em;
   width: 100%;
 
   border-radius: 5px;
