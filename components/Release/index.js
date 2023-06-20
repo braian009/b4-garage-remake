@@ -1,5 +1,5 @@
 import * as React from "react";
-import CardWithCTA from "./CardWithCTA";
+import CardWithCTA from "../varied/CardWithCTA";
 import Image from "next/image";
 import ProExhaustLogo from "./ProExhaustLogo";
 import styles from "./release.module.css";

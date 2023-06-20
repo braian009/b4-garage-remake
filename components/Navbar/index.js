@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <nav className={styles.container}>
       <div className={styles.inner}>
-        <div className={styles.brandLogo}>
+        <div className={styles.brandLogo} onClick={() => router.push('/')}>
           <BrandIcon />
         </div>
         <div className={styles.navMenu}>

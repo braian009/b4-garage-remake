@@ -6,6 +6,7 @@
   background-color: var(--bg-black);
 
   padding: 6.5em 0 0;
+  overflow: hidden;
 }
 
 .inner {
@@ -16,7 +17,7 @@
   width: 100%;
   max-width: 1080px;
 
-  padding: 3em 1em 0;
+  padding: 4.5em 1em 3.5em;
   margin: 0 auto;
 
   grid-template-columns: repeat(4, 1fr);
@@ -25,7 +26,10 @@
 
 .container > img {
   object-fit: cover;
-  opacity: 0.9;
+  object-position: bottom;
+  height: 125% !important;
+
+  object-position: -25em 0em;
 }
 
 .heroOverlay {
@@ -34,14 +38,8 @@
   bottom: 0;
 
   width: 100%;
-  background: hsla(0, 0%, 0%, 0.4);
-
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(12, 12, 12, 0.7) 45%,
-    transparent
-  );
-  backdrop-filter: blur(1px) saturate(150%);
+  background-color: hsla(0, 0%, 7%, 0.7);
+  filter: blur(2px);
 }
 
 .heroText {
@@ -53,26 +51,27 @@
 
   text-align: center;
 
-  max-width: 30em;
-  align-self: center;
+  max-width: 25em;
+  align-self: start;
 }
 
 .heroText h1 {
   line-height: 0.75;
   color: var(--white-primary);
-  font-size: 5rem;
+  font-size: 4.5rem;
+  font-weight: lighter;
 }
 
 .heroText p {
-  margin-top: 0.75em;
-  max-width: 22em;
+  margin-top: 0.5em !important;
   color: var(--white-secondary);
 }
 
 .ctaButton {
+  font-size: 0.95rem;
   padding: 0.5em 2em;
 
-  margin-top: 0.75em;
+  margin-top: 0.5em !important;
   border-radius: 5px;
 
   background-color: var(--orange-primary);
@@ -83,7 +82,6 @@
   justify-self: center;
   align-self: end;
 
-  padding-bottom: 3.5em;
 
   grid-column: span 4;
   grid-row: 3 / 4;
@@ -101,8 +99,8 @@
 }
 
 .buttons ul li {
-  width: 3em;
-  height: 3em;
+  width: 3.5em;
+  height: 3.5em;
   font-size: 0.9rem;
 }
 
@@ -115,38 +113,119 @@
 .slogan {
   width: 100%;
   grid-column: span 4;
+  grid-row: 2 / 3;
   align-self: center;
 }
 
 .slogan > div > h4 {
+  font-size: 0.8rem;
   color: var(--white-secondary) !important;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  border: 1px solid var(--orange-primary);
+  background-color: hsla(0, 0%, 7%, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.slogan > div > h4 > div {
+  background-color: var(--orange-borders) !important;
+}
+
+.lastJob {
+  display: none;
+  grid-column: span 2;
+  flex-direction: column;
+  gap: 0.5em;
+  max-width: 14em;
+  justify-self: end;
+  align-self: start;
+}
+
+.lastJob h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: var(--white-primary);
+  align-self: flex-end !important;
+  width: fit-content !important;
+}
+
+.lastJob > div {
+  align-self: flex-start !important;
+  width: fit-content !important;
+}
+
+.lastJob > div h4 {
+  color: var(--white-primary) !important;
+  padding-right: 0.25rem;
+}
+
+.lastJob > div > h4 > div {
+  background-color: var(--orange-borders) !important;
+}
+
+
+.lastJob > div > h4 > div:nth-child(1) {
+  display: none !important;
+}
+
+.lastJob p {
+  color: var(--gray-primary);
+}
+
+.lastJob p > a {
+  color: var(--orange-primary);
+  cursor: pointer;
 }
 
 @media (min-width: 35em) {
+  .container > img {
+    object-position: bottom;
+  }
   .inner {
-    padding-bottom: 0.5em;
+    padding-top: 3em;
   }
 
   .buttons {
     margin-left: auto;
   }
 
+  .buttons ul {
+    padding-bottom: 0;
+  }
+
   .heroText {
     align-items: flex-start;
     text-align: left;
-    padding-left: 0.5em;
   }
 
   .ctaButton {
     margin: initial;
-    margin-top: 1em;
+  }
+
+  .slogan {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    align-self: end;
   }
 
   .slogan > div {
-    place-content: end;
+    place-content: start;
   }
 
   .slogan > div > h4 > div:nth-child(2) {
     display: none;
+  }
+
+  .buttons {
+    grid-column: 3 / 5;
+  }
+}
+
+@media (min-width: 50em) {
+  .heroText {
+    grid-column: span 2;
+  }
+  .lastJob {
+    display: flex;
   }
 }

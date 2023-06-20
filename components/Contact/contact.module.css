@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   padding: 3em 1em;
-  background-color: var(--bg-black);
+  background-color: var(--bg-gray);
 }
 
 .inner {
@@ -15,25 +15,18 @@
   margin: 0 auto;
 }
 
-.inner h1 {
-  font-size: 3rem;
-  color: var(--white-primary);
-}
 
 .inner .newsletter {
   width: 100%;
   max-width: 35em;
-  padding: 2em 0.5em;
-  border: 2px solid hsl(0, 0%, 25%, 0.4);
-  border-left: none;
-  border-right: none;
+  border-radius: 11px;
 }
 
 .inner .newsletter > div {
-  font-size: 0.85rem;
+  font-size: 1.25rem;
   letter-spacing: 0.01em;
   text-align: center;
-  color: var(--white-secondary);
+  color: var(--black-secondary)
 }
 
 .inner .newsletter form {
@@ -42,6 +35,11 @@
   width: 100%;
   gap: 0.25em;
   margin-top: 0.25em;
+  background-color: #1f1f1f;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #000;
+  border: 2px solid var(--orange-borders);
 }
 
 .inner .newsletter form input {
@@ -75,34 +73,36 @@
 
 .inner .socials > div {
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 1.25rem;
+
   color: var(--white-secondary);
+  color: var(--black-secondary);
 }
 
 .inner .socials .socialsList {
   display: flex;
   justify-content: center;
-  gap: 1em;
+  gap: 0.75em;
   align-self: center;
 
   width: fit-content;
   padding: 0 1em;
   margin: 0 auto;
-  margin-top: 0.75em;
+  margin-top: 0.5em;
 }
 
 .inner .socials .socialsList li {
   display: grid;
   place-items: center;
 
-  width: 3em;
-  height: 3em;
+  width: 3.5em;
+  height: 3.5em;
   border-radius: 50%;
 }
 
 .inner .socials .socialsList li svg {
   width: 3em;
   height: 3em;
-  fill: rgba(255, 255, 255, 0.7);
+  fill: var(--orange-primary);
   border-radius: 50%;
 }

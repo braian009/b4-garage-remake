@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className={styles.container}>
       <div className={styles.inner}>
-        <h1>Contact</h1>
+        {/* <h1>Contact</h1> */}
         <div className={styles.newsletter}>
           <div>Suscribe to our newsletter:</div>
           <form>

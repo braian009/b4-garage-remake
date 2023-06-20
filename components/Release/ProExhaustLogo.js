@@ -13,7 +13,7 @@ const ProExhaustLogo = () => {
       }}
     >
       <div style={{ flex: "50%", height: "100%" }}>
-        <svg fill="#e84b2c" height="100%" width="100%" viewBox="0 0 512 512">
+        <svg fill="#e25336" height="100%" width="100%" viewBox="0 0 512 512">
           <g strokeWidth="0"></g>
           <g strokeLinecap="round" strokeLinejoin="round"></g>
           <g>

@@ -300,8 +300,8 @@ export const productsList = {
       name: "exhaust 2",
       image: "/exhaust.png",
       description:
-        "This exhaust system offers a classic design and reliable performance, providing a balanced combination of sound enhancement and improved exhaust flow for a satisfying driving experience.",
-      features: "conventional",
+        "Engineered for exhilarating performance, this high-performance exhaust system delivers enhanced power, aggressive sound, and optimized exhaust flow, unleashing the full potential of your vehicle's engine.",
+      features: "pro exhaust",
       price: 710,
       inventory: 3,
     },
@@ -312,7 +312,7 @@ export const productsList = {
       image: "/exhaust.png",
       description:
         "This exhaust system offers a classic design and reliable performance, providing a balanced combination of sound enhancement and improved exhaust flow for a satisfying driving experience.",
-      features: "conventional",
+      features: "pro exhaust",
       price: 710,
       inventory: 2,
     },
@@ -323,7 +323,7 @@ export const productsList = {
       image: "/exhaust.png",
       description:
         "Engineered for exhilarating performance, this high-performance exhaust system delivers enhanced power, aggressive sound, and optimized exhaust flow, unleashing the full potential of your vehicle's engine.",
-      features: "performance line",
+      features: "pro exhaust",
       price: 840,
       inventory: 7,
     },
@@ -334,7 +334,7 @@ export const productsList = {
       image: "/exhaust.png",
       description:
         "Engineered for exhilarating performance, this high-performance exhaust system delivers enhanced power, aggressive sound, and optimized exhaust flow, unleashing the full potential of your vehicle's engine.",
-      features: "performance line",
+      features: "pro exhaust",
       price: 840,
       inventory: 4,
     },
@@ -345,7 +345,7 @@ export const productsList = {
       image: "/exhaust.png",
       description:
         "Engineered for exhilarating performance, this high-performance exhaust system delivers enhanced power, aggressive sound, and optimized exhaust flow, unleashing the full potential of your vehicle's engine.",
-      features: "performance line",
+      features: "pro exhaust",
       price: 840,
       inventory: 4,
     },
@@ -356,7 +356,7 @@ export const productsList = {
       image: "/exhaust.png",
       description:
         "Engineered for exhilarating performance, this high-performance exhaust system delivers enhanced power, aggressive sound, and optimized exhaust flow, unleashing the full potential of your vehicle's engine.",
-      features: "performance line",
+      features: "pro exhaust",
       price: 840,
       inventory: 4,
     },

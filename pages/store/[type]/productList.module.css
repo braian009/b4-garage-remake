@@ -24,7 +24,7 @@
 
 .storeNav {
   position: relative;
-  padding: 0.5em 1em !important;
+  padding: 0.5em !important;
 }
 
 .storeNav ul {
@@ -38,11 +38,23 @@
   color: var(--black-secondary);
 }
 
-.storeNav ul li {
+.storeNav .navTag {
   font-size: 0.9rem;
   padding: 0.5rem;
+  position: relative !important;
+  text-align: center;
+
 
   cursor: pointer;
+}
+
+.navTag .navTagLine {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--orange-borders);
+  height: 2px;
 }
 
 .storeCards {

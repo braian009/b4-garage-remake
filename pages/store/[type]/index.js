@@ -5,11 +5,12 @@ import LineDecoration from "@/components/varied/LegendText/LineDecoration";
 import ProductCard from "@/components/ProductCard";
 
 import { useRouter } from "next/router";
+
 import { getSlugFromString, getStringFromSlug } from "@/utils/slugConverter";
 
 import { productTypes } from "@/data/store";
 import { productsList } from "@/data/store";
-
+import { motion } from "framer-motion";
 
 const getStaticPaths = () => {
   let paths = [];
@@ -53,6 +54,7 @@ const Store = ({ itemType, itemList }) => {
             {productTypes.map((type) => {
               return (
                 <li
+                  className={styles.navTag}
                   key={`productType-${type}`}
                   onClick={() => {
                     router.push({
@@ -64,6 +66,9 @@ const Store = ({ itemType, itemList }) => {
                   }}
                 >
                   {type}
+                  {router.asPath === `/store/${getSlugFromString(type)}` && (
+                    <motion.div layoutId="storeNavTag" className={styles.navTagLine}></motion.div>
+                  ) }
                 </li>
               );
             })}
@@ -89,9 +94,7 @@ const Store = ({ itemType, itemList }) => {
         </div>
         <div className={styles.storeCards}>
           {itemList.map((item) => {
-            return (
-              <ProductCard key={`productCard-${item.id}`} item={item} />
-            );
+            return <ProductCard key={`productCard-${item.id}`} item={item} />;
           })}
         </div>
       </div>
