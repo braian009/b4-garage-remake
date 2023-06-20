@@ -93,4 +93,6 @@ button {
   outline: none;
   padding: none;
   color: var(--white-primary);
+  font-family: "Roboto Condensed", "Helvetica", sans-serif;
+  cursor: pointer;
 }
