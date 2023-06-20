@@ -14,7 +14,7 @@ const menuListVariants = {
   },
   closed: {
     opacity: 1,
-    border: "none", 
+    border: "none",
     clipPath: "inset(0% 0% 100% 0%)",
   },
 };
@@ -34,9 +34,14 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <nav className={styles.container}>
+    <motion.nav
+      className={styles.container}
+      initial={{ y: -100, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ delay: 1, type: "spring", stiffness: 400, damping: 75 }}
+    >
       <div className={styles.inner}>
-        <div className={styles.brandLogo} onClick={() => router.push('/')}>
+        <div className={styles.brandLogo} onClick={() => router.push("/")}>
           <BrandIcon />
         </div>
         <div className={styles.navMenu}>
@@ -46,7 +51,6 @@ const Navbar = () => {
             variants={buttonVariants}
             initial={false}
             animate={isActive ? "active" : "notActive"}
-
           >
             <MenuIcon />
           </motion.button>
@@ -62,13 +66,13 @@ const Navbar = () => {
             }}
             className={styles.navList}
           >
-            <li onClick={() => router.push('/about')}>About</li>
-            <li onClick={() => router.push('/store')}>Store</li>
-            <li onClick={() => router.push('/events')}>Events</li>
+            <li onClick={() => router.push("/about")}>About</li>
+            <li onClick={() => router.push("/store")}>Store</li>
+            <li onClick={() => router.push("/events")}>Events</li>
           </motion.ul>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

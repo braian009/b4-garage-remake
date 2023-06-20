@@ -1,12 +1,24 @@
 import * as React from "react";
 import styles from "./services.module.css";
 import LegendText from "../varied/LegendText";
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
     <div className={styles.container}>
       <div className={styles.inner}>
-        <div className={styles.servicesCards}>
+        <motion.div
+          className={styles.servicesCards}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.4,
+            duration: 0.4,
+            type: "spring",
+            stiffness: 400,
+            damping: 75,
+          }}
+        >
           <div className={styles.serviceCard}>
             <h2>Essentials</h2>
             <p>
@@ -23,9 +35,20 @@ const Services = () => {
               deserunt veniam ex qui elit et amet aliqua nostrud excepteur.
             </p>
           </div>
-        </div>
-        <div className={styles.sponsors}>
-          <LegendText text='Powered by:'/>
+        </motion.div>
+        <motion.div
+          className={styles.sponsors}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.8,
+            duration: 0.4,
+            type: "spring",
+            stiffness: 400,
+            damping: 75,
+          }}
+        >
+          <LegendText text="Powered by:" />
           <ul>
             <li>
               <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none">
@@ -59,7 +82,7 @@ const Services = () => {
               </svg>
             </li>
           </ul>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

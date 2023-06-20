@@ -1,5 +1,7 @@
 import * as React from "react";
 import styles from "./contact.module.css";
+
+import { motion } from "framer-motion";
 import InstagramIcon from "../varied/Icons/InstagramIcon";
 import FacebookIcon from "../varied/Icons/FacebookIcon";
 import TwitterIcon from "../varied/Icons/TwitterIcon";
@@ -7,8 +9,18 @@ import TwitterIcon from "../varied/Icons/TwitterIcon";
 const Contact = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.inner}>
-        {/* <h1>Contact</h1> */}
+      <motion.div
+        className={styles.inner}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.4,
+          duration: 0.4,
+          type: "spring",
+          stiffness: 400,
+          damping: 75,
+        }}
+      >
         <div className={styles.newsletter}>
           <div>Suscribe to our newsletter:</div>
           <form>
@@ -30,7 +42,7 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

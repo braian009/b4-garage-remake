@@ -1,6 +1,10 @@
 import * as React from "react";
 import styles from "./hero.module.css";
+
 import Image from "next/image";
+
+import { motion } from "framer-motion";
+
 import TwitterIcon from "../varied/Icons/TwitterIcon";
 import InstagramIcon from "../varied/Icons/InstagramIcon";
 import Slogan from "../varied/LegendText";
@@ -12,7 +16,18 @@ const Hero = () => {
       <Image src={"/toyotasupra.jpg"} fill alt={""}></Image>
       <div className={styles.heroOverlay}></div>
 
-      <div className={styles.inner}>
+      <motion.div
+        className={styles.inner}
+        initial={{ opacity: 0, scale: 1.4 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{
+          delay: 0.4,
+          duration: 0.4,
+          type: "spring",
+          stiffness: 400,
+          damping: 75,
+        }}
+      >
         <div className={styles.heroText}>
           <h1>
             <span>Unleash</span> it
@@ -41,7 +56,7 @@ const Hero = () => {
             consequat deserunt nostrud excepteur mollit.
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
