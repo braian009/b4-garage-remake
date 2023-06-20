@@ -15,7 +15,7 @@ const Expertise = () => {
           whileInView={{ opacity: 1 }}
           transition={{
             delay: 0.4,
-            duration: 0.4,
+            duration: 0.2,
             type: "spring",
             stiffness: 400,
             damping: 75,

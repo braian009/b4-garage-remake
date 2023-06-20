@@ -1,6 +1,8 @@
 import * as React from "react";
 import styles from "./card.module.css";
 
+import { motion } from "framer-motion";
+
 const CardWithCTA = () => {
   return (
     <div className={styles.cardContainer}>
@@ -12,7 +14,18 @@ const CardWithCTA = () => {
         ullamco voluptate deserunt sit. Deserunt sint ex magna eiusmod nostrud
         sunt eiusmod veniam.
       </p>
-      <button>Call to action</button>
+      <motion.button
+        whileHover={{
+          backgroundColor: "#1f1f1f",
+          color: "#eb6347",
+        }}
+        transition={{
+          duration: 0.3,
+          ease: "easeOut",
+        }}
+      >
+        Call to action
+      </motion.button>
     </div>
   );
 };

@@ -9,14 +9,13 @@
     padding: 1em;
   }
   
-  .expertiseCard::before {
-    display: block;
-    content: "";
+  .cardOverlay {
     position: absolute;
     top: 0;
     bottom: 0;
     width: 100%;
     background-color: hsla(0, 0%, 5%, 0.875);
+
     z-index: 10;
   }
   
@@ -31,7 +30,6 @@
   
   .cardImage img {
     object-fit: cover;
-    filter: blur(1px) saturate(100%);
   }
   
   .cardText {

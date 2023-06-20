@@ -78,7 +78,7 @@
   box-shadow: 2px 2px 6px #000;
 }
 
-.buttons {
+.socials {
   justify-self: center;
   align-self: end;
 
@@ -87,7 +87,7 @@
   grid-row: 3 / 4;
 }
 
-.buttons ul {
+.socials ul {
   display: flex;
   align-items: center;
   gap: 1em;
@@ -98,13 +98,14 @@
   border-radius: 11px;
 }
 
-.buttons ul li {
+.socials ul li {
   width: 3.5em;
   height: 3.5em;
   font-size: 0.9rem;
+  cursor: pointer;
 }
 
-.buttons ul li svg {
+.socials ul li svg {
   width: 100%;
   height: 100%;
   fill: var(--white-secondary);
@@ -185,11 +186,11 @@
     padding-top: 3em;
   }
 
-  .buttons {
+  .socials {
     margin-left: auto;
   }
 
-  .buttons ul {
+  .socials ul {
     padding-bottom: 0;
   }
 
@@ -216,7 +217,7 @@
     display: none;
   }
 
-  .buttons {
+  .socials {
     grid-column: 3 / 5;
   }
 }

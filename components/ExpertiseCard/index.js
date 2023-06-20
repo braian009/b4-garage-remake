@@ -8,6 +8,17 @@ import Image from "next/image";
 const ExpertiseCard = ({ item, image }) => {
   return (
     <div className={styles.expertiseCard}>
+      <motion.div className={styles.cardOverlay}
+        initial={{ opacity: 0.4 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 1.4,
+          duration: 0.4,
+          type: "spring",
+          stiffness: 400,
+          damping: 75,
+        }}
+      ></motion.div>
       <div className={styles.cardImage}>
         <Image src={image} fill alt={""} />
       </div>
@@ -16,7 +27,7 @@ const ExpertiseCard = ({ item, image }) => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.8,
+          delay: 1.8,
           duration: 0.4,
           type: "spring",
           stiffness: 400,
@@ -40,7 +51,18 @@ const ExpertiseCard = ({ item, image }) => {
           {item.title}
         </h4>
         <p>{item.text}</p>
-        <button>call to action</button>
+        <motion.button
+          whileHover={{
+            backgroundColor: "#e25336",
+            color: "#e0e0e0",
+          }}
+          transition={{
+            duration: 0.3,
+            ease: "easeOut",
+          }}
+        >
+          call to action
+        </motion.button>
       </motion.div>
     </div>
   );

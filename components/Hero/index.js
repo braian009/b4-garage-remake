@@ -34,9 +34,21 @@ const Hero = () => {
           </h1>
 
           <p>Culpa sint dolor enim non sit minim veniam.</p>
-          <button className={styles.ctaButton}>Order Now</button>
+          <motion.button
+            className={styles.ctaButton}
+            whileHover={{
+              backgroundColor: "#1f1f1f",
+              color: "#eb6347",
+            }}
+            transition={{
+              duration: 0.3,
+              ease: 'easeOut'
+            }}
+          >
+            Order Now
+          </motion.button>
         </div>
-        <div className={styles.buttons}>
+        <div className={styles.socials}>
           <ul>
             <li>
               <InstagramIcon />

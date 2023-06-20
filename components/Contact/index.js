@@ -25,7 +25,19 @@ const Contact = () => {
           <div>Suscribe to our newsletter:</div>
           <form>
             <input id="email" type="text"></input>
-            <button type="submit">Suscribe</button>
+            <motion.button
+              type="submit"
+              whileHover={{
+                backgroundColor: "#1f1f1f",
+                color: "#eb6347",
+              }}
+              transition={{
+                duration: 0.3,
+                ease: "easeOut",
+              }}
+            >
+              Suscribe
+            </motion.button>
           </form>
         </div>
         <div className={styles.socials}>
