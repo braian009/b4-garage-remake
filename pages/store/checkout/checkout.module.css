@@ -46,4 +46,6 @@
   max-width: 14em;
   margin: 0 auto;
   margin-top: 0.5em;
+  cursor: pointer;
+  border: 1px solid var(--orange-borders) !important;
 }

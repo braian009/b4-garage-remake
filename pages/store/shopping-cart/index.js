@@ -1,11 +1,10 @@
 import * as React from "react";
 import styles from "./shoppingCart.module.css";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import LegendText from "@/components/varied/LegendText";
 import ItemCartRow from "@/components/ItemCartRow";
 import { useSelector, useDispatch } from "react-redux";
-import { purchaseItems } from "@/redux/purchaseAction";
 import { useRouter } from "next/router";
 
 const ShoppingCart = () => {
@@ -64,11 +63,19 @@ const ShoppingCart = () => {
             <div className={styles.checkout}>
               <h4>Guest Checkout</h4>
               <p>Checkout without registering</p>
-              <button
-                onClick={() => dispatch(purchaseItems({ cart: cartList }))}
+              <motion.button
+                onClick={() => router.push("/store/checkout")}
+                whileHover={{
+                  backgroundColor: "#1f1f1f",
+                  color: "#eb6347",
+                }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeOut",
+                }}
               >
                 Proceed to checkout
-              </button>
+              </motion.button>
             </div>
           </>
         ) : (
@@ -90,7 +97,6 @@ const ShoppingCart = () => {
               whileHover={{
                 backgroundColor: "#1f1f1f",
                 color: "#eb6347",
-                // border: "1px solid #eb6347",
               }}
               transition={{
                 duration: 0.3,

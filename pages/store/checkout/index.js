@@ -1,19 +1,62 @@
 import * as React from "react";
 import styles from "./checkout.module.css";
+import { motion } from "framer-motion";
+import { useSelector, useDispatch } from "react-redux";
+import { purchaseItems } from "@/redux/purchaseAction";
+import { useRouter } from "next/router";
 
 const Checkout = () => {
+  const router = useRouter();
+  const dispatch = useDispatch();
+  const cartList = useSelector((state) => state.cart.items);
+
+  const handleCheckout = () => {
+    new Promise((resolve) => {
+      resolve(dispatch(purchaseItems({ cart: cartList })));
+    }).then(() => {
+      router.push("/");
+    });
+  };
+
+  !cartList.length && router.push("/");
   return (
     <div className={styles.container}>
-      <div className={styles.inner}>
-        <h1>Checkout</h1>
-        <div className={styles.checkoutCard}>
-          <h4>
-            Exercitation nisi mollit laborum sit do sunt eu. Sunt culpa
-            excepteur ex cillum do non.
-          </h4>
-          <div>Got it!</div>
-        </div>
-      </div>
+      {cartList.length && (
+        <motion.div
+          className={styles.inner}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.4,
+            duration: 0.4,
+            type: "spring",
+            stiffness: 400,
+            damping: 75,
+          }}
+        >
+          <h1>Checkout</h1>
+          <div className={styles.checkoutCard}>
+            <h4>
+              The developer of this site was a bit lazy at this point, and
+              simply didn&apos;t want to implement a fake payment system, so he
+              left this single button for you, the user, to complete the
+              payment. Sorry for the inconvenience :D
+            </h4>
+            <motion.div
+              onClick={handleCheckout}
+              whileHover={{
+                backgroundColor: "#1f1f1f",
+                color: "#eb6347",
+              }}
+              transition={{
+                duration: 0.3,
+                ease: "easeOut",
+              }}
+            >
+              Got it!
+            </motion.div>
+          </div>
+        </motion.div>
+      )}
     </div>
   );
 };

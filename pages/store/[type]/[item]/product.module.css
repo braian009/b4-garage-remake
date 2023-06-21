@@ -90,24 +90,23 @@
   font-size: 0.9rem !important;
   box-shadow: 2px 2px 4px #000;
   border-radius: 5px;
-  padding: 0.5em 1em;
+  padding: 0.5em 1em !important;
   cursor: default;
 
 }
 
 .infoFooter > .price {
-  font-size: 0.95rem;
   flex: 50%;
   background-color: #a29d9a;
   color: var(--black-secondary);
-  line-height: 1.125;
+  line-height: 1.2;
 }
 
 .infoFooter > .addButton,
 .infoFooter > .added {
   align-self: stretch;
   background-color: var(--orange-primary);
-  border: 1px solid var(--orange-borders);
+  border: 1px solid var(--orange-borders) !important;
   flex: 50%;
 }
 
