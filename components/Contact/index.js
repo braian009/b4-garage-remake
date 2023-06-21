@@ -7,6 +7,19 @@ import FacebookIcon from "../varied/Icons/FacebookIcon";
 import TwitterIcon from "../varied/Icons/TwitterIcon";
 
 const Contact = () => {
+  const [email, setEmail] = React.useState("");
+  const handleInputChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    const isFilled = email ? true : false;
+    e.preventDefault();
+
+    if (isFilled) {
+      setEmail("");
+    }
+  };
   return (
     <div className={styles.container}>
       <motion.div
@@ -24,9 +37,9 @@ const Contact = () => {
         <div className={styles.newsletter}>
           <div>Suscribe to our newsletter:</div>
           <form>
-            <input id="email" type="text"></input>
+            <input id="email" value={email} onChange={handleInputChange} type="text"></input>
             <motion.button
-              type="submit"
+              onClick={handleSubmit}
               whileHover={{
                 backgroundColor: "#1f1f1f",
                 color: "#eb6347",

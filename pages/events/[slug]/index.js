@@ -3,6 +3,7 @@ import styles from "./event.module.css";
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import EventForm from "@/components/EventForn";
 import LegendText from "@/components/varied/LegendText";
 
 import { getStringFromSlug, getSlugFromString } from "@/utils/slugConverter";
@@ -57,38 +58,7 @@ const Event = ({ event }) => {
         <div className={styles.eventImage}>
           <Image src={event.image} fill alt={""} />
         </div>
-        <div className={styles.eventForm}>
-          <p>Get info on how to be part of B4&apos;s events!</p>
-
-          <form>
-            <div>
-              <label htmlFor="fullname">Full Name:</label>
-              <input id="fullname" type="text"></input>
-            </div>
-            <div>
-              <label htmlFor="email">Email:</label>
-              <input id="email" type="text"></input>
-            </div>
-            <div>
-              <label htmlFor="phone">Phone Number:</label>
-
-              <input id="phone" type="text"></input>
-            </div>
-            <motion.button
-              type="submit"
-              whileHover={{
-                backgroundColor: "#1f1f1f",
-                color: "#eb6347",
-              }}
-              transition={{
-                duration: 0.3,
-                ease: "easeOut",
-              }}
-            >
-              Submit
-            </motion.button>
-          </form>
-        </div>
+        <EventForm/>
       </motion.div>
     </div>
   );

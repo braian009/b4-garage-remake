@@ -8,7 +8,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { useRouter } from "next/router";
 
 const ShoppingCart = () => {
-  const dispatch = useDispatch();
   const cartList = useSelector((state) => state.cart.items);
   const totalPrice = useSelector((state) => {
     return state.cart.items.reduce((priceSum, item) => {

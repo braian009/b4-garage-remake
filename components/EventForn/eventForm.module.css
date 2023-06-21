@@ -1,0 +1,83 @@
+.formContainer {
+  width: 100%;
+  min-width: 14em;
+  margin-top: 1em;
+}
+
+.formContainer > p {
+  font-size: 0.9rem;
+
+  padding-left: 0.5em;
+  margin-bottom: 0.5rem;
+
+  text-align: center;
+}
+
+.formContainer form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25em;
+
+  padding: 1em;
+  width: 100%;
+
+  background-color: var(--black-primary);
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #000;
+  border: 2px solid var(--orange-borders);
+}
+
+.formContainer form button {
+  padding: 0.5em 2em;
+  margin-top: 0.5em;
+
+  background-color: var(--orange-primary);
+  border-radius: 5px;
+  border: 1px solid #eb6347;
+  grid-column: span 2;
+}
+
+.formContainer form label {
+  font-size: 0.8rem;
+  color: var(--white-secondary);
+}
+
+.formContainer form input {
+  font-size: 0.8rem;
+
+  padding: 0.5em;
+  background: none;
+  color: var(--white-primary);
+
+  border: 1px solid var(--gray-input-borders);
+  border-radius: 5px;
+  outline: none;
+}
+
+.formContainer form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  grid-column: span 2;
+}
+
+@media (min-width: 30em) {
+  .formContainer form > div:nth-child(1) {
+    grid-column: span 2;
+  }
+
+  .formContainer form > div:nth-child(2),
+  .formContainer form > div:nth-child(3) {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 60em) {
+  .formContainer {
+    align-self: end;
+  }
+
+  .formContainer p {
+    text-align: left;
+  }
+}
