@@ -3,8 +3,10 @@ import MenuIcon from "./MenuIcon";
 import styles from "./navbar.module.css";
 
 import BrandIcon from "../varied/Icons/BrandIcon";
+import CartIcon from "../varied/Icons/CartIcon";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
+import { useSelector } from "react-redux";
 
 const menuListVariants = {
   open: {
@@ -30,6 +32,8 @@ const buttonVariants = {
 
 const Navbar = () => {
   const [isActive, setIsActive] = React.useState(false);
+
+  const itemsAmount = useSelector((state) => state.cart.items.length);
 
   const router = useRouter();
 
@@ -67,10 +71,36 @@ const Navbar = () => {
             }}
             className={styles.navList}
           >
-            <li onClick={() => router.push("/about")}>About</li>
-            <li onClick={() => router.push("/store")}>Store</li>
-            <li onClick={() => router.push("/events")}>Events</li>
+            <motion.li
+              onClick={() => router.push("/about")}
+              whileHover={{ color: "#e0e0e0" }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+            >
+              About
+            </motion.li>
+            <motion.li
+              onClick={() => router.push("/store")}
+              whileHover={{ color: "#e0e0e0" }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+            >
+              Store
+            </motion.li>
+
+            <motion.li
+              onClick={() => router.push("/events")}
+              whileHover={{ color: "#e0e0e0" }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+            >
+              Events
+            </motion.li>
           </motion.ul>
+        </div>
+        <div
+          className={styles.cartLink}
+          onClick={() => router.push("/store/shopping-cart")}
+        >
+          <CartIcon />
+          <div className={styles.itemsAmount}>{itemsAmount}</div>
         </div>
       </div>
     </motion.nav>
