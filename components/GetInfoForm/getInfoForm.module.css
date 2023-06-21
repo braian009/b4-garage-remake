@@ -41,6 +41,7 @@
   align-self: stretch;
   padding: 0.3em 1em;
   color: var(--white-primary);
+  border: 1px solid #eb6347 !important;
   border-radius: 5px;
 }
 

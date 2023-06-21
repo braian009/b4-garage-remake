@@ -40,12 +40,32 @@ const getStaticProps = ({ params }) => {
   };
 };
 
+const itemVariants = {
+  active: {
+    color: "#eb6347",
+  },
+  inactive: {
+    color: "#242424",
+  },
+};
+
 const Store = ({ itemType, itemList }) => {
   const router = useRouter();
 
   return (
     <div className={styles.container}>
-      <div className={styles.inner}>
+      <motion.div
+        className={styles.inner}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.4,
+          duration: 0.4,
+          type: "spring",
+          stiffness: 400,
+          damping: 75,
+        }}
+      >
         <div className={styles.storeText}>
           <h1>B4&apos;s Store</h1>
         </div>
@@ -53,7 +73,7 @@ const Store = ({ itemType, itemList }) => {
           <ul>
             {productTypes.map((type) => {
               return (
-                <li
+                <motion.li
                   className={styles.navTag}
                   key={`productType-${type}`}
                   onClick={() => {
@@ -64,12 +84,22 @@ const Store = ({ itemType, itemList }) => {
                       },
                     });
                   }}
+                  variants={itemVariants}
+                  whileHover={"active"}
+                  animate={
+                    router.asPath === `/store/${getSlugFromString(type)}`
+                      ? "active"
+                      : "inactive"
+                  }
                 >
                   {type}
                   {router.asPath === `/store/${getSlugFromString(type)}` && (
-                    <motion.div layoutId="storeNavTag" className={styles.navTagLine}></motion.div>
-                  ) }
-                </li>
+                    <motion.div
+                      layoutId="storeNavTag"
+                      className={styles.navTagLine}
+                    ></motion.div>
+                  )}
+                </motion.li>
               );
             })}
           </ul>
@@ -97,7 +127,7 @@ const Store = ({ itemType, itemList }) => {
             return <ProductCard key={`productCard-${item.id}`} item={item} />;
           })}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

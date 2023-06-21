@@ -93,6 +93,7 @@
   cursor: pointer;
   color: var(--white-primary);
   box-shadow: 2px 2px 8px #000;
+  border: 1px solid var(--orange-borders) !important;
 }
 
 .checkout {

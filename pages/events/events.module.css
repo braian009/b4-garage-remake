@@ -32,8 +32,6 @@
   color: var(--black-secondary) !important;
 }
 
-
-
 .eventsForm {
   position: relative;
 
@@ -44,12 +42,11 @@
   margin: 0 auto;
 }
 
-
 .eventsText h1 {
   font-size: 4rem;
   font-style: italic;
 
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .eventsText p {

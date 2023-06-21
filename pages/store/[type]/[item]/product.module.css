@@ -106,7 +106,8 @@
 .infoFooter > .addButton,
 .infoFooter > .added {
   align-self: stretch;
-  background-color: var(--orange-primary) !important;
+  background-color: var(--orange-primary);
+  border: 1px solid var(--orange-borders);
   flex: 50%;
 }
 

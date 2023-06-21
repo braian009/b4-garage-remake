@@ -1,6 +1,7 @@
 import * as React from "react";
 import styles from "./shoppingCart.module.css";
 
+import { motion, AnimatePresence } from "framer-motion";
 import LegendText from "@/components/varied/LegendText";
 import ItemCartRow from "@/components/ItemCartRow";
 import { useSelector, useDispatch } from "react-redux";
@@ -20,7 +21,18 @@ const ShoppingCart = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.inner}>
+      <motion.div
+        className={styles.inner}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.4,
+          duration: 0.4,
+          type: "spring",
+          stiffness: 400,
+          damping: 75,
+        }}
+      >
         <h1>Your cart</h1>
 
         {cartList.length ? (
@@ -35,15 +47,15 @@ const ShoppingCart = () => {
                 </ul>
                 <LegendText text="Order summary" />
               </div>
-              <div className={styles.cartBody}>
-                <ul className={styles.cartItems}>
+              <motion.div className={styles.cartBody}>
+                <motion.ul className={styles.cartItems}>
                   {cartList.map((item) => {
                     return (
                       <ItemCartRow key={`cartItem-${item.id}`} item={item} />
                     );
                   })}
-                </ul>
-              </div>
+                </motion.ul>
+              </motion.div>
               <div className={styles.cartFooter}>
                 <div>Subtotal:</div>
                 <div>${totalPrice.toFixed(2)}</div>
@@ -60,12 +72,36 @@ const ShoppingCart = () => {
             </div>
           </>
         ) : (
-          <div className={styles.emptyCart}>
-            <LegendText text="There's no items in your cart yet"/>
-            <div onClick={() => router.back()}>Continue</div>
-          </div>
+          <motion.div
+            className={styles.emptyCart}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.4,
+              duration: 0.4,
+              type: "spring",
+              stiffness: 400,
+              damping: 75,
+            }}
+          >
+            <LegendText text="There's no items in your cart yet" />
+            <motion.div
+              onClick={() => router.back()}
+              whileHover={{
+                backgroundColor: "#1f1f1f",
+                color: "#eb6347",
+                // border: "1px solid #eb6347",
+              }}
+              transition={{
+                duration: 0.3,
+                ease: "easeOut",
+              }}
+            >
+              Continue
+            </motion.div>
+          </motion.div>
         )}
-      </div>
+      </motion.div>
     </div>
   );
 };

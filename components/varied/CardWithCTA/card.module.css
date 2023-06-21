@@ -22,15 +22,16 @@
   font-size: 0.85rem;
   line-height: 1.2;
   color: var(--white-secondary);
-  
 }
 
 .cardContainer button {
   width: 11em;
-  border-radius: 5px;
   
-  background-color: var(--orange-primary);
   padding: 0.5em 2em;
+  background-color: var(--orange-primary);
+  border-radius: 5px;
+  border: 1px solid #eb6347;
+
 }
 
 @media (min-width: 50em) {

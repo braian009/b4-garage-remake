@@ -2,6 +2,7 @@ import * as React from "react";
 import styles from "./event.module.css";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 import LegendText from "@/components/varied/LegendText";
 
 import { getStringFromSlug, getSlugFromString } from "@/utils/slugConverter";
@@ -33,7 +34,18 @@ const getStaticProps = ({ params }) => {
 const Event = ({ event }) => {
   return (
     <div className={styles.container}>
-      <div className={styles.inner}>
+      <motion.div
+        className={styles.inner}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.6,
+          duration: 0.4,
+          type: "spring",
+          stiffness: 400,
+          damping: 75,
+        }}
+      >
         <div className={styles.eventText}>
           <h1>{event.title}</h1>
           <p>{event.description}</p>
@@ -62,10 +74,22 @@ const Event = ({ event }) => {
 
               <input id="phone" type="text"></input>
             </div>
-            <button type="submit">Submit</button>
+            <motion.button
+              type="submit"
+              whileHover={{
+                backgroundColor: "#1f1f1f",
+                color: "#eb6347",
+              }}
+              transition={{
+                duration: 0.3,
+                ease: "easeOut",
+              }}
+            >
+              Submit
+            </motion.button>
           </form>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

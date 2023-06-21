@@ -38,6 +38,7 @@ const Navbar = () => {
       className={styles.container}
       initial={{ y: -100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
+      viewport={{ once: true }}
       transition={{ delay: 1, type: "spring", stiffness: 400, damping: 75 }}
     >
       <div className={styles.inner}>

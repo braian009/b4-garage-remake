@@ -2,6 +2,7 @@ import * as React from "react";
 import styles from "./storeCard.module.css";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 
 import { getSlugFromString } from "@/utils/slugConverter";
@@ -11,9 +12,11 @@ const StoreCard = ({ productType }) => {
   const imageName = productType.toLowerCase().replace(/\s+/g, "");
 
   return (
-    <div
+    <motion.div
       className={styles.container}
       onClick={() => router.push(`/store/${getSlugFromString(productType)}`)}
+      whileHover={{ scale: 1.025 }}
+      whileTap={{ scale: 1 }}
     >
       <div className={styles.storeCardImage}>
         <Image src={`/${imageName}.jpg`} fill alt={""} />
@@ -34,7 +37,7 @@ const StoreCard = ({ productType }) => {
           </svg>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

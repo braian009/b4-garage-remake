@@ -66,6 +66,7 @@
 
   background-color: var(--orange-primary);
   border-radius: 5px;
+  border: 1px solid var(--orange-borders);
   cursor: pointer;
 }
 

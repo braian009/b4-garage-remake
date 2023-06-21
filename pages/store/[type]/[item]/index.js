@@ -2,44 +2,13 @@ import * as React from "react";
 import styles from "./product.module.css";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 import LegendText from "@/components/varied/LegendText";
 
-import { getSlugFromString, getStringFromSlug } from "@/utils/slugConverter";
+import { getStringFromSlug } from "@/utils/slugConverter";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "@/redux/cartSlice";
 import { productsList } from "@/data/store";
-
-// const getStaticPaths = () => {
-//   let paths = [];
-
-//   Object.keys(productsList).forEach((product) => {
-//     productsList[product].forEach((productItem) => {
-//       paths.push({
-//         params: {
-//           type: getSlugFromString(productItem.type),
-//           item: getSlugFromString(productItem.name),
-//         },
-//       });
-//     });
-//   });
-
-//   return {
-//     paths,
-//     fallback: false,
-//   };
-// };
-
-// const getStaticProps = ({ params }) => {
-//   const { type, item } = params;
-
-//   return {
-//     props: {
-//       item: productsList[getStringFromSlug(type)].find((productItem) => {
-//         return productItem.name === getStringFromSlug(item);
-//       }),
-//     },
-//   };
-// };
 
 const getServerSideProps = ({ params }) => {
   const { type, item } = params;
@@ -66,7 +35,18 @@ const Product = ({ item }) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.inner}>
+      <motion.div
+        className={styles.inner}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.4,
+          duration: 0.4,
+          type: "spring",
+          stiffness: 400,
+          damping: 75,
+        }}
+      >
         <div className={styles.storeText}>
           <h1>B4&apos;s Store</h1>
           <LegendText text={item.type} />
@@ -86,24 +66,34 @@ const Product = ({ item }) => {
                 <div className={styles.outOfStock}>item out of stock</div>
               ) : (
                 <>
-                  <p className={styles.price}>${Number(item.price).toFixed(2)}</p>
+                  <p className={styles.price}>
+                    ${Number(item.price).toFixed(2)}
+                  </p>
 
                   {isAlreadyinCart ? (
                     <div className={styles.added}>Added to cart!</div>
                   ) : (
-                    <button
+                    <motion.button
                       className={styles.addButton}
                       onClick={() => dispatch(addToCart({ item: item }))}
+                      whileHover={{
+                        backgroundColor: "#1f1f1f",
+                        color: "#eb6347",
+                      }}
+                      transition={{
+                        duration: 0.3,
+                        ease: "easeOut",
+                      }}
                     >
                       Add to cart
-                    </button>
+                    </motion.button>
                   )}
                 </>
               )}
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
