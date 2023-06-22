@@ -23,11 +23,7 @@ const Expertise = () => {
         >
           {expertiseList.map((item) => {
             return (
-              <ExpertiseCard
-                key={`expertiseCard-${item.id}`}
-                item={item}
-                image={item.image}
-              />
+              <ExpertiseCard key={`expertiseCard-${item.id}`} item={item} />
             );
           })}
         </motion.div>

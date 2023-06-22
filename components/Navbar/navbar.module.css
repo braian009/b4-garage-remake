@@ -100,11 +100,11 @@
 }
 
 .cartLink {
-  width: 2.25em ;
-  height: 2.25em;
+  width: 2em ;
+  height: 2em;
   position: absolute;
   right: 1.5em;
-  top: 0.5em;
+  top: 0.75em;
 
   cursor: pointer;
 }
@@ -120,7 +120,7 @@
 }
 
 .cartLink .itemsAmount {
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   display: grid;
   place-items: center;
 

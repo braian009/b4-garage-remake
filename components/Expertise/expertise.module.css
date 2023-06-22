@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  background-color: var(--bg-black);
 }
 
 .inner {
@@ -7,12 +8,14 @@
   max-width: 1480px;
   margin: 0 auto;
   overflow: hidden;
+  background-color: var(--bg-white);
 }
 
 .inner .expertiseCards {
   width: 100%;
   display: grid;
   grid-template-rows: 25em 25em;
+
 
   padding: 0 0;
   gap: 2px;

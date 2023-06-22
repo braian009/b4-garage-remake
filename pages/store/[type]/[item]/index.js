@@ -2,8 +2,10 @@ import * as React from "react";
 import styles from "./product.module.css";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import LegendText from "@/components/varied/LegendText";
+import CheckIcon from "@/components/varied/Icons/CheckIcon";
+import CartIcon from "@/components/varied/Icons/CartIcon";
 
 import { getStringFromSlug } from "@/utils/slugConverter";
 import { useSelector, useDispatch } from "react-redux";
@@ -71,22 +73,32 @@ const Product = ({ item }) => {
                   </p>
 
                   {isAlreadyinCart ? (
-                    <div className={styles.added}>Added to cart!</div>
-                  ) : (
-                    <motion.button
-                      className={styles.addButton}
-                      onClick={() => dispatch(addToCart({ item: item }))}
-                      whileHover={{
-                        backgroundColor: "#1f1f1f",
-                        color: "#eb6347",
-                      }}
-                      transition={{
-                        duration: 0.3,
-                        ease: "easeOut",
-                      }}
+                    <motion.div
+                      className={styles.added}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
                     >
-                      Add to cart
-                    </motion.button>
+                      <CartIcon />
+                      <CheckIcon />
+                    </motion.div>
+                  ) : (
+                    <AnimatePresence>
+                      <motion.button
+                        className={styles.addButton}
+                        onClick={() => dispatch(addToCart({ item: item }))}
+                        whileHover={{
+                          backgroundColor: "#1f1f1f",
+                          color: "#eb6347",
+                        }}
+                        transition={{
+                          duration: 0.3,
+                          ease: "easeOut",
+                        }}
+                        exit={{ opacty: 0 }}
+                      >
+                        Add to cart
+                      </motion.button>
+                    </AnimatePresence>
                   )}
                 </>
               )}

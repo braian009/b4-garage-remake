@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 import Image from "next/image";
 
-const ExpertiseCard = ({ item, image }) => {
+const ExpertiseCard = ({ item }) => {
   return (
     <div className={styles.expertiseCard}>
       <motion.div className={styles.cardOverlay}
@@ -20,7 +20,7 @@ const ExpertiseCard = ({ item, image }) => {
         }}
       ></motion.div>
       <div className={styles.cardImage}>
-        <Image src={image} fill alt={""} />
+        <Image src={item.image} fill alt={""} />
       </div>
       <motion.div
         className={styles.cardText}

@@ -92,7 +92,6 @@
   border-radius: 5px;
   padding: 0.5em 1em !important;
   cursor: default;
-
 }
 
 .infoFooter > .price {
@@ -105,9 +104,30 @@
 .infoFooter > .addButton,
 .infoFooter > .added {
   align-self: stretch;
+  position: relative;
   background-color: var(--orange-primary);
   border: 1px solid var(--orange-borders) !important;
   flex: 50%;
+}
+
+.infoFooter .added svg:first-child {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-100%);
+  width: 1.7em;
+  height: 1.7em;
+}
+
+.infoFooter .added svg:first-child path {
+  stroke: var(--white-secondary) !important;
+}
+
+.infoFooter .added svg:last-child {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(0%);
+  width: 1.6em;
+  height: 1.6em;
 }
 
 .infoFooter > .addButton {
