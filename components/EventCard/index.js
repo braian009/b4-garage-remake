@@ -11,7 +11,7 @@ const EventCard = ({ title, date, image }) => {
     <motion.div
       className={styles.cardContainer}
       onClick={() => router.push(`/events/${getSlugFromString(title)}`)}
-      whileHover={{ scale: 1.025 }}
+      whileHover={{ scale: 1.015 }}
       whileTap={{ scale: 1 }}
     >
       <div className={styles.cardDate}>

@@ -15,7 +15,7 @@ const StoreCard = ({ productType }) => {
     <motion.div
       className={styles.container}
       onClick={() => router.push(`/store/${getSlugFromString(productType)}`)}
-      whileHover={{ scale: 1.025 }}
+      whileHover={{ scale: 1.015 }}
       whileTap={{ scale: 1 }}
     >
       <div className={styles.storeCardImage}>

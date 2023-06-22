@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Slogan from "@/components/varied/LegendText";
 import InsightCard from "@/components/InsightCard";
+import GoBackButton from "@/components/varied/GoBackButton";
 
 import { insightList } from "@/data/insights";
 
@@ -24,6 +25,7 @@ const About = () => {
           damping: 75,
         }}
       >
+        <GoBackButton/>
         <div className={styles.aboutText}>
           <h1>About us</h1>
           <p>

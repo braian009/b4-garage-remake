@@ -1,6 +1,8 @@
 import * as React from "react";
 import styles from "./checkout.module.css";
 import { motion } from "framer-motion";
+import GoBackButton from "@/components/varied/GoBackButton";
+
 import { useSelector, useDispatch } from "react-redux";
 import { purchaseItems } from "@/redux/purchaseAction";
 import { useRouter } from "next/router";
@@ -33,6 +35,7 @@ const Checkout = () => {
             damping: 75,
           }}
         >
+          <GoBackButton/>
           <h1>Checkout</h1>
           <div className={styles.checkoutCard}>
             <h4>

@@ -1,8 +1,9 @@
 import * as React from "react";
 import styles from "./store.module.css";
 
-import StoreCard from "@/components/StoreCard";
 import { motion } from "framer-motion";
+import StoreCard from "@/components/StoreCard";
+import GoBackButton from "@/components/varied/GoBackButton";
 
 import { productTypes } from "@/data/store";
 
@@ -21,6 +22,7 @@ const Store = () => {
           damping: 75,
         }}
       >
+        <GoBackButton/>
         <h1>B4&apos;s Store</h1>
         <div className={styles.storeCards}>
           {productTypes.map((type) => {

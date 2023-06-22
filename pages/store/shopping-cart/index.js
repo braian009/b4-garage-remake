@@ -4,6 +4,8 @@ import styles from "./shoppingCart.module.css";
 import { motion } from "framer-motion";
 import LegendText from "@/components/varied/LegendText";
 import ItemCartRow from "@/components/ItemCartRow";
+import GoBackButton from "@/components/varied/GoBackButton";
+
 import { useSelector, useDispatch } from "react-redux";
 import { useRouter } from "next/router";
 
@@ -31,8 +33,8 @@ const ShoppingCart = () => {
           damping: 75,
         }}
       >
+        <GoBackButton />
         <h1>Your cart</h1>
-
         {cartList.length ? (
           <>
             <div className={styles.cart}>

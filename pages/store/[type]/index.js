@@ -11,6 +11,7 @@ import { getSlugFromString, getStringFromSlug } from "@/utils/slugConverter";
 import { productTypes } from "@/data/store";
 import { productsList } from "@/data/store";
 import { motion } from "framer-motion";
+import GoBackButton from "@/components/varied/GoBackButton";
 
 const getStaticPaths = () => {
   let paths = [];
@@ -66,6 +67,7 @@ const Store = ({ itemType, itemList }) => {
           damping: 75,
         }}
       >
+        <GoBackButton/>
         <div className={styles.storeText}>
           <h1>B4&apos;s Store</h1>
         </div>

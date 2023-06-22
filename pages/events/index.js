@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import GetInfoForm from "@/components/GetInfoForm";
 import EventCard from "@/components/EventCard";
 import Slogan from "@/components/varied/LegendText";
+import GoBackButton from "@/components/varied/GoBackButton";
 
 import { eventList } from "@/data/events";
 
@@ -23,6 +24,7 @@ const Events = ({}) => {
           damping: 75,
         }}
       >
+        <GoBackButton/>
         <div className={styles.eventsText}>
           <h1>Events</h1>
           <p>

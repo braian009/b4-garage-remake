@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import EventForm from "@/components/EventForn";
 import LegendText from "@/components/varied/LegendText";
+import GoBackButton from "@/components/varied/GoBackButton";
 
 import { getStringFromSlug, getSlugFromString } from "@/utils/slugConverter";
 import { eventList } from "@/data/events";
@@ -47,6 +48,7 @@ const Event = ({ event }) => {
           damping: 75,
         }}
       >
+        <GoBackButton/>
         <div className={styles.eventText}>
           <h1>{event.title}</h1>
           <p>{event.description}</p>
