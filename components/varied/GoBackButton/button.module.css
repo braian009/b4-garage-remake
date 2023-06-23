@@ -1,9 +1,9 @@
 .container {
   position: absolute;
-  top: 1.125em;
+  top: 1.25em;
   left: 1.25em;
-  width: 4em;
-  height: 1.75em;
+  width: 3em;
+  height: 1.5em;
   border: 2px solid hsla(0, 0%, 45%, 0.4);
   border-radius: 5px;
   cursor: pointer;

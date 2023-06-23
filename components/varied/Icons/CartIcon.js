@@ -3,7 +3,7 @@ import * as React from "react";
 const CartIcon = () => {
   return (
     <svg viewBox="0 0 24 24" fill="none">
-      <g stroke-width="0"></g>
+      <g strokeWidth="0"></g>
       <g strokeLinecap="round" strokeLinejoin="round"></g>
       <g>
         <path

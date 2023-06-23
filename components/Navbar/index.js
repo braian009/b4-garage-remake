@@ -4,7 +4,7 @@ import styles from "./navbar.module.css";
 
 import BrandIcon from "../varied/Icons/BrandIcon";
 import CartIcon from "../varied/Icons/CartIcon";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 
@@ -43,7 +43,7 @@ const Navbar = () => {
       initial={{ y: -100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ delay: 1, type: "spring", stiffness: 400, damping: 75 }}
+      transition={{ delay: 0.8, duration: 0.4, type: "spring", stiffness: 400, damping: 75 }}
     >
       <div className={styles.inner}>
         <div className={styles.brandLogo} onClick={() => router.push("/")}>

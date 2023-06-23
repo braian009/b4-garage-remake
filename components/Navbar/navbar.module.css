@@ -12,8 +12,8 @@
   color: var(--white-secondary);
 
   background-color: var(--bg-black);
+  box-shadow: 1px 1px 6px #0c0c0c;
 
-  /* border-bottom: 2px solid rgba(255, 255, 255, 0.125); */
 }
 
 .inner {
