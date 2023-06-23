@@ -29,8 +29,10 @@ const Hero = () => {
         }}
       >
         <div className={styles.heroText}>
+          
+
           <h1>
-            <span>Unleash</span> it
+            Unleash it
           </h1>
 
           <p>Culpa sint dolor enim non sit minim veniam.</p>
@@ -42,7 +44,7 @@ const Hero = () => {
             }}
             transition={{
               duration: 0.3,
-              ease: 'easeOut'
+              ease: "easeOut",
             }}
           >
             Order Now

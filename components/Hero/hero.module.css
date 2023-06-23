@@ -44,6 +44,7 @@
 
 .heroText {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
 
@@ -53,14 +54,18 @@
 
   max-width: 25em;
   align-self: start;
+  overflow: visible !important;
 }
 
 .heroText h1 {
   font-size: 4.5rem;
   line-height: 0.75;
-  color: var(--white-primary);
   font-weight: lighter;
+  color: var(--white-primary);
+  font-style: italic;
+  text-transform: lowercase;
 }
+
 
 .heroText p {
   margin-top: 0.5em !important;
@@ -82,7 +87,7 @@
 .socials {
   justify-self: center;
   align-self: end;
-
+  position: relative;
 
   grid-column: span 4;
   grid-row: 3 / 4;
@@ -117,6 +122,7 @@
   grid-column: span 4;
   grid-row: 2 / 3;
   align-self: center;
+  position: relative;
 }
 
 .slogan > div > h4 {
@@ -141,6 +147,7 @@
   max-width: 14em;
   justify-self: end;
   align-self: start;
+  position: relative;
 }
 
 .lastJob h4 {
@@ -165,7 +172,6 @@
   background-color: var(--orange-borders) !important;
 }
 
-
 .lastJob > div > h4 > div:nth-child(1) {
   display: none !important;
 }
@@ -185,6 +191,8 @@
   }
   .inner {
     padding-top: 3em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
   }
 
   .socials {
@@ -220,6 +228,13 @@
 
   .socials {
     grid-column: 3 / 5;
+  }
+}
+
+@media (min-width: 1080px) {
+  .inner {
+    padding-left: 1.25em;
+    padding-right: 1.25em;
   }
 }
 

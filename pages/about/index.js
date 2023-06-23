@@ -4,11 +4,11 @@ import styles from "./about.module.css";
 import Image from "next/image";
 
 import { motion } from "framer-motion";
-import Slogan from "@/components/varied/LegendText";
 import InsightCard from "@/components/InsightCard";
 import GoBackButton from "@/components/varied/GoBackButton";
 
 import { insightList } from "@/data/insights";
+import LegendText from "@/components/varied/LegendText";
 
 const About = () => {
   return (
@@ -25,7 +25,7 @@ const About = () => {
           damping: 75,
         }}
       >
-        <GoBackButton/>
+        <GoBackButton />
         <div className={styles.aboutText}>
           <h1>About us</h1>
           <p>
@@ -38,20 +38,20 @@ const About = () => {
         <div className={styles.aboutImage}>
           <Image src="/aboutimage.jpg" fill alt={""} />
         </div>
+
+        <div className={styles.aboutValues}>
+          <h2> some title</h2>
+
+          <p>
+            Eiusmod id do incididunt fugiat culpa enim et consequat nulla id
+            Lorem. Aliquip culpa elit non et ut occaecat non et reprehenderit
+            exercitation ea excepteur. Commodo pariatur aliqua quis elit nostrud
+            veniam dolore non ut mollit aliqua adipisicing.
+          </p>
+        </div>
         <div className={styles.insightCards}>
-          <motion.div
-            initial={{ opacity: 0, scale: 1.5 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{
-              delay: 0.4,
-              duration: 0.4,
-              type: "spring",
-              stiffness: 400,
-              damping: 75,
-            }}
-          >
-            <Slogan text="Some insights:" />
-          </motion.div>
+          <LegendText text="Some insights:" />
+
           {insightList.map((item) => {
             return (
               <InsightCard
