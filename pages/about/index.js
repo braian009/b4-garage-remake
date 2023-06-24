@@ -29,10 +29,10 @@ const About = () => {
         <div className={styles.aboutText}>
           <h1>About us</h1>
           <p>
-            Minim aliquip sint qui laboris quis aliquip pariatur excepteur.
-            Eiusmod dolore exercitation incididunt Lorem cupidatat cupidatat.
-            Culpa adipisicing nostrud incididunt dolor. Enim in id sunt
-            exercitation.
+            Our garage was founded with the mission of offering top-notch car
+            modification and repair services. The founder, a true car
+            enthusiast, wanted to create a space where drivers could bring their
+            vehicles to receive the best care possible.
           </p>
         </div>
         <div className={styles.aboutImage}>
@@ -61,8 +61,9 @@ const About = () => {
               </svg>
             </div>
             <p>
-              Eiusmod id do incididunt fugiat culpa enim et consequat nulla id
-              Lorem. Aliquip culpa elit non et ut occaecat non et reprehenderit.
+              We prioritize your safety and bring years of expertise to every
+              project. Our skilled team ensures that your vehicle receives the
+              highest level of care and precision.
             </p>
           </div>
           <div className={styles.valuesCard}>
@@ -76,8 +77,9 @@ const About = () => {
               </svg>
             </div>
             <p>
-              Eiusmod id do incididunt fugiat culpa enim et consequat nulla id
-              Lorem. Aliquip culpa elit non et ut occaecat non et reprehenderit.
+              We believe in the power of details. From the smallest
+              customizations to grand transformations, we meticulously craft
+              your vision into reality, exceeding expectations every time.
             </p>
           </div>
           <div className={styles.valuesCard}>
@@ -111,8 +113,9 @@ const About = () => {
               </svg>
             </div>
             <p>
-              Eiusmod id do incididunt fugiat culpa enim et consequat nulla id
-              Lorem. Aliquip culpa elit non et ut occaecat non et reprehenderit.
+              We take pride in our strong bond with the community. Our garage is
+              trusted for its exceptional service and unwavering dedication to
+              customer satisfaction.
             </p>
           </div>
         </div>

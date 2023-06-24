@@ -1,14 +1,14 @@
 export const expertiseList = [
   {
     id: 0,
-    title: "some title of some kind",
-    text: "Nisi qui consectetur minim enim sint nisi sunt ex eiusmod. Cupidatat ex proident mollit cillum duis aliquip sit minimconsequat id sint.",
+    title: "Urban customizations",
+    text: "Unlock the true potential of your city cart with our expertly crafted body kits and customized solutions. Stand out from the crowd with style and performance.",
     image: "/expertise0.jpg",
   },
   {
     id: 1,
-    title: "some title of some kind",
-    text: "Nisi qui consectetur minim enim sint nisi sunt ex eiusmod. Cupidatat ex proident mollit cillum duis aliquip sit minimconsequat id sint.",
+    title: "Offroad solutions",
+    text: "Embrace the rugged terrain with our offroad performance solutions. Enhance your vehicle with upgraded lighting, durable protection, and more for an adventurous journey.",
     image: "/expertise1.jpg",
   },
 ];

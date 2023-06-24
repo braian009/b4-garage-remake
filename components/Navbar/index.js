@@ -4,7 +4,7 @@ import styles from "./navbar.module.css";
 
 import BrandIcon from "../varied/Icons/BrandIcon";
 import CartIcon from "../varied/Icons/CartIcon";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 
@@ -12,7 +12,7 @@ const menuListVariants = {
   open: {
     opacity: 1,
     clipPath: "inset(0% 0% 0% 0%)",
-    border: "1px solid #e84b2c",
+    border: "1px solid #eb6347",
   },
   closed: {
     opacity: 1,
@@ -23,7 +23,7 @@ const menuListVariants = {
 
 const buttonVariants = {
   active: {
-    backgroundColor: "#e84b2c",
+    backgroundColor: "#eb6347",
   },
   notActive: {
     backgroundColor: "#727272",
@@ -32,8 +32,19 @@ const buttonVariants = {
 
 const Navbar = () => {
   const [isActive, setIsActive] = React.useState(false);
-
   const itemsAmount = useSelector((state) => state.cart.items.length);
+  
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setIsActive(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const router = useRouter();
 
@@ -43,7 +54,13 @@ const Navbar = () => {
       initial={{ y: -100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ delay: 0.8, duration: 0.4, type: "spring", stiffness: 400, damping: 75 }}
+      transition={{
+        delay: 0.8,
+        duration: 0.4,
+        type: "spring",
+        stiffness: 400,
+        damping: 75,
+      }}
     >
       <div className={styles.inner}>
         <div className={styles.brandLogo} onClick={() => router.push("/")}>
@@ -72,14 +89,20 @@ const Navbar = () => {
             className={styles.navList}
           >
             <motion.li
-              onClick={() => router.push("/about")}
+              onClick={() => {
+                router.push("/about");
+                setIsActive(false);
+              }}
               whileHover={{ color: "#e0e0e0" }}
               transition={{ duration: 0.4, ease: "easeOut" }}
             >
               About
             </motion.li>
             <motion.li
-              onClick={() => router.push("/store")}
+              onClick={() => {
+                router.push("/store");
+                setIsActive(false);
+              }}
               whileHover={{ color: "#e0e0e0" }}
               transition={{ duration: 0.4, ease: "easeOut" }}
             >
@@ -87,7 +110,10 @@ const Navbar = () => {
             </motion.li>
 
             <motion.li
-              onClick={() => router.push("/events")}
+              onClick={() => {
+                router.push("/events");
+                setIsActive(false);
+              }}
               whileHover={{ color: "#e0e0e0" }}
               transition={{ duration: 0.4, ease: "easeOut" }}
             >

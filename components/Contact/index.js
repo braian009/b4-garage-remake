@@ -35,9 +35,14 @@ const Contact = () => {
         }}
       >
         <div className={styles.newsletter}>
-          <div>Suscribe to our newsletter:</div>
+          <div>Subscribe to our newsletter:</div>
           <form>
-            <input id="email" value={email} onChange={handleInputChange} type="text"></input>
+            <input
+              id="email"
+              value={email}
+              onChange={handleInputChange}
+              type="text"
+            ></input>
             <motion.button
               onClick={handleSubmit}
               whileHover={{
@@ -49,7 +54,7 @@ const Contact = () => {
                 ease: "easeOut",
               }}
             >
-              Suscribe
+              Submit
             </motion.button>
           </form>
         </div>

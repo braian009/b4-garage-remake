@@ -38,6 +38,10 @@ body {
   overflow-x: hidden;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 p {
   font-size: 0.85rem;
   line-height: 0.97;

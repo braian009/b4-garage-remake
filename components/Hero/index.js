@@ -10,7 +10,10 @@ import InstagramIcon from "../varied/Icons/InstagramIcon";
 import Slogan from "../varied/LegendText";
 import LegendText from "../varied/LegendText";
 
+import { useRouter } from "next/router";
+
 const Hero = () => {
+  const router = useRouter();
   return (
     <div className={styles.container}>
       <Image src={"/toyotasupra.jpg"} fill alt={""}></Image>
@@ -29,13 +32,9 @@ const Hero = () => {
         }}
       >
         <div className={styles.heroText}>
-          
+          <h1>Unleash it</h1>
 
-          <h1>
-            Unleash it
-          </h1>
-
-          <p>Culpa sint dolor enim non sit minim veniam.</p>
+          <p>with unparalleled quality and reliability.</p>
           <motion.button
             className={styles.ctaButton}
             whileHover={{
@@ -46,8 +45,9 @@ const Hero = () => {
               duration: 0.3,
               ease: "easeOut",
             }}
+            onClick={() => router.push("/store/wheels")}
           >
-            Order Now
+            Shop now
           </motion.button>
         </div>
         <div className={styles.socials}>
@@ -61,13 +61,13 @@ const Hero = () => {
           </ul>
         </div>
         <div className={styles.slogan}>
-          <Slogan text="architects of style and design" />
+          <Slogan text="your vision, our expertise." />
         </div>
         <div className={styles.lastJob}>
           <LegendText text="Supra" />
           <p>
-            One of our <a> latest jobs </a> Magna non deserunt voluptate
-            consequat deserunt nostrud excepteur mollit.
+            One of our <a> latest jobs </a> pushing boundaries with upgraded
+            power, speed, and agility.
           </p>
         </div>
       </motion.div>

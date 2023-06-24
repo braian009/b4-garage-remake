@@ -24,14 +24,15 @@ const Events = ({}) => {
           damping: 75,
         }}
       >
-        <GoBackButton/>
+        <GoBackButton />
         <div className={styles.eventsText}>
           <h1>Events</h1>
           <p>
-            Ipsum eiusmod quis enim duis minim excepteur ea pariatur incididunt
-            Lorem. Sunt culpa minim adipisicing excepteur do id id in minim quis
-            incididunt laboris incididunt. Consequat non magna quis quis sunt
-            tempor in.
+            Welcome to our Events page! Explore our exciting lineup of
+            automotive gatherings and competitions. Join fellow
+            enthusiasts and immerse yourself in the world of cars, speed, and
+            adrenaline. Stay tuned for upcoming events and mark your calendars
+            for an unforgettable experience.
           </p>
         </div>
         <div className={styles.eventsCards}>

@@ -61,7 +61,7 @@ const ExpertiseCard = ({ item }) => {
             ease: "easeOut",
           }}
         >
-          call to action
+          Book your service
         </motion.button>
       </motion.div>
     </div>

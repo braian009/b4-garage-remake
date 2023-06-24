@@ -22,17 +22,13 @@ const Services = () => {
           <div className={styles.serviceCard}>
             <h2>Essentials</h2>
             <p>
-              Nostrud ea adipisicing mollit amet consequat quis aute cupidatat
-              duis nisi ipsum non. Reprehenderit exercitation est aliquip
-              deserunt veniam ex qui elit et amet aliqua nostrud excepteur.
+            At our garage, we take pride in providing comprehensive automotive solutions. From routine maintenance and timely repairs to meticulous inspections, we ensure your vehicle is in optimal condition.
             </p>
           </div>
           <div className={styles.serviceCard}>
             <h2>Speedscape</h2>
             <p>
-              Nostrud ea adipisicing mollit amet consequat quis aute cupidatat
-              duis nisi ipsum non. Reprehenderit exercitation est aliquip
-              deserunt veniam ex qui elit et amet aliqua nostrud excepteur.
+            We specialize in creating unparalleled automotive experiences through our Speedscape services, from precision tuning and performance enhancements to aerodynamic refinements.
             </p>
           </div>
         </motion.div>
