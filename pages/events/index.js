@@ -1,7 +1,9 @@
 import * as React from "react";
 import styles from "./events.module.css";
+import { bebasNeue } from "@/styles/fonts";
 
 import { motion } from "framer-motion";
+
 import GetInfoForm from "@/components/GetInfoForm";
 import EventCard from "@/components/EventCard";
 import Slogan from "@/components/varied/LegendText";
@@ -16,6 +18,7 @@ const Events = ({}) => {
         className={styles.inner}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{
           delay: 0.6,
           duration: 0.4,
@@ -26,13 +29,13 @@ const Events = ({}) => {
       >
         <GoBackButton />
         <div className={styles.eventsText}>
-          <h1>Events</h1>
+          <h1 className={bebasNeue.className}>Events</h1>
           <p>
             Welcome to our Events page! Explore our exciting lineup of
-            automotive gatherings and competitions. Join fellow
-            enthusiasts and immerse yourself in the world of cars, speed, and
-            adrenaline. Stay tuned for upcoming events and mark your calendars
-            for an unforgettable experience.
+            automotive gatherings and competitions. Join fellow enthusiasts and
+            immerse yourself in the world of cars, speed, and adrenaline. Stay
+            tuned for upcoming events and mark your calendars for an
+            unforgettable experience.
           </p>
         </div>
         <div className={styles.eventsCards}>

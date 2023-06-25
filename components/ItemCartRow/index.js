@@ -1,9 +1,11 @@
 import * as React from "react";
 import styles from "./itemCartRow.module.css";
+
+import Image from "next/image";
+
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromCart, setItemQuantity } from "@/redux/cartSlice";
 
-import Image from "next/image";
 
 const Options = ({ itemId, optionsNumber }) => {
   let values = [];

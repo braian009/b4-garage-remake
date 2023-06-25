@@ -1,8 +1,10 @@
 import * as React from "react";
 import styles from "./event.module.css";
+import { bebasNeue } from "@/styles/fonts";
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+
 import EventForm from "@/components/EventForn";
 import LegendText from "@/components/varied/LegendText";
 import GoBackButton from "@/components/varied/GoBackButton";
@@ -40,6 +42,7 @@ const Event = ({ event }) => {
         className={styles.inner}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{
           delay: 0.6,
           duration: 0.4,
@@ -48,9 +51,9 @@ const Event = ({ event }) => {
           damping: 75,
         }}
       >
-        <GoBackButton/>
+        <GoBackButton />
         <div className={styles.eventText}>
-          <h1>{event.title}</h1>
+          <h1 className={bebasNeue.className}>{event.title}</h1>
           <p>{event.description}</p>
           <div className={styles.date}>
             <LegendText text={`${event.date.month} ${event.date.day}`} />
@@ -60,7 +63,7 @@ const Event = ({ event }) => {
         <div className={styles.eventImage}>
           <Image src={event.image} fill alt={""} />
         </div>
-        <EventForm/>
+        <EventForm />
       </motion.div>
     </div>
   );

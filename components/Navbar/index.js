@@ -1,10 +1,12 @@
 import * as React from "react";
-import MenuIcon from "./MenuIcon";
+import MenuIcon from "../varied/Icons/MenuIcon";
 import styles from "./navbar.module.css";
+
+import { motion } from "framer-motion";
 
 import BrandIcon from "../varied/Icons/BrandIcon";
 import CartIcon from "../varied/Icons/CartIcon";
-import { motion } from "framer-motion";
+
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 
@@ -33,7 +35,7 @@ const buttonVariants = {
 const Navbar = () => {
   const [isActive, setIsActive] = React.useState(false);
   const itemsAmount = useSelector((state) => state.cart.items.length);
-  
+
   React.useEffect(() => {
     const handleScroll = () => {
       setIsActive(false);
@@ -126,7 +128,9 @@ const Navbar = () => {
           onClick={() => router.push("/store/shopping-cart")}
         >
           <CartIcon />
-          <div className={styles.itemsAmount}>{itemsAmount}</div>
+          {itemsAmount > 0 && (
+            <div className={styles.itemsAmount}>{itemsAmount}</div>
+          )}
         </div>
       </div>
     </motion.nav>

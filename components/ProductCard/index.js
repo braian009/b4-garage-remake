@@ -10,16 +10,25 @@ import { getSlugFromString } from "@/utils/slugConverter";
 const ProductCard = ({ item }) => {
   const router = useRouter();
 
+  const handleClick = () => {
+    router.push({
+      pathname: "/store/[type]/[item]",
+      query: {
+        type: getSlugFromString(item.type),
+        item: getSlugFromString(item.name),
+      },
+    });
+  };
+
   return (
     <motion.div
       key={`product-${item.id}`}
       className={styles.container}
       whileHover={{
         scale: 1.025,
-        boxShadow: '2px 2px 6px #eb6347'
       }}
     >
-      <div className={styles.cardImage}>
+      <div className={styles.cardImage} onClick={handleClick}>
         <Image src={item.image} fill alt={""} />
       </div>
       <div className={styles.cardText}>
@@ -27,15 +36,7 @@ const ProductCard = ({ item }) => {
         <div>{item.features}</div>
         <p>${Number(item.price).toFixed(2)}</p>
         <motion.button
-          onClick={() => {
-            router.push({
-              pathname: "/store/[type]/[item]",
-              query: {
-                type: getSlugFromString(item.type),
-                item: getSlugFromString(item.name),
-              },
-            });
-          }}
+          onClick={handleClick}
           whileHover={{
             backgroundColor: "#1f1f1f",
             color: "#eb6347",

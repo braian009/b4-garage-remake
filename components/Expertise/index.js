@@ -1,9 +1,10 @@
 import * as React from "react";
 import styles from "./expertise.module.css";
 
-import { expertiseList } from "@/data/expertise";
-import ExpertiseCard from "../ExpertiseCard";
 import { motion } from "framer-motion";
+
+import ExpertiseCard from "../ExpertiseCard";
+import { expertiseList } from "@/data/expertise";
 
 const Expertise = () => {
   return (
@@ -13,6 +14,7 @@ const Expertise = () => {
           className={styles.expertiseCards}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           transition={{
             delay: 0.4,
             duration: 0.2,

@@ -1,5 +1,6 @@
 import * as React from "react";
 import styles from "./store.module.css";
+
 import Image from "next/image";
 
 const Store = () => {

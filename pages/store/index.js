@@ -1,7 +1,9 @@
 import * as React from "react";
 import styles from "./store.module.css";
+import { bebasNeue } from "@/styles/fonts";
 
 import { motion } from "framer-motion";
+
 import StoreCard from "@/components/StoreCard";
 import GoBackButton from "@/components/varied/GoBackButton";
 
@@ -14,6 +16,7 @@ const Store = () => {
         className={styles.inner}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{
           delay: 0.6,
           duration: 0.4,
@@ -22,8 +25,8 @@ const Store = () => {
           damping: 75,
         }}
       >
-        <GoBackButton/>
-        <h1>B4&apos;s Store</h1>
+        <GoBackButton />
+        <h1 className={bebasNeue.className}>B4&apos;s Store</h1>
         <div className={styles.storeCards}>
           {productTypes.map((type) => {
             return <StoreCard key={`storeCard-${type}`} productType={type} />;

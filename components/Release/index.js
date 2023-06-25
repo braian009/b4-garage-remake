@@ -1,9 +1,11 @@
 import * as React from "react";
-import CardWithCTA from "../varied/CardWithCTA";
-import Image from "next/image";
-import ProExhaustLogo from "./ProExhaustLogo";
 import styles from "./release.module.css";
+
+import Image from "next/image";
 import { motion } from "framer-motion";
+
+import CardWithCTA from "../varied/CardWithCTA";
+import ProExhaustLogo from "../varied/Icons/ProExhaustIcon";
 
 const Release = () => {
   return (
@@ -13,6 +15,7 @@ const Release = () => {
           <motion.div
             initial={{ opacity: 1, y: 100, scale: 2 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true }}
             transition={{
               delay: 1.2,
               duration: 0.4,
@@ -26,6 +29,7 @@ const Release = () => {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             transition={{
               delay: 1.6,
               duration: 0.4,

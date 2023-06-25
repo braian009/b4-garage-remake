@@ -2,6 +2,7 @@ import * as React from "react";
 import styles from "./contact.module.css";
 
 import { motion } from "framer-motion";
+
 import InstagramIcon from "../varied/Icons/InstagramIcon";
 import FacebookIcon from "../varied/Icons/FacebookIcon";
 import TwitterIcon from "../varied/Icons/TwitterIcon";
@@ -26,6 +27,7 @@ const Contact = () => {
         className={styles.inner}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{
           delay: 0.4,
           duration: 0.4,

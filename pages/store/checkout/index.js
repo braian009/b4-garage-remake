@@ -1,11 +1,14 @@
 import * as React from "react";
 import styles from "./checkout.module.css";
+import { bebasNeue } from "@/styles/fonts";
+
 import { motion } from "framer-motion";
+
 import GoBackButton from "@/components/varied/GoBackButton";
 
+import { useRouter } from "next/router";
 import { useSelector, useDispatch } from "react-redux";
 import { purchaseItems } from "@/redux/purchaseAction";
-import { useRouter } from "next/router";
 
 const Checkout = () => {
   const router = useRouter();
@@ -27,6 +30,7 @@ const Checkout = () => {
         <motion.div
           className={styles.inner}
           whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{
             delay: 0.4,
             duration: 0.4,
@@ -35,8 +39,8 @@ const Checkout = () => {
             damping: 75,
           }}
         >
-          <GoBackButton/>
-          <h1>Checkout</h1>
+          <GoBackButton />
+          <h1 className={bebasNeue.className}>Checkout</h1>
           <div className={styles.checkoutCard}>
             <h4>
               The developer of this site was a bit lazy at this point, and

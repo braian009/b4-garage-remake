@@ -1,7 +1,9 @@
 import * as React from "react";
 import styles from "./services.module.css";
-import LegendText from "../varied/LegendText";
+
 import { motion } from "framer-motion";
+
+import LegendText from "../varied/LegendText";
 
 const Services = () => {
   return (
@@ -11,6 +13,7 @@ const Services = () => {
           className={styles.servicesCards}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{
             delay: 0.4,
             duration: 0.4,
@@ -22,13 +25,18 @@ const Services = () => {
           <div className={styles.serviceCard}>
             <h2>Essentials</h2>
             <p>
-            At our garage, we take pride in providing comprehensive automotive solutions. From routine maintenance and timely repairs to meticulous inspections, we ensure your vehicle is in optimal condition.
+              At our garage, we take pride in providing comprehensive automotive
+              solutions. From routine maintenance and timely repairs to
+              meticulous inspections, we ensure your vehicle is in optimal
+              condition.
             </p>
           </div>
           <div className={styles.serviceCard}>
             <h2>Speedscape</h2>
             <p>
-            We specialize in creating unparalleled automotive experiences through our Speedscape services, from precision tuning and performance enhancements to aerodynamic refinements.
+              We specialize in creating unparalleled automotive experiences
+              through our Speedscape services, from precision tuning and
+              performance enhancements to aerodynamic refinements.
             </p>
           </div>
         </motion.div>
@@ -36,6 +44,7 @@ const Services = () => {
           className={styles.sponsors}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{
             delay: 0.8,
             duration: 0.4,

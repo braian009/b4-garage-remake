@@ -1,5 +1,5 @@
 import * as React from "react";
-import styles from "./insight.module.css";
+import styles from "./insightCard.module.css";
 
 const InsightCard = ({ header, body }) => {
   return (

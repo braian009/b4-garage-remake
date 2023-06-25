@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import { roboto } from "@/styles/fonts";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -14,15 +15,24 @@ export default function App({ Component, pageProps }) {
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-        <div style={{ minHeight: "100vh", width: "100%", position: 'relative', paddingBottom: "5em", backgroundColor: "#d4d4d4" }}>
+        <main
+          style={{
+            minHeight: "100vh",
+            width: "100%",
+            position: "relative",
+            paddingBottom: "5em",
+            backgroundColor: "#d4d4d4",
+          }}
+          className={roboto.className}
+        >
           <>
             <Navbar />
-            <main style={{ minHeight: "100%" }}>
+            <div style={{ minHeight: "100%" }}>
               <Component {...pageProps} />
-            </main>
+            </div>
             <Footer />
           </>
-        </div>
+        </main>
       </PersistGate>
     </Provider>
   );

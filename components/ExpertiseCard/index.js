@@ -2,15 +2,16 @@ import * as React from "react";
 import styles from "./expertiseCard.module.css";
 
 import { motion } from "framer-motion";
-
 import Image from "next/image";
 
 const ExpertiseCard = ({ item }) => {
   return (
     <div className={styles.expertiseCard}>
-      <motion.div className={styles.cardOverlay}
+      <motion.div
+        className={styles.cardOverlay}
         initial={{ opacity: 0.4 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{
           delay: 1.4,
           duration: 0.4,
@@ -26,6 +27,7 @@ const ExpertiseCard = ({ item }) => {
         className={styles.cardText}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{
           delay: 1.8,
           duration: 0.4,

@@ -1,15 +1,17 @@
 import * as React from "react";
 import styles from "./product.module.css";
+import { bebasNeue } from "@/styles/fonts";
 
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
+
 import LegendText from "@/components/varied/LegendText";
 import CheckIcon from "@/components/varied/Icons/CheckIcon";
 import CartIcon from "@/components/varied/Icons/CartIcon";
 import GoBackButton from "@/components/varied/GoBackButton";
 
-import { getStringFromSlug } from "@/utils/slugConverter";
 import { useSelector, useDispatch } from "react-redux";
+import { getStringFromSlug } from "@/utils/slugConverter";
 import { addToCart } from "@/redux/cartSlice";
 import { productsList } from "@/data/store";
 
@@ -52,7 +54,7 @@ const Product = ({ item }) => {
       >
         <GoBackButton/>
         <div className={styles.storeText}>
-          <h1>B4&apos;s Store</h1>
+          <h1 className={bebasNeue.className}>B4&apos;s Store</h1>
           <LegendText text={item.type} />
         </div>
         <div className={styles.itemDetailsCard}>

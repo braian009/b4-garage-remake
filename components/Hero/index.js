@@ -1,8 +1,8 @@
 import * as React from "react";
 import styles from "./hero.module.css";
+import { bebasNeue } from "@/styles/fonts";
 
 import Image from "next/image";
-
 import { motion } from "framer-motion";
 
 import TwitterIcon from "../varied/Icons/TwitterIcon";
@@ -16,13 +16,14 @@ const Hero = () => {
   const router = useRouter();
   return (
     <div className={styles.container}>
-      <Image src={"/toyotasupra.jpg"} fill alt={""}></Image>
+      <Image src={"/herobg.jpg"} fill alt={""}></Image>
       <div className={styles.heroOverlay}></div>
 
       <motion.div
         className={styles.inner}
         initial={{ opacity: 0, scale: 1.4 }}
         whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
         transition={{
           delay: 0.4,
           duration: 0.4,
@@ -32,7 +33,7 @@ const Hero = () => {
         }}
       >
         <div className={styles.heroText}>
-          <h1>Unleash it</h1>
+          <h1 className={bebasNeue.className}>Unleash it</h1>
 
           <p>with unparalleled quality and reliability.</p>
           <motion.button

@@ -58,17 +58,14 @@
 }
 
 .heroText h1 {
-  font-size: 4.5rem;
+  font-size: 4.75rem;
   line-height: 0.75;
-  font-weight: lighter;
   color: var(--white-primary);
-  font-style: italic;
-  text-transform: lowercase;
+  letter-spacing: 0.02em;
 }
 
-
 .heroText p {
-  margin-top: 0.5em !important;
+  margin-top: 0.25em !important;
   color: var(--white-secondary);
 }
 

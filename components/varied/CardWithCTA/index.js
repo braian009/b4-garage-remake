@@ -20,7 +20,7 @@ const CardWithCTA = () => {
       </p>
       <motion.button
         whileHover={{
-          backgroundColor: "#1f1f1f",
+          backgroundColor: "#0c0c0c",
           color: "#eb6347",
         }}
         transition={{

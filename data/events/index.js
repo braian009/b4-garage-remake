@@ -7,7 +7,7 @@ export const eventList = [
     image: "/event1.jpg",
     date: {
       day: "21",
-      month: "Jul",
+      month: "Aug",
     },
   },
   {
@@ -19,7 +19,7 @@ export const eventList = [
 
     date: {
       day: "9",
-      month: "Aug",
+      month: "Sep",
     },
   },
   {
@@ -31,7 +31,7 @@ export const eventList = [
 
     date: {
       day: "27",
-      month: "Aug",
+      month: "Sep",
     },
   },
   {
@@ -43,7 +43,7 @@ export const eventList = [
 
     date: {
       day: "4",
-      month: "Sep",
+      month: "Oct",
     },
   },
 ];

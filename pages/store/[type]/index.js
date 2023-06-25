@@ -1,17 +1,16 @@
 import * as React from "react";
 import styles from "./productList.module.css";
+import { bebasNeue } from "@/styles/fonts";
+
+import { motion } from "framer-motion";
 
 import LineDecoration from "@/components/varied/LegendText/LineDecoration";
 import ProductCard from "@/components/ProductCard";
+import GoBackButton from "@/components/varied/GoBackButton";
 
 import { useRouter } from "next/router";
-
 import { getSlugFromString, getStringFromSlug } from "@/utils/slugConverter";
-
-import { productTypes } from "@/data/store";
-import { productsList } from "@/data/store";
-import { motion } from "framer-motion";
-import GoBackButton from "@/components/varied/GoBackButton";
+import { productsList, productTypes } from "@/data/store";
 
 const getStaticPaths = () => {
   let paths = [];
@@ -59,6 +58,7 @@ const Store = ({ itemType, itemList }) => {
         className={styles.inner}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{
           delay: 0.4,
           duration: 0.4,
@@ -67,9 +67,9 @@ const Store = ({ itemType, itemList }) => {
           damping: 75,
         }}
       >
-        <GoBackButton/>
+        <GoBackButton />
         <div className={styles.storeText}>
-          <h1>B4&apos;s Store</h1>
+          <h1 className={bebasNeue.className}>B4&apos;s Store</h1>
         </div>
         <div className={styles.storeNav}>
           <ul>

@@ -1,13 +1,15 @@
 import * as React from "react";
 import styles from "./shoppingCart.module.css";
+import { bebasNeue } from "@/styles/fonts";
 
 import { motion } from "framer-motion";
+
 import LegendText from "@/components/varied/LegendText";
 import ItemCartRow from "@/components/ItemCartRow";
 import GoBackButton from "@/components/varied/GoBackButton";
 
-import { useSelector, useDispatch } from "react-redux";
 import { useRouter } from "next/router";
+import { useSelector } from "react-redux";
 
 const ShoppingCart = () => {
   const cartList = useSelector((state) => state.cart.items);
@@ -25,6 +27,7 @@ const ShoppingCart = () => {
         className={styles.inner}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{
           delay: 0.4,
           duration: 0.4,
@@ -34,7 +37,7 @@ const ShoppingCart = () => {
         }}
       >
         <GoBackButton />
-        <h1>Your cart</h1>
+        <h1 className={bebasNeue.className}>Your cart</h1>
         {cartList.length ? (
           <>
             <div className={styles.cart}>
@@ -84,6 +87,7 @@ const ShoppingCart = () => {
             className={styles.emptyCart}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{
               delay: 0.4,
               duration: 0.4,
