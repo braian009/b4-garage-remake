@@ -5,7 +5,7 @@ import Head from "next/head";
 const EventsHead = () => {
   return (
     <Head>
-      <title>Events | B4&apos;s Garage</title>
+      <title>Events | B4 Garage</title>
       <meta
         name="description"
         content="Join us for exciting car events and meetups. Stay updated with the latest automotive gatherings and showcases."

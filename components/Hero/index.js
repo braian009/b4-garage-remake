@@ -67,7 +67,7 @@ const Hero = () => {
         <div className={styles.lastJob}>
           <LegendText text="Supra" />
           <p>
-            One of our <a> latest jobs </a> pushing boundaries with upgraded
+            One of our <a>latest jobs</a>, pushing boundaries with upgraded
             power, speed, and agility.
           </p>
         </div>

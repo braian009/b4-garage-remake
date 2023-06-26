@@ -84,9 +84,10 @@
 
   width: 100%;
   padding: 1.5em;
-  border-radius: 11px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 
-  transform: translateY(1.9em) !important;
+  transform: translateY(1.94em) !important;
 
   background-color: var(--bg-black);
   z-index: 100;

@@ -83,7 +83,7 @@ const AboutPage = () => {
             </div>
           </div>
           <div className={styles.insightCards}>
-            <LegendText text="Some insights:" />
+            <LegendText text="Some Insights" />
 
             {insightList.map((item) => {
               return (

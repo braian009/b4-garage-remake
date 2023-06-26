@@ -120,13 +120,13 @@
 
 .checkout p {
   font-size: 0.8rem;
-  margin-top: 0.25rem;
+  margin-top: 0.2rem;
 
   color: var(--gray-primary);
 }
 
 .checkout button {
-  margin-top: 0.5rem;
+  margin-top: 0.35rem;
   padding: 0.5em 2em;
   background-color: var(--orange-primary);
   border: 1px solid var(--orange-borders);

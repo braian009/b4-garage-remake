@@ -43,7 +43,7 @@ const EventsPage = ({}) => {
             </p>
           </div>
           <div className={styles.eventsCards}>
-            <Slogan text="upcoming events" />
+            <Slogan text="Upcoming Events" />
 
             {eventList.map((event) => {
               return (
