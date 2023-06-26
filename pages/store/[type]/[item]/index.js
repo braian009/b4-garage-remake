@@ -5,6 +5,7 @@ import { bebasNeue } from "@/styles/fonts";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 
+import ProductHead from "@/components/varied/PageHeads/ProductHead";
 import LegendText from "@/components/varied/LegendText";
 import CheckIcon from "@/components/varied/Icons/CheckIcon";
 import CartIcon from "@/components/varied/Icons/CartIcon";
@@ -27,7 +28,7 @@ const getServerSideProps = ({ params }) => {
   };
 };
 
-const Product = ({ item }) => {
+const ProductPage = ({ item }) => {
   const dispatch = useDispatch();
 
   const isAlreadyinCart = useSelector((state) => {
@@ -39,81 +40,83 @@ const Product = ({ item }) => {
   });
 
   return (
-    <div className={styles.container}>
-      <motion.div
-        className={styles.inner}
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.4,
-          duration: 0.4,
-          type: "spring",
-          stiffness: 400,
-          damping: 75,
-        }}
-      >
-        <GoBackButton/>
-        <div className={styles.storeText}>
-          <h1 className={bebasNeue.className}>B4&apos;s Store</h1>
-          <LegendText text={item.type} />
-        </div>
-        <div className={styles.itemDetailsCard}>
-          <div className={styles.productImage}>
-            <Image src={`${item.image}`} fill alt={""} />
+    <>
+      <ProductHead title={item.name} />
+      <div className={styles.container}>
+        <motion.div
+          className={styles.inner}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.4,
+            duration: 0.4,
+            type: "spring",
+            stiffness: 400,
+            damping: 75,
+          }}
+        >
+          <GoBackButton />
+          <div className={styles.storeText}>
+            <h1 className={bebasNeue.className}>B4&apos;s Store</h1>
+            <LegendText text={item.type} />
           </div>
-          <div className={styles.productInfo}>
-            <div className={styles.infoHeader}>
-              <h4>{item.name}</h4>
-              <p>{item.features}</p>
+          <div className={styles.itemDetailsCard}>
+            <div className={styles.productImage}>
+              <Image src={`${item.image}`} fill alt={""} />
             </div>
-            <p>{item.description}</p>
-            <div className={styles.infoFooter}>
-              {isOutOfStock ? (
-                <div className={styles.outOfStock}>item out of stock</div>
-              ) : (
-                <>
-                  <p className={styles.price}>
-                    ${Number(item.price).toFixed(2)}
-                  </p>
+            <div className={styles.productInfo}>
+              <div className={styles.infoHeader}>
+                <h4>{item.name}</h4>
+                <p>{item.features}</p>
+              </div>
+              <p>{item.description}</p>
+              <div className={styles.infoFooter}>
+                {isOutOfStock ? (
+                  <div className={styles.outOfStock}>item out of stock</div>
+                ) : (
+                  <>
+                    <p className={styles.price}>
+                      ${Number(item.price).toFixed(2)}
+                    </p>
 
-                  {isAlreadyinCart ? (
-                    <motion.div
-                      className={styles.added}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                    >
-                      <CartIcon />
-                      <CheckIcon />
-                    </motion.div>
-                  ) : (
-                    <AnimatePresence>
-                      <motion.button
-                        className={styles.addButton}
-                        onClick={() => dispatch(addToCart({ item: item }))}
-                        whileHover={{
-                          backgroundColor: "#1f1f1f",
-                          color: "#eb6347",
-                        }}
-                        transition={{
-                          duration: 0.3,
-                          ease: "easeOut",
-                        }}
-                        exit={{ opacty: 0 }}
+                    {isAlreadyinCart ? (
+                      <motion.div
+                        className={styles.added}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
                       >
-                        Add to cart
-                      </motion.button>
-                    </AnimatePresence>
-                  )}
-                </>
-              )}
+                        <CartIcon />
+                        <CheckIcon />
+                      </motion.div>
+                    ) : (
+                      <AnimatePresence>
+                        <motion.button
+                          className={styles.addButton}
+                          onClick={() => dispatch(addToCart({ item: item }))}
+                          whileHover={{
+                            backgroundColor: "#1f1f1f",
+                            color: "#eb6347",
+                          }}
+                          transition={{
+                            duration: 0.3,
+                            ease: "easeOut",
+                          }}
+                          exit={{ opacty: 0 }}
+                        >
+                          Add to cart
+                        </motion.button>
+                      </AnimatePresence>
+                    )}
+                  </>
+                )}
+              </div>
             </div>
           </div>
-        </div>
-      </motion.div>
-    </div>
+        </motion.div>
+      </div>
+    </>
   );
 };
 
-// export { getStaticPaths, getStaticProps };
 export { getServerSideProps };
-export default Product;
+export default ProductPage;

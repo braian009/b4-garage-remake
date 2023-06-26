@@ -8,7 +8,7 @@ import { expertiseList } from "@/data/expertise";
 
 const Expertise = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.inner}>
         <motion.div
           className={styles.expertiseCards}
@@ -30,7 +30,7 @@ const Expertise = () => {
           })}
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

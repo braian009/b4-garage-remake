@@ -15,7 +15,7 @@ import { useRouter } from "next/router";
 const Hero = () => {
   const router = useRouter();
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <Image src={"/herobg.jpg"} fill alt={""}></Image>
       <div className={styles.heroOverlay}></div>
 
@@ -72,7 +72,7 @@ const Hero = () => {
           </p>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 

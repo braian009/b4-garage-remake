@@ -7,7 +7,7 @@ import LegendText from "../varied/LegendText";
 
 const Services = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.inner}>
         <motion.div
           className={styles.servicesCards}
@@ -89,7 +89,7 @@ const Services = () => {
           </ul>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

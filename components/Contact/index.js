@@ -22,7 +22,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <motion.div
         className={styles.inner}
         initial={{ opacity: 0, y: 20 }}
@@ -75,7 +75,7 @@ const Contact = () => {
           </ul>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 

@@ -9,7 +9,7 @@ import ProExhaustLogo from "../varied/Icons/ProExhaustIcon";
 
 const Release = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.inner}>
         <div className={styles.releaseInfo}>
           <motion.div
@@ -45,7 +45,7 @@ const Release = () => {
           <Image src="/proexhaust.jpg" fill alt={""} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
